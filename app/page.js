@@ -52,7 +52,13 @@ export default function Home() {
       }
     }
   }, [loading]);
-  const columnTexts = ['First column text', 'Second column text', 'Third column text'];
+  const numberData = [
+    { startValue: 5, endValue: 29, speed: 400, label: 'YEARS', Plus:'+' },
+    { startValue: 50, endValue: 173, speed: 400, label: 'LAKH SQ.FT. DELIVERED' },
+    { startValue: 7000, endValue: 75000, speed: 200, label: 'CUSTOMERS', Plus:'+'  },
+  ];
+  const justifyData = 'justify-space-between';
+
   return (
     <>
     <Loader />
@@ -69,7 +75,7 @@ export default function Home() {
         <section id="about" ref={smoothRef}>
          <About />
        </section>
-       <Numbers numberOfColumns={3} columnTexts={columnTexts} />
+       <Numbers countersData={numberData} className={justifyData} />
        <Projectslider categoryData={categoryData} />
        <Accordian faqData={""}/>
     </main>

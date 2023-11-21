@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '@/app/About.module.css'
 import Counter from './Counter';
 
-const Numbers = ({ countersData, }) => {
+const Numbers = ({ countersData, justifyData}) => {
   const imageRef = useRef(null);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Numbers = ({ countersData, }) => {
                 </div>
               </div>
               <div className="numbercount position-absolute top-0 bottom-0 left-0 right-0 col-12 float-start d-flex align-items-center">
-                <div className="numberrow position-absolute col-12 float-start flex-center gap-5 align-items-center">
+              <div className={`numberrow position-absolute col-12 float-start flex-center gap-5 align-items-center ${justifyData ? '' : 'justify-content-evenly'}`}>
                   {countersData && Array.isArray(countersData) && countersData.map((counter, index) => (
                     <div key={index} className="numbercolumn">
                       <div className="countercount">

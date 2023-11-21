@@ -1791,8 +1791,8 @@ figure.snip0016 a {
 }
 
 .thambnailslider .slick-list {
-  width: 70%;
-  margin-left: 42%;
+  width: 100%;
+  margin-left: 40%;
   overflow: visible;
 }
 

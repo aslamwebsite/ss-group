@@ -9,8 +9,8 @@ import OurEthos from '@/component/OurEthos'
 import Journey from '@/component/Journey';
 import React from 'react'
 import CustomCursor from '@/component/CustomCursor'
-import CoreValues from '@/component/svg-components/CoreValues';
-import Vision from '@/component/svg-components/Vision';
+import MDDesk from '@/component/MDDesk'
+import VisionMission from '@/component/VisionMission'
 
 const page = () => {
     const aboutUsImage = '/about-banner.jpg';
@@ -113,58 +113,9 @@ const page = () => {
                 <section ref={ethosRef}>
             <OurEthos />
             </section>            
-            <section>
-            <div className="vimision" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
-                <div className="container">
-                        <div className="col-lg-11 m-auto col-12">
-                            <div className="row">
-                            <div className="col-lg-6 col-12 row align-items-center abstractshape">
-                                <div className="col-lg-9 col-12">
-                                <h4>VISION</h4>
-                                <p>Our vision includes becoming the progressive developer of Delhi NCR, that prides itself in identifying locations and transforming them into landmarks. With this transformation comes stakeholder and investor value and admiration. We will always be recognized for who we are and what we do in improving the quality of life of our customers through the implementation of our quality design-build-deliver process.</p>
-                                </div>
-                                <div className="col-lg-3 col-12">
-                                    <Vision />
-                                </div>
-                            </div>
-                            <div className="col-lg-6 col-12 row align-items-center abstractshape">
-                                <div className="col-lg-9 col-12 flex-direction-row">
-                                <h4>CORE VALUES</h4>
-                                <p>Our decisions and actions are guided by the Values we believe in. We are determined to create long-term worth for our customers, clients and partners, as well as our employees, community, and our environment.</p>
-                                </div>
-                                <div className="col-lg-3 col-12">
-                                <CoreValues />                                
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-       </section>
+          <VisionMission />
        <Circleeffect />
-            <section>
-                    <div className="directormessage">
-                        <div className="container">
-                            <div className="web-container">
-                                <div className="row">
-                                    <div className="col-12 float-start text-center title">
-                                        <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>FROM THE MD&quot;S DESK</h3>
-                                    </div>
-                                    <div className="col-12 float-start text-center">
-                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
-                                            SS Group has been in existence for nearly three decades, nurturing the vision of providing inspiring properties for the users to work, live and play. Recognizing the basic need of mankind for a better tomorrow, we are keenly aware of the importance of creating value that stands the test of time.</p>
-                                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true'>At SS Group, we stay committed to building a long-term sustainable society by undertaking planned development across the residential, commercial and retail segments. Excellence in our business is a goal we work towards and we strive to improve continuously to keep pace with the changing real estate trends. By contemplating the finest details in all our developments, right from the design to the delivery, we make every effort to deliver quality construction, with completion of the projects within the defined time-frame promised to our customers.</p><p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="120" data-aos-duration="600" data-aos-once='true'>With the aim to understand our customers dreams and realize them to the fullest, our creativity leads us to adopt advanced technology and resources. We are fully committed to this approach and pursue it with fervor in all our upcoming developments.
-                                        </p>
-                                    </div>
-                                    <div className="col-12 pt-5 mt-5 float-start text-center">
-                                        <p className="text-uppercase m-0 text-black" data-aos="fade-down" data-aos-easing="ease-in" data-aos-offset="130" data-aos-duration="700" data-aos-once='true'><strong>ASHOK SINGH JAUNAPURIA</strong></p>
-                                        <p data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="140" data-aos-duration="750" data-aos-once='true'>MANAGING DIRECTOR & CEO, SS GROUP</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+           <MDDesk />
                 <section ref={journeyRef}>
             <Journey />            
             </section>

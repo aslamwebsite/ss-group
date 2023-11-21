@@ -1,95 +1,79 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client"
+import React, { useEffect, useState, useRef } from 'react';
+import Slick from '@/component/Slider'
+import ScrollDown from '@/component/ScrollDown'
+import About from '@/component/About'
+import News from '@/component/News';
+import Numbers from '@/component/Numbers';
+import Projectslider from '@/component/Projectslider';
+// import projectData from '@/json/project.json';
+import Footer from '@/component/Footer';
+import Header from '@/component/Header';
+import Accordian from '@/component/Accordian';
+import CustomCursor from '@/component/CustomCursor';
+import Loader from '@/component/Loader';
+import axios from 'axios';
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+  const [categoryData, setCategoryData] = useState([]);
+  // const categoryData = projectData.categories;
+  // console.log(categoryData);
+  
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('https://www.ssgroup-india.com/admin_new/api/fetch_cat.php');
+        setCategoryData(response.data.categories);
+        // console.log(response.data.categories);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (!categoryData) {
+    return <p>Error</p>;
+  }
+  const smoothRef = useRef(null);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      const loaderElement = document.querySelector('.loader');
+      if (loaderElement) {
+        loaderElement.classList.add('hideloader'); 
+      }
+    }
+  }, [loading]);
+  const columnTexts = ['First column text', 'Second column text', 'Third column text'];
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <Loader />
+    <CustomCursor />
+    <Header />
+    <main className="d-flex flex-wrap float-start col-12">
+    <section id='slider'>
+      <div className='col-12 float-start homeslider position-relative'>
+        <Slick />
+        <ScrollDown targetRef={smoothRef} />   
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <News />
+        </section>
+        <section id="about" ref={smoothRef}>
+         <About />
+       </section>
+       <Numbers numberOfColumns={3} columnTexts={columnTexts} />
+       <Projectslider categoryData={categoryData} />
+       <Accordian faqData={""}/>
     </main>
+    <Footer />
+    </>
   )
 }

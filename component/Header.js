@@ -41,9 +41,7 @@ const Header = (props) => {
               </div>
               <div className='col-lg-4'>
                 <div className='text-center col-12 float-start text-white'>
-                  <a>
                     <Enquiry enquireText='Enquire' requestCallbackText='Request a Call Back' />
-                  </a>
                 </div>
               </div>
               <div className='col-lg-4'>

@@ -65,7 +65,7 @@ main,
 }
 
 .container {
-  max-width: 1724px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -519,7 +519,7 @@ footer,
 }
 
 .MuiAccordionDetails-root.css-15v22id-MuiAccordionDetails-root {
-  padding: 25px;
+  padding-top: 15px;
 }
 
 .copyrights p {
@@ -627,23 +627,6 @@ footer,
   background-position: 0;
 }
 
-.realstatebtn {
-  align-items: center;
-  background-color: transparent;
-  border: 1px solid;
-  border-radius: 50px;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  max-width: 180px;
-  overflow: hidden;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-
 @-webkit-keyframes criss-cross-left {
   0% {
     left: -20px;
@@ -717,6 +700,19 @@ footer,
 }
 
 .realstatebtn {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 50px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  max-width: 180px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
   position: relative;
   color: #858585;
 }
@@ -791,7 +787,7 @@ footer,
   
 }
 
-.popupContent span button {
+.popupContent button {
   color: inherit;
   text-decoration: inherit;
   opacity: 0.5;
@@ -801,7 +797,7 @@ footer,
   border: 0;
 }
 
-.popupContent span:hover a {
+.popupContent a:hover{
   opacity: 1;
 }
 
@@ -1824,7 +1820,10 @@ figure.snip0016 a {
   border-radius: 50%;
   position: absolute;
 }
-
+.circles .circle:after{
+  width: 300px;
+  height: 300px;
+}
 .circles {
   position: relative;
 }
@@ -2210,6 +2209,7 @@ header.blackheader .realstatebtn span {
 
 header.blackheader .realstatebtn {
   border-color: var(--gray-color);
+  padding: 0 25px;
 }
 
 header.blackheader .hemburgur:hover span {
@@ -2773,4 +2773,7 @@ header.blackheader .fixed .fil0 {
 }
 .filterpadding {
   padding: 50px 0 100px 0;
+}
+.bannerwrap .parallaximage {
+  min-height: 900px;
 }

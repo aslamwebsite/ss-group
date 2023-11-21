@@ -34,7 +34,7 @@ const Navbar = () => {
                                     <div className='leftbox d-flex pb-3'>
                                         <ul>
                                             {/* <li className="wrapper pb-0" onClick={handleToggle} ><Link href='/' className="pseudo-text-effect"><span><HomeIcon /></span></Link></li> */}
-                                            <li className="wrapper" onClick={handleToggle} ><Link href='/about-us' className="pseudo-text-effect" data-after="SS Group"><span>SS Group</span></Link></li>
+                                            <li className="wrapper" onClick={handleToggle} ><Link href='/ss-group' className="pseudo-text-effect" data-after="SS Group"><span>SS Group</span></Link></li>
                                             <li className="wrapper"  onClick={handleToggle}><Link href='/projects/homes' className="pseudo-text-effect" data-after="Homes"><span>Homes</span></Link></li>
                                             <li className="wrapper" onClick={handleToggle}><Link href='/projects/retail' className="pseudo-text-effect" data-after="Retail"><span>Retail</span></Link></li>
                                             <li className="wrapper" onClick={handleToggle}><Link href='/projects/offices' className="pseudo-text-effect" data-after="Offices"><span>Offices</span></Link></li>

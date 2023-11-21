@@ -16,16 +16,16 @@ export default function Enquiry({ enquireText, requestCallbackText }) {
   return (
  <>
     <div className='flex-center'>
-      <button onClick={togglePopup} className='realstatebtn text-white'>
+      <a><button onClick={togglePopup} className='realstatebtn text-white'>
         <span className='text-white'>{enquireText}</span>
-      </button>
+      </button></a>
               <div className={`popup ${isPopupOpen ? 'active' : ''}`}>
           <div className='popupContent col-12 pull-start'>
-            <span className='position-absolute top-0 start-50 py-5'>
+            <a className='position-absolute top-0 start-50 py-5'>
               <button onClick={togglePopup} className='p-2'>
                 Close -
               </button>
-            </span>
+            </a>
             <div className='row'>
               <div className='col-lg-3'></div>
               <div className='col-lg-6'>

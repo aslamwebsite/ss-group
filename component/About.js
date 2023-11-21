@@ -47,7 +47,7 @@ const About = () => {
               </div>
               <div className='col-12 float-start'>
                 <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-once='true'>Trust is earned. Trust is the outcome of keeping your word and delivering excellence again and again. SS Group, Gurugram's leading real estate developer, with almost 29+ years of unwavering commitment, has maintained an envious track record of completed residential and commercial developments in the city, through a combination of financial, engineering and design expertise.</p>
-                <Link className="btns rounded" href='/about-us' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'><span className="text-green">Know More</span></Link>
+                <Link className="btns rounded" href='/ss-group' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'><span className="text-green">Know More</span></Link>
               </div>
             </div>
             <div className={`col-lg-7 col-12`}>

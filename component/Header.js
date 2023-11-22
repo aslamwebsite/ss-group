@@ -26,6 +26,14 @@ const Header = (props) => {
     }
   };
 
+  const handleLinkClick = () => {
+    setFormData({
+      location: '',
+      type: '',
+      statusval: '',
+    });
+  };
+
   return (
     <header {...props}>
       <div className={header ? 'header fixed' : 'header'}>
@@ -41,7 +49,9 @@ const Header = (props) => {
               </div>
               <div className='col-lg-4'>
                 <div className='text-center col-12 float-start text-white'>
+                  <a>
                     <Enquiry enquireText='Enquire' requestCallbackText='Request a Call Back' />
+                  </a>
                 </div>
               </div>
               <div className='col-lg-4'>
@@ -49,13 +59,13 @@ const Header = (props) => {
                   <div className='categories d-flex'>
                     <ul className='d-flex gap-5 m-0'>
                       <li>
-                        <Link href='/projects/homes'>HOMES</Link>
+                        <Link href='/projects/homes' onClick={handleLinkClick}>HOMES</Link>
                       </li>
                       <li>
-                        <Link href='/projects/retail'>RETAIL</Link>
+                        <Link href='/projects/retail' onClick={handleLinkClick}>RETAIL</Link>
                       </li>
                       <li>
-                        <Link href='/projects/offices'>OFFICE</Link>
+                        <Link href='/projects/offices' onClick={handleLinkClick}>OFFICE</Link>
                       </li>
                     </ul>
                   </div>

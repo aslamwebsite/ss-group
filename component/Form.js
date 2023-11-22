@@ -6,6 +6,7 @@ const Form = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
   });
 
   const handleChange = (e) => {
@@ -50,14 +51,14 @@ const Form = () => {
       </div>
       <div className='col-lg-4 col-12'>
       <TextField
-        name="phone"
-        label="Phone"
-        className='modifiedinput'
-        value={formData.phone}
-        onChange={handleChange}
-        fullWidth
-        required
-      />
+  name="phone"
+  label="Phone"
+  className='modifiedinput'
+  value={formData.phone}
+  onChange={handleChange}
+  fullWidth
+  required
+/>
       </div>
       <div className='col-12 mt-5 text-center'>
             <div className='col-lg-3 col-12 m-auto ssgroupbtn'>

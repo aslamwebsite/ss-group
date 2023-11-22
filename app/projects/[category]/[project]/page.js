@@ -15,6 +15,8 @@ const page = () => {
   const [project, setprojectData] = useState([]);
   const params = useParams();
   const slug = params.project;
+  console.log(slug);
+  // const project = projectData.projects.find((project) => project.slug === slug);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,7 +28,7 @@ const page = () => {
       } catch (error) {
         console.error('Error fetching data:', error);
       }
-    };
+    }; 
     fetchData();
   }, []);
   if (!project) {
@@ -106,19 +108,19 @@ const page = () => {
               <div className='web-container'>
               <div className='col-12 flaot-start flex-center'>
                                 <div className='heading text-center border-0'>
-                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>quick link</h3>
+                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="150" data-aos-duration="1000" data-aos-once='true'>quick link</h3>
                                     </div>
                             </div>
                 <div className='col-lg-10 col-12 m-auto'>
                   <div className='row'>
                     <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white" data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'><span className="text-white">BROCHURE</span></button>
+                      <button className="realstatebtn text-white"><span className="text-white">BROCHURE</span></button>
                     </div>
                     <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'><span className="text-white">FLOOR PLANS</span></button>
+                      <button className="realstatebtn text-white"><span className="text-white">FLOOR PLANS</span></button>
                     </div>
                     <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white" data-aos="fade-right" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'><span className="text-white">CONSTRUCTION UPDATES</span></button>
+                      <button className="realstatebtn text-white"><span className="text-white">CONSTRUCTION UPDATES</span></button>
                     </div>
                   </div>
                 </div>

@@ -11,12 +11,18 @@ import Category from '@/component/Category';
 import FilterProject from '@/component/FilterProject';
 import Image from 'next/image'
 
-
 const page = () => {
+
     const [categoryData, setCategoryData] = useState([]);
     const params = useParams();
     const slug = params.category;
-    useEffect(() => {
+      const url = window.location.href;
+      const queryString = url.split('?')[1];
+      const queryParams = new URLSearchParams(queryString);
+      const location = queryParams.get('location') || '';
+      const type = queryParams.get('type') || '';
+      const statusval = queryParams.get('statusval') || '';
+      useEffect(() => {
         const fetchData = async () => {
           try {
             const response = await axios.get('https://www.ssgroup-india.com/admin_new/api/fetch_cat.php');
@@ -26,15 +32,37 @@ const page = () => {
             console.error('Error fetching data:', error);
           }
         };
-    
         fetchData();
       }, []);
 
-    
-if (!categoryData) {
-  return <p>Error</p>;
-}
+    const filterProjects = (location, type, status) => {
+      if (!categoryData) return [];
+  
 
+      const filterSubcategory = (subcategory) => {
+        if (!subcategory) return [];
+    
+        const lowercasedLocation = location && location.toLowerCase();
+        const lowercasedType = type && type.toLowerCase();
+        const lowercasedStatus = status && status.toLowerCase();
+    
+        return subcategory.filter(project => (
+          (!lowercasedLocation || project.location.toLowerCase() === lowercasedLocation) &&
+          (!lowercasedType || project.pro_type.toLowerCase() === lowercasedType) &&
+          (!lowercasedStatus || project.pro_status.toLowerCase() === lowercasedStatus)
+        ));
+      };
+      
+  const filteredProjects = [
+    ...filterSubcategory(categoryData.LuxuryResidences),
+    ...filterSubcategory(categoryData.DeliveredProjects),
+    ...filterSubcategory(categoryData.PremiumResidences)
+  ];
+
+      return filteredProjects;
+    };
+    const filteredProjects =  (location || type || statusval) ? filterProjects(location, type, statusval) : '';
+    console.log(filteredProjects);
     const smoothRef = useRef(null);
     const [isZoomed, setIsZoomed] = useState(false);
     const [text, setText] = useState('');
@@ -59,7 +87,7 @@ if (!categoryData) {
             clearTimeout(textTimeout);
         };
     }, []);
-
+    
     const displayText = () => {
         let currentIndex = 0;
         const textInterval = setInterval(() => {
@@ -96,9 +124,26 @@ if (!categoryData) {
         });
     };
     const handleFilterSubmit = (formData) => {
-        // handle form data submission logic here
         console.log(formData);
       };
+
+
+      const smoothRef2 = useRef(null);
+
+  useEffect(() => {
+    const url = window.location.href;
+    const queryString = url.split('?')[1];
+    const queryParams = new URLSearchParams(queryString);
+    const location = queryParams.get('location') || '';
+
+    if (location) {
+      smoothRef2.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []); 
+
+
+
+
   return (
     <>
         <CustomCursor />
@@ -125,12 +170,12 @@ if (!categoryData) {
                         </div>
                     </div>
             </div>
-            <div className='col-12 float-start filterpadding'>
+            <div className='col-12 float-start filterpadding' ref={smoothRef2}>
             <div className='container'>
               <div className='row'>
                 <div className='web-container'>
                   <div className='col-12 float-start' data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
-                    <FilterProject onSubmit={handleFilterSubmit} />                    
+                    <FilterProject filterData={categoryData.filterval} searchFloc={location ? location : ''} searchFtype={type ? type : ''} searchFstatus={statusval ? statusval : ''} onSubmit={handleFilterSubmit} />                    
                   </div>
                 </div>
               </div>
@@ -138,9 +183,8 @@ if (!categoryData) {
             </div>
           </div>
           
-                </section>
-                
-                <Category categoryToShow={categoryData} slugValue={slug} />
+                </section>             
+                <Category categoryToShow={categoryData} filtersearchResult={(filteredProjects) ? filteredProjects : ''} slugValue={slug} />
         </main>
         <Footer />
     </>

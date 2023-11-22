@@ -66,7 +66,7 @@ Sector- 44, Gurgaon,<br />
                 <div className="col-lg-11 col-12 float-end border-top border-color mt-5 pt-2 copyrights">
                 <div className="row">
                     <div className="col-lg-6 col-12">
-                      <p>&copy; {currentYear} | All Rights Reserved.</p>
+                      <p>&copy; {currentYear} | All Rights Reserved. | <Link href='/privacy-policy'>Privacy Policy</Link> | <Link href='/disclaimer'>Disclaimer</Link></p>
                     </div>
                     <div className="col-lg-6 col-12 text-end">
                       <p><Link href="https://triverseadvertising.com/" target="_blank">site : triverse</Link></p>

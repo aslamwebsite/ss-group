@@ -1,4 +1,3 @@
-// Enquiry.js
 import { useState, useEffect } from 'react';
 import Form from './Form';
 

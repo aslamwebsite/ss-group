@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '@/fonts/stylesheet.css'
 import './globals.css'
+import './responsive.css'
 
 export const metadata = {
   title: 'SS Group | Real Estate Developer | Luxury Property in Gurugram',

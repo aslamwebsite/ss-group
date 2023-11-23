@@ -25,7 +25,7 @@ const Accordian = ( {faqData} ) => {
               <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>Frequently Asked Questions</h3>
             </div>
             <div className='col-lg-11 m-auto col-12' data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
-              <div className='col-12 float-start accordions'>
+              <div className='col-12 float-start accordions' data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
                 {faqData?
                 <>
                 {faqData.map((faqItem, index) => (
@@ -34,7 +34,6 @@ const Accordian = ( {faqData} ) => {
                     className={openAccordion === index ? 'remove-shadow' : 'remove-shadow'}
                     expanded={openAccordion === index}
                     onChange={() => handleAccordionChange(index)}
-                    data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'
                   >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                       {faqItem.question}

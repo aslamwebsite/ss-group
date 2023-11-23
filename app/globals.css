@@ -99,7 +99,6 @@ ul {
 .accordions .MuiButtonBase-root {
   font-size: var(--font18);
   line-height: 26px;
-  margin:5px 0;
 }
 
 .logo {
@@ -409,6 +408,7 @@ header {
 .remove-shadow,
 .remove-shadow::before {
   box-shadow: none !important;
+  margin: 5px 0;
 }
 
 .remove-shadow::before {
@@ -528,7 +528,7 @@ footer,
 
 .accordions .MuiButtonBase-root {
   padding: 0;
-  border-bottom: solid 1px #d9d6d6;
+  /* border-bottom: solid 1px #d9d6d6; */
 }
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {

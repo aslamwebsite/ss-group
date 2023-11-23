@@ -9,7 +9,7 @@ const ScrollDown = ({ targetRef }) => {
   };
 
   return (
-    <div id="scroll-down" onClick={handleScrollTo}>
+    <div id="scroll-down" onClick={handleScrollTo} className='desktop-show'>
       <span className="arrow-down flex-center"></span>
     </div>
   );

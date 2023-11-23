@@ -16,6 +16,15 @@ const Projectslider = ({ categoryData }) => {
     slidesToScroll: 1,
     autoplaySpeed: 5000,
     autoplay: false,
+    responsive: [
+      {
+        breakpoint: 990, 
+        settings: {
+          slidesToShow: 1.1,
+          arrows: false,
+        },
+      },
+    ]
   };
 
   const observerOptions = {

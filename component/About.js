@@ -38,7 +38,7 @@ const About = () => {
   return (
     <>
         <div className='position-relative col-12 float-start'>
-        <div className={`aboutus col-12 float-start`}>
+        <div className={`aboutus col-12 float-start sm-overflow`}>
           <div className='row'>
             <div className='col-lg-1 col-12'></div>
             <div className='col-lg-4 col-12'>

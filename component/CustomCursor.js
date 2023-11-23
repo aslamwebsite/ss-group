@@ -36,7 +36,7 @@ const CustomCursor = () => {
     })
   return (
     <>
-        <div id='custom-cursor' className='custom-cursor flex-center'>
+        <div id='custom-cursor' className='custom-cursor flex-center desktop-show'>
             <span className='cursor-text'>view</span>
         </div>
     </>

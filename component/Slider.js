@@ -14,6 +14,7 @@ const Slick = () => {
         fade: true,
         autoplaySpeed: 6000, 
         autoplay: true,
+        arrows: false,
         afterChange: (index) => setCurrentSlide(index),
     };
 

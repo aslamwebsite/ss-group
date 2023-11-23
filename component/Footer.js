@@ -10,8 +10,8 @@ const Footer = () => {
         <footer className="pb-5" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>
             <div className="container">
              <div className="row">
-             <div className="d-flex align-items-start justify-content-between">             
-               <div className="col-lg-1 col-12 position-relative">
+             <div className="d-flex align-items-start justify-content-between flex-wrap">             
+               <div className="col-lg-1 col-12 position-relative desktop-show">
                <div className="text-transform">
                <h2 className="d-flex text-center">
                <span>S</span>
@@ -36,7 +36,7 @@ const Footer = () => {
                   <Form/>  
                   </div>
                   <div className="col-12 float-start">
-                    <div className="row">
+                    <div className="row sm-gap-3 sm-dflex">
                     <div className="col-lg-4 col-12" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="700" data-aos-once='true'>
                           <div className="addressbox">
                               <span>T</span>

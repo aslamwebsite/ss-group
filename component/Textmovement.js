@@ -25,7 +25,7 @@ export const Textmovement = () => {
       <div className='textmovement col-12 float-start position-absolute'>
           <div className='d-flex'>
             <div className='overflow-hidden fulltextcolumn'>
-              <h3 className='scroll-animated-text'>SS GROUP</h3>
+              <h1 className='scroll-animated-text'>SS GROUP</h1>
             </div>
             <div className='overflow-hidden hiddentextcolumn'>
               <h3 className='scroll-animated-text'>SS GROUP</h3>

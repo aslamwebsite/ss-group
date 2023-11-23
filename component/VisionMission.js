@@ -6,7 +6,7 @@ const VisionMission = () => {
   return (
     <>
       <section>
-            <div className="vimision" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
+            <div className="vimision sm-overflow " data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
                 <div className="container">
                         <div className="col-lg-11 m-auto col-12">
                             <div className="row">

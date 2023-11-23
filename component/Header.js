@@ -39,8 +39,8 @@ const Header = (props) => {
       <div className={header ? 'header fixed' : 'header'}>
         <div className='container'>
           <div className='row'>
-            <div className='col-12 float-start flex-center'>
-              <div className='col-lg-4 col-6'>
+            <div className='col-12 float-start flex-center m-padding-0 p-0'>
+              <div className='col-lg-4'>
                 <div className='logo white'>
                   <Link href='/'>
                     <Logo />
@@ -54,7 +54,7 @@ const Header = (props) => {
               </div>
               <div className='col-lg-4'>
                 <div className='menustn d-flex justify-content-end align-items-center'>
-                  <div className='categories d-flex'>
+                  <div className='categories d-flex desktop-show'>
                     <ul className='d-flex gap-5 m-0'>
                       <li>
                         <Link href='/projects/homes' onClick={handleLinkClick}>HOMES</Link>

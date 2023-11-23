@@ -286,8 +286,8 @@ header {
   height: 100px;
   background-color: #fff;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
   z-index: 1;
 }
 
@@ -297,8 +297,8 @@ header {
   height: 250px;
   background-color: #fff;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -1px;
+  left: -1px;
   z-index: 1;
 }
 
@@ -3146,4 +3146,20 @@ section.image-effect-section .slick-prev:hover:before {
 }
 .css-17o5nyn.Mui-expanded{
   color: var(--primary-color);
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner .row, .banner .row .col-12, .About_parallaxImageInner__a0xKv {
+  height: 100%;
+}
+.mobile-show{
+  display: none !important;
+}
+.desktop-show{
+  display: block !important;
 }

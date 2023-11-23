@@ -34,6 +34,7 @@ const Accordian = ( {faqData} ) => {
                     className={openAccordion === index ? 'remove-shadow' : 'remove-shadow'}
                     expanded={openAccordion === index}
                     onChange={() => handleAccordionChange(index)}
+                    data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'
                   >
                     <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                       {faqItem.question}

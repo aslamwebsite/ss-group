@@ -64,15 +64,15 @@ const page = () => {
     <Header className='blackheader' />
       <main className="d-flex flex-wrap float-start col-12">
       <section>
-          <div className='overview col-12 float-start pt-5'>
-            <div className='container'>
-            <div className='col-12 float-start'>
+          <div className='overview col-12 float-start'>
+          <div className='col-12 float-start'>
                     <div className="container">
                         <div className="row">
                         <div className="breadcumtab"><ul><li><a href="/">Home</a></li><li><a href="/">Homes</a></li><li>{slug}</li></ul></div>
                         </div>
                     </div>
                     </div>
+            <div className='container'>
               <div className="col-lg-4 col-12 m-auto text-center">
                 <div className="heading">
                   {showH1 && <h1 className="runtext lh-1 text-uppercase">{project.ProjectName}</h1>}

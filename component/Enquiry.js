@@ -21,9 +21,9 @@ export default function Enquiry({ enquireText, requestCallbackText }) {
               <div className={`popup ${isPopupOpen ? 'active' : ''}`}>
           <div className='popupContent col-12 pull-start'>
             <a className='position-absolute top-0 start-50 py-5'>
-              <button onClick={togglePopup} className='p-2'>
+              <span onClick={togglePopup} className='p-2'>
                 Close -
-              </button>
+              </span>
             </a>
             <div className='row'>
               <div className='col-lg-3'></div>

@@ -1,0 +1,333 @@
+@media all and (max-width:1700px) {
+    .lefspace {
+        width: 90%;
+    }
+
+    .hiddentextcolumn .scroll-animated-text {
+        right: 98%;
+    }
+
+    .fulltextcolumn {
+        width: 78vw;
+    }
+
+    .scroll-animated-text {
+        font-size: 270px;
+    }
+
+    .ssgroupformtext .text-transform h2 {
+        font-size: 9.7em;
+    }
+
+    .abstractshape p {
+        max-height: 140px;
+        overflow: auto;
+    }
+}
+
+@media all and (max-width:1600px) {
+    .fulltextcolumn {
+        width: 83vw;
+    }
+
+    .hiddentextcolumn .scroll-animated-text {
+        right: 105%;
+    }
+
+    .countercount {
+        font-size: 65px;
+    }
+
+    .ethoscontent h4 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .abstractshape {
+        height: 220px;
+    }
+    .rightbox {
+        width: 100%;
+    }
+    .rightbox .title h3{
+        font-size: 13px;
+    }
+    .address, .contact {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    .menus .togmenu .sidemenus li a {
+        font-size: 11px;
+        letter-spacing: 4px;
+        white-space: nowrap;
+    }
+    .abstractshape p, .circlecont p {
+        font-size: 13px;
+        line-height: 18px;
+        max-height: 120px;
+    }
+
+.menus .togmenu ul li {
+    padding: 15px 0;
+}
+}
+
+@media all and (max-width:1450px) {
+    .fulltextcolumn {
+        width: 96vw;
+    }
+    .lg-react-element a{
+        width: 30%;
+    }
+    .abstractshape {
+        height: 196px;
+    }
+    .heading h3 {
+        font-size: 30px;
+    }
+    header.blackheader {
+        min-height: 100px;
+    }
+    .breadcumtab ul li{
+        font-size: 11px;
+    }
+    /* header.blackheader .header {
+        padding: 15px 0;
+    } */
+    .heading h1 {
+        font-size: 44px;
+    }
+    .countercount {
+        font-size: 65px;
+        white-space: nowrap;
+    }
+
+    .hiddentextcolumn .scroll-animated-text {
+        right: 120%;
+    }
+
+    .imagemanager {
+        max-height: 360px;
+    }
+
+    section.image-effect-section .slick-prev,
+    section.image-effect-section .slick-next {
+        width: 50px;
+    }
+
+    .numberrow.position-absolute.col-12.float-start.flex-center.gap-5.align-items-center.justify-content-evenly .numbercolumn:nth-child(1) {
+        padding-left: 30px;
+    }
+
+    main {
+        gap: 50px;
+    }
+
+
+    .abstractshape::before {
+        height: 100%;
+    }
+
+    section.image-effect-section .slick-next {
+        left: 4%;
+    }
+
+    .text-transform h2 {
+        font-size: 100px;
+    }
+
+    body {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .effectlayer::after {
+        width: 388px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle:after {
+        width: 180px;
+        height: 180px;
+    }
+
+    .circlecont h4,
+    .abstractshape h4 {
+        font-size: 24px;
+    }
+
+    .directormessage {
+        padding: 50px 0;
+    }
+
+    .circle-context p {
+        font-size: 13px;
+        line-height: 17px;
+        letter-spacing: 0.5px;
+    }
+
+    .circles .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .quotes p,
+    .circle-context h4 {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .circle-context h5 {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:1380px) {
+    .rightbox {
+        width: 90%;
+    }
+    
+    .address, .contact {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .menus .togmenu ul li {
+        padding: 15px 0;
+    }
+    
+    .togmenu ul li a, .pseudo-text-effect {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    .cross em {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .cross {
+        font-size: 30px;
+    }
+    .logo {
+        max-width: 75px;
+    }
+
+    .realstatebtn span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .header .realstatebtn {
+        max-width: 100px;
+        max-height: 35px;
+    }
+
+    .categories ul li {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    .home_slidertext h4 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .home_slidertext p {
+        font-size: 17px;
+    }
+
+    .heading h3 {
+        font-size: 34px;
+    }
+
+    .runtext,
+    h3.effectheading.aos-init.aos-animate {
+        letter-spacing: 0.10em;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .header.fixed {
+        padding: 10px 0;
+    }
+
+    .header.fixed .logo {
+        max-width: 60px;
+    }
+
+    ul.d-flex.gap-5.m-0 {
+        gap: 2rem !important;
+    }
+
+    .effectlayer::after {
+        width: 379px;
+    }
+
+    .countercount {
+        font-size: 60px;
+    }
+
+    .title h3 {
+        padding: 7px 60px;
+        letter-spacing: 4px;
+        font-size: 15px;
+    }
+
+    .accordions .MuiButtonBase-root {
+        font-size: 16px;
+    }
+
+    .scroll-animated-text {
+        font-size: 250px;
+        line-height: 310px;
+    }
+
+    .btns {
+        margin: 10px auto;
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle:after {
+        width: 180px;
+        height: 180px;
+    }
+
+    .circlecont h4,
+    .abstractshape h4 {
+        font-size: 24px;
+    }
+    .locationheading h4{
+        font-size: 17px;
+    }
+    footer, .directormessage {
+        padding: 50px 0;
+    }
+    footer.pb-5{
+        margin-top: 50px;
+        padding-bottom:25px !important;
+    }
+    .copyrights p{
+        font-size: 10px;
+    }
+    .circle-context p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+/* @media screen and (min-width: 1680px) and (min-height: 1050px) {
+   
+} */

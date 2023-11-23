@@ -35,6 +35,7 @@ export const LocationMap = ( {locationData} ) => {
                                     <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="150" data-aos-duration="1000" data-aos-once='true'>Location Map</h3>
                                     </div>
                             </div>
+            <div className="locationzoommap col-12 float-start d-flex gap-2">
             <div className="col-lg-9 col-12" data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
               <div className='locationimage position-relative'>
               <TransformWrapper>
@@ -67,6 +68,7 @@ export const LocationMap = ( {locationData} ) => {
                   </div>
                 ))}
               </div>
+            </div>
             </div>
           </div>
         </div>

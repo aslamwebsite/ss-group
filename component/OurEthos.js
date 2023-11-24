@@ -2,6 +2,7 @@ import React from 'react';
 export const OurEthos = () => {
   return (
     <>
+      <div className="ethossection col-12 float-start">
       <div className="container">
         <div className="web-container">
           <div className="row">
@@ -22,6 +23,7 @@ export const OurEthos = () => {
             </h4>
           </div>
         </div>
+      </div>
       </div>
 
     </>

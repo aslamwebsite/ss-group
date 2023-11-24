@@ -38,7 +38,7 @@ function Mediatabs() {
   return (
     <>
       <div className="galleryfilterstn col-12 float-start">
-        <div className="filtertabtopmenu flex-center justify-content-start gap-3 mb-3">
+        <div className="filtertabtopmenu flex-center justify-content-start gap-1">
           {[2023, 2022, 2021, 2020, 2019, 2018, 2017].map((year) => (
             <div className="menubtn" key={year}>
               <span

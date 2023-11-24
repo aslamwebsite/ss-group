@@ -70,7 +70,6 @@ export default function Home() {
       Plus: "+",
     },
   ];
-  const justifyData = "justify-space-between";
   const homeFaqData = [
     { question: 'What type of properties does SS Group offer?', answer: 'SS Group offers a wide range of residential and commercial properties, including apartments, villas, shops, anchor stores and office spaces. Explore all our properties here at <a href="http://www.ssgroup-india.com" target="_blank">www.ssgroup-india.com</a>' },
     { question: 'Where are SS Group projects currently located?', answer: 'Our projects are strategically located in prime areas of New Gurugram, offering easy access, excellent connectivity and excellent growth. Find details about our residential or commercial project locations here at <a href="http://www.ssgroup-india.com" target="_blank">www.ssgroup-india.com</a>'},
@@ -97,7 +96,7 @@ export default function Home() {
         <section id="about" ref={smoothRef}>
           <About />
         </section>
-        <Numbers countersData={numberData} className={justifyData} />
+        <Numbers countersData={numberData} />
         <Projectslider categoryData={categoryData} />
         <Accordian faqData={homeFaqData} />
       </main>

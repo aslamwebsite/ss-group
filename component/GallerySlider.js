@@ -47,7 +47,8 @@ export const GallerySlider = ( {galleryData} ) => {
     return (
         <>
             <section>
-                <div className='container'>
+              <div className="pgallery col-12 float-start">
+              <div className='container'>
                     <div className='row'>
                             <div className='col-12 flaot-start flex-center'>
                                 <div className='heading text-center border-0'>
@@ -72,6 +73,7 @@ export const GallerySlider = ( {galleryData} ) => {
                         </div>
                     </div>
                 </div>
+              </div>
             </section>
         </>
     );

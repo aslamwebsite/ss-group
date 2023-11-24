@@ -85,7 +85,7 @@ section,
 header,
 footer,
 .slick-slide div,
-.react-parallax {
+.react-parallax, .locationheading, .locationinfo {
   width: 100%;
   float: left;
 }
@@ -1198,7 +1198,7 @@ figure.snip0016 p:last-child,
   flex-wrap: wrap;
   width: 80%;
   float: right;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .address,
@@ -1649,6 +1649,7 @@ figure.snip0016 a {
   font-size: 13px;
   line-height: 13px;
   padding: 0;
+  white-space: nowrap;
 }
 
 .aboutnavbar ul li:last-child {
@@ -1731,9 +1732,10 @@ figure.snip0016 a {
 
 .abstractshape h4 {
   font-family: var(--headingfont);
+}
+.overview, .abstractshape h4 {
   margin-top: 10px;
 }
-
 .abstractshape p,
 .circlecont p {
   font-size: 15px;
@@ -2262,7 +2264,7 @@ header.blackheader .fil0 {
 }
 
 .overview .heading {
-  height: 85px;
+  
   border-bottom: solid 1px var(--gray-color);
   margin-bottom: 10px;
 }
@@ -2423,6 +2425,7 @@ h3.effectheading.aos-init.aos-animate {
   padding: 25px;
   height: 80vh;
   overflow: auto;
+  width: 100%;
 }
 .transform-component-module_content__FBWxo{
   height: 80vh !important;
@@ -2445,9 +2448,13 @@ h3.effectheading.aos-init.aos-animate {
   width: 100%;
   float: left;
   font-size: 15px;
-  line-height: 26px;
+  line-height: 20px;
+  gap: 10px;
 }
-
+.locationinfo ul li span {
+  padding-left: 10px;
+  border-left: solid 1px #000;
+}
 .locationinfo ul li strong {
   text-transform: uppercase;
   color: var(--primary-color);
@@ -2493,14 +2500,14 @@ h3.effectheading.aos-init.aos-animate {
   height: auto !important;
 }
 
-/* CSS in your stylesheet */
 .locationimage {
   transition: transform 0.5s;
 }
 
 .locationimage img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .locationmapcta {
@@ -2510,6 +2517,7 @@ h3.effectheading.aos-init.aos-animate {
 .locationmapcta button {
   background: transparent;
   border: none;
+  color: inherit;
 }
 
 .loadingtext span:first-child:before {
@@ -2604,6 +2612,7 @@ h3.effectheading.aos-init.aos-animate {
 .menubar {
   width: 80%;
   background: #f2f2f2;
+  min-width: 180px;
 }
 
 
@@ -2611,6 +2620,7 @@ h3.effectheading.aos-init.aos-animate {
   padding: 15px 20px;
   border-top: solid 1px #dddddd;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .menubar ul li a {
@@ -2637,7 +2647,7 @@ h3.effectheading.aos-init.aos-animate {
   height: 20%;
   position: absolute;
   width: 1px;
-  left: 160%;
+  left: 200%;
   background: var(--black-color);
   transform: translate(-50%, -50%);
   top: 50%;
@@ -2934,7 +2944,6 @@ section.image-effect-section .slick-prev:hover:before {
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: box;
   display: flex;
   -webkit-box-align: center;
   -moz-box-align: center;
@@ -3147,19 +3156,13 @@ section.image-effect-section .slick-prev:hover:before {
 .css-17o5nyn.Mui-expanded{
   color: var(--primary-color);
 }
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.banner .row, .banner .row .col-12, .About_parallaxImageInner__a0xKv {
-  height: 100%;
-}
 .mobile-show{
   display: none !important;
 }
 .desktop-show{
   display: block !important;
+}
+.filtertabtopmenu {
+  overflow: auto;
+  padding-bottom: 1rem;
 }

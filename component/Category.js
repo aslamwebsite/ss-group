@@ -17,7 +17,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                     </div>
                     <div className="row">
                     {Object.keys(categoryToShow.LuxuryResidences).map((pd1, index) => (
-                            <div key={index} className='col-lg-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
+                            <div key={index} className='col-lg-6 col-sm-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
                                 {/* <Link href={"/projects/" + slugValue + "/" + categoryToShow.LuxuryResidences[index].slug}> */}
                                 <Link href={(categoryToShow.LuxuryResidences[index].linkActive==1) ? "/projects/" + slugValue + "/" + categoryToShow.LuxuryResidences[index].slug : ""}>
                                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
@@ -49,7 +49,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                     <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>Ready To Move</h3>
                     </div>
                     {Object.keys(categoryToShow.PremiumResidences).map((pd1, index) => (
-                            <div key={index} className='col-lg-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
+                            <div key={index} className='col-lg-6 col-sm-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
                                 <Link href="">
                                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
@@ -71,7 +71,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
         </section>
          : null}
           {categoryToShow.DeliveredProjects ?
-        <section className='category-section completed'>
+        <section className='category-section completed overflow-hidden'>
         <div className='container'>
             <div className='web-container'>
             <div className='title col-12 float-start text-center'>
@@ -79,8 +79,8 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                 </div>
                 </div>					             
         </div>
-        <div class={(slugValue=='homes') ? "Marquee" : "Marquee flex-center"}>
-        <div class={(slugValue=='homes') ? "Marquee-content" : ""}>
+        <div className={(slugValue=='homes') ? "Marquee" : "Marquee flex-center"}>
+        <div className={(slugValue=='homes') ? "Marquee-content sm-padding-0" : ""}>
         <div className="col-12 float-start d-flex gap-2">
                 {Object.keys(categoryToShow.DeliveredProjects).map((pd1, index) => (
                         <div key={index} className='Marquee-tag categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
@@ -110,7 +110,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                     <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>{(filtersearchResult.length > 0) ? "Search Result" : "No Data Found" }</h3>
                     </div>
                     {filtersearchResult.map((searchResult, index) => (
-                            <div key={index} className='col-lg-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
+                            <div key={index} className='col-lg-6 col-sm-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
                                 <Link href="">
                                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>

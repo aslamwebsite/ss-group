@@ -153,6 +153,14 @@ export default class DynamicSliders extends Component {
       autoplaySpeed: 5000,
       speed: 1000,
       fade: true,
+      responsive: [
+        {
+          breakpoint: 630, 
+          settings: {
+            arrows: false, 
+          },
+        },
+      ]
     };
 
     return (

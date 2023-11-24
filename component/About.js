@@ -54,7 +54,7 @@ const About = () => {
             </div>
             <div className={`col-lg-7 col-12`}>
               <div className='aboutimg col-11 float-end effectlayer position-relative'>
-              <Image src={Aboutus} alt='SS Group'/>
+              <Image src={Aboutus} alt='SS Group' priority width='1500' height='1000' />
               </div>
             </div>
           </div>

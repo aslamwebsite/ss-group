@@ -62,16 +62,17 @@ const page = () => {
     <>
     <CustomCursor />
     <Header className='blackheader' />
-      <main className="d-flex flex-wrap float-start col-12">
-      <section>
-          <div className='overview col-12 float-start'>
-          <div className='col-12 float-start'>
+    <div className='col-12 float-start'>
                     <div className="container">
                         <div className="row">
                         <div className="breadcumtab"><ul><li><a href="/">Home</a></li><li><a href="/">Homes</a></li><li>{slug}</li></ul></div>
                         </div>
                     </div>
                     </div>
+      <main className="d-flex flex-wrap float-start col-12">
+      <section>
+          <div className='overview col-12 float-start'>
+        
             <div className='container'>
               <div className="col-lg-4 col-12 m-auto text-center">
                 <div className="heading">
@@ -79,7 +80,7 @@ const page = () => {
                   {showH2 && <h2>{project.Location}</h2>}
                 </div>
                 <div className="col-12 float-start">
-                  <p className={showP ? "fade-up show" : "fade-up"}>
+                  <p className={showP ? "m-0 fade-up show" : "m-0 fade-up"}>
                     {project.Overview}
                   </p>
                 </div>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '@/app/About.module.css'
 import Counter from './Counter';
 
-const Numbers = ({ countersData, justifyData}) => {
+const Numbers = ({ countersData, justifyData, className }) => {
   const imageRef = useRef(null);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Numbers = ({ countersData, justifyData}) => {
 
   return (
     <section>
-      <div className={`aboutus col-12 float-start`}>
+            <div className={`aboutus col-12 float-start ${className}`}>
         <div className="container">
           <div className="row">
             <div className={`col-lg-11 m-auto col-12 p-0 ${styles.parallaxContainer}`}>

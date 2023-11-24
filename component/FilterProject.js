@@ -1,5 +1,3 @@
-// FilterProject.js
-
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -9,7 +7,7 @@ import InputLabel from '@mui/material/InputLabel';
 
 const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, initialQuery }) => {
   const [formData, setFormData] = useState({
-    location: initialQuery?.location || searchFloc, // Make sure 'defaultLocation' is an actual value in your locations array
+    location: initialQuery?.location || searchFloc, 
     type: initialQuery?.type || searchFtype,
     statusval: initialQuery?.statusval || searchFstatus,
   });

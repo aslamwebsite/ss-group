@@ -11,7 +11,7 @@ const MDDesk = () => {
                                     <div className="col-12 float-start text-center title">
                                         <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>FROM THE MD&quot;S DESK</h3>
                                     </div>
-                                    <div className="col-12 float-start text-center">
+                                    <div className="col-12 float-start text-center p-0">
                                     <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>India's robust economic growth is being driven by its vast and youthful workforce, positioning it as a global economic powerhouse. This sets the stage for an exciting future in the Indian real estate sector, with substantial market expansion on the horizon.</p>
 <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>The recent surge in real estate demand is most evident in the Delhi/NCR region, particularly Gurugram, where the past decade has witnessed an unprecedented wave of new developments in both residential and commercial space.</p>
 <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>At SS Group, we are at the forefront of planned growth and development across residential, commercial, and retail real estate. Our unwavering commitment to excellence, combined with our promise to create a fulfilling lifestyle for our valued customers, motivates us to contribute to a brighter future for India.</p>

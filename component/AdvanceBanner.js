@@ -8,7 +8,7 @@ export const AdvanceBanner = ( {bannerData} ) => {
     <>
       {sections && sections.map((section, index) => (
         <div className="parallaximage col-12 float-start" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
-        <Parallax key={index} bgImage={section.imageUrl} strength={500} >
+        <Parallax key={index} bgImage={section.imageUrl} strength={500} className='h-auto'>
           <div className='full-height'>
             <div className='projectcontent' data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="800" data-aos-once='true'>
               <h3>{section.content.title}</h3>

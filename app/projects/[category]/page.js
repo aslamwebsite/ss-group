@@ -152,10 +152,10 @@ const page = () => {
         <section className='overflow-hidden '>
                     <div className='bannerimage position-relative full-height'>
                       <div className="loadingimg full-height">
-                      <Image src="/ss-banner.webp" width="1920" height="890"/>
+                      <Image src="/ss-banner.webp" alt='blank-banner' priority width="1920" height="890"/>
                       </div>
                         <div className={`projectbanner ${isZoomed ? 'zoom-in' : 'zoom-out'}`}>                        
-                        <Image src={categoryData.category_bimage ? categoryData.category_bimage : ''} width='1920' height='980' alt={text} className='full-height'/>                        
+                        <Image src={categoryData.category_bimage ? categoryData.category_bimage : ''} width='1920' height='980' alt={text} className='full-height' priority />                        
                         </div>
                         <div className='bannerimagecont position-absolute top-50 text-center col-12 float-start'>
                             <h2>{text}</h2>

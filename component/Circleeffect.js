@@ -30,7 +30,7 @@ const circleData = [
 export const Circleeffect = () => {
     return (
         <section>
-            <div className="infographics">
+            <div className="infographics col-12 float-start sm-overflow">
                 <div className="container">
                     <div className="col-lg-11 col-12 m-auto">
                         <div className="row">

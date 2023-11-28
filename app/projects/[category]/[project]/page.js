@@ -12,6 +12,7 @@ import Accordian from '@/component/Accordian';
 import Image from 'next/image';
 
 const page = () => {
+  const [loading, setLoading] = useState(true); 
   const [project, setprojectData] = useState([]);
   const params = useParams();
   const slug = params.project;
@@ -25,6 +26,7 @@ const page = () => {
         const project = response.data.projects.find((p) => p.slug === slug);
         console.log(project);
         setprojectData(project);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -65,7 +67,7 @@ const page = () => {
     <div className='col-12 float-start'>
                     <div className="container">
                         <div className="row">
-                        <div className="breadcumtab"><ul><li><a href="/">Home</a></li><li><a href="/">Homes</a></li><li>{slug}</li></ul></div>
+                        <div className="breadcumtab"><ul><li><a href="/">Home</a></li><li><a href={"/projects/" + project.category}>{project.category}</a></li><li>{project.ProjectName}</li></ul></div>
                         </div>
                     </div>
                     </div>
@@ -74,7 +76,7 @@ const page = () => {
           <div className='overview col-12 float-start'>
         
             <div className='container'>
-              <div className="col-lg-4 col-12 m-auto text-center">
+              <div className="col-lg-5 col-12 m-auto text-center">
                 <div className="heading">
                   {showH1 && <h1 className="runtext lh-1 text-uppercase">{project.ProjectName}</h1>}
                   {showH2 && <h2>{project.Location}</h2>}
@@ -121,7 +123,7 @@ const page = () => {
                       <button className="realstatebtn text-white"><span className="text-white">FLOOR PLANS</span></button>
                     </div>
                     <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white"><span className="text-white">CONSTRUCTION UPDATES</span></button>
+                      <a href={"/construction/" + slug}><button className="realstatebtn text-white"><span className="text-white">CONSTRUCTION UPDATES</span></button></a>
                     </div>
                   </div>
                 </div>

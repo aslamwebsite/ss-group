@@ -422,6 +422,28 @@
 }
 
 @media all and (max-width:990px) {
+    .position-relative.image-effect-section button.slick-arrow{
+        right: auto;
+        bottom: -20%;
+    }
+    .position-relative.image-effect-section button.slick-arrow.slick-next {
+        right: 30px;
+    }
+    .ssgroupformtext .text-transform {
+        transform: rotate(180deg) translate(0%, 0%);
+        height: auto;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .ssgroupformtext .text-transform h2 {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .popup .MuiFormControl-root {
+        margin: 15px 0;
+    }
     figure.snip0016 h4 {
         font-size: 19px;
     }
@@ -507,13 +529,17 @@
         object-fit: cover;
     }
 
-    .Marquee-tag:nth-child(even) {
-        width: 250px;
-        height: 250px;
+    .Marquee-tag:nth-child(even), .Marquee-tag:nth-child(odd) {
+        width: 49%;
+        height: auto;
     }
-
-    .Marquee-tag:nth-child(odd) {
-        width: 150px;
+    .Marquee-content.sm-padding-0 {
+        animation: none;
+    }
+    
+    .Marquee-content.sm-padding-0 .col-12.float-start.d-flex.gap-2 {
+        flex-wrap: wrap;
+        padding: 0 15px;
     }
 
     .locationcont {
@@ -640,7 +666,8 @@
     .ssgroupfooter form .row {
         gap: 25px;
     }
-
+    .thambnailslider button.slick-arrow.slick-prev,      
+    .thambnailslider button.slick-arrow.slick-next,
     .mobile-show {
         display: block !important;
     }
@@ -703,15 +730,15 @@
         background-repeat: no-repeat;
     }
 
-    .thambnailslider button.slick-arrow.slick-next:before,
+    /* .thambnailslider button.slick-arrow.slick-next:before,
     .thambnailslider button.slick-arrow.slick-prev:before {
         color: #59595b;
         content: '';
-    }
+    } */
 
-    .thambnailslider button.slick-arrow.slick-next,
+    /* .thambnailslider button.slick-arrow.slick-next,
     .thambnailslider button.slick-arrow.slick-prev {
-        bottom: -25%;
+        bottom: -15%;
         top: inherit;
         right: 0;
         text-transform: uppercase;
@@ -725,7 +752,7 @@
     .thambnailslider button.slick-arrow.slick-prev {
         right: inherit;
         background-image: url(/arrow.webp);
-    }
+    } */
 
     .heading {
         margin-bottom: 25px;
@@ -744,6 +771,7 @@
 }
 
 @media all and (max-width:630px) {
+   
     .mediasection {
         margin-top: 25px;
     }
@@ -886,7 +914,7 @@
     }
 
     .aboutimg {
-        height: 50vh;
+        height: 65vh;
     }
 
     .hiddentextcolumn .scroll-animated-text {
@@ -1005,6 +1033,9 @@
     .realstatebtn span {
         font-size: 12px;
     }
+    footer.pb-5 .col-10.m-auto {
+    width: 100%;
+}
 }
 
 @media all and (max-width:480px) {
@@ -1064,16 +1095,7 @@
         max-width: 70px;
     }
 
-    .loadingtext span:first-child {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .loadingtext span:last-child {
-        font-size: 13px;
-        line-height: 20px;
-    }
-
+    
     .vimision svg {
         width: 100px;
     }
@@ -1142,6 +1164,11 @@
 }
 
 @media all and (max-width:350px) {
+    .home_slidertext h4, .addressbox span {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0 5px;
+    }
     .cross em {
         width: 35px;
         height: 35px;

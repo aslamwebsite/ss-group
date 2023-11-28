@@ -25,7 +25,11 @@ const Header = (props) => {
       setNavbar(false);
     }
   };
-
+  const [formData, setFormData] = useState({
+    location: '',
+    type: '',
+    statusval: '',
+  });
   const handleLinkClick = () => {
     setFormData({
       location: '',
@@ -49,7 +53,7 @@ const Header = (props) => {
               </div>
               <div className='col-lg-4'>
                 <div className='text-center col-12 float-start text-white'>
-                    <Enquiry enquireText='Enquire' requestCallbackText='Request a Call Back' />
+                  <Enquiry enquireText='Enquire' requestCallbackText='Request a Call Back' />
                 </div>
               </div>
               <div className='col-lg-4'>

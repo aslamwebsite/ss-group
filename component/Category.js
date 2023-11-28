@@ -50,7 +50,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                     </div>
                     {Object.keys(categoryToShow.PremiumResidences).map((pd1, index) => (
                             <div key={index} className='col-lg-6 col-sm-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
-                                <Link href="">
+                                <Link href="#">
                                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                             {categoryToShow.PremiumResidences[index].imageSrc ?
@@ -84,7 +84,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
         <div className="col-12 float-start d-flex gap-2">
                 {Object.keys(categoryToShow.DeliveredProjects).map((pd1, index) => (
                         <div key={index} className='Marquee-tag categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
-                            <Link href="">
+                            <Link href="#">
                                 <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         {categoryToShow.DeliveredProjects[index].imageSrc ?
                                         <Image src={categoryToShow.DeliveredProjects[index].imageSrc} width='655' height='597' alt={categoryToShow.DeliveredProjects[index].ProjectName} />
@@ -111,7 +111,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                     </div>
                     {filtersearchResult.map((searchResult, index) => (
                             <div key={index} className='col-lg-6 col-sm-6 col-12 categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
-                                <Link href="">
+                                <Link href="#">
                                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                             {searchResult.imageSrc ?

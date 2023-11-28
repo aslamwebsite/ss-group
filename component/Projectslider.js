@@ -122,7 +122,8 @@ const Projectslider = ({ categoryData }) => {
               <Slider {...settings}>
               {categoryData.retail.LuxuryResidences && Object.keys(categoryData.retail.LuxuryResidences).map((pd1, index) => (
                   <div key={index}>
-                    <Link href={(categoryData.retail.LuxuryResidences[index].linkActive==1) ? "/projects/retail/" + categoryData.retail.LuxuryResidences[index].slug : ""}>
+                    {/* <Link href={(categoryData.retail.LuxuryResidences[index].linkActive==1) ? "/projects/retail/" + categoryData.retail.LuxuryResidences[index].slug : ""}> */}
+                    <Link href='#'>
                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                         <span className='srv_layer'></span>

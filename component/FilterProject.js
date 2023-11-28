@@ -55,7 +55,7 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
             <MenuItem value="" disabled className='text-center'>Type</MenuItem>
             {/* Add options based on your project types */}
             {filterData && filterData.types.map(typeData => (
-            <MenuItem value={typeData}>{typeData}</MenuItem>
+            <MenuItem value={typeData}>{}</MenuItem>
             ))}
             {/* Add more options as needed */}
           </Select>
@@ -92,19 +92,11 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
 export async function getServerSideProps(context) {
   const { query } = context;
 
-  // Ensure that query is not undefined before accessing its properties
   const initialQuery = {  
     location: query?.location || '',
     type: query?.type || '',
     statusval: query?.statusval || '',
   };
-
-  // // Fetch initial data needed for the component (replace this with your actual data fetching logic)
-  // const filterData = {
-  //   locations: ['location1', 'location2'],
-  //   types: ['type1', 'type2'],
-  //   status: ['Delivered'],
-  // };
 
   return {
     props: {

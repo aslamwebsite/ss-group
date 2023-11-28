@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Image from 'next/image';
 
 export default class DynamicSliders extends Component {
   constructor(props) {
@@ -9,127 +10,127 @@ export default class DynamicSliders extends Component {
       nav2: null,
       circleContent: [
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/strada-journey.webp',
           heading: '2023',
           title: 'SS STRADA',
           text: 'Sector – 84, Gurugram\nThe next-door go-to-shopping destination',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/cendana-journey.webp',
           heading: '2023',
           title: 'SS CENDANA',
           text: 'Sector – 83, Gurugram\nThe perfect blend of luxury and comfort',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/linden-floors-journey.webp',
           heading: '2021',
           title: 'SS LINDEN FLOORS',
           text: 'Sector – 84-85, Gurugram\nIndependent living floors for your exclusive lifestyle',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/ss100-journey.webp',
           heading: '2020',
           title: 'SS 100',
           text: 'Sector – 49, Gurugram\nA premium commercial hub of shop, dine and work',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/highpoint-journey.webp',
           heading: '2019',
           title: 'SS HIGHPOINT',
           text: 'Sector – 86, Gurugram\nOne-of-its-kind neighborhood shopping & leisure destination',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/omnia-journey.webp',
           heading: '2014',
           title: 'SS OMNIA',
           text: 'Sector – 86, Gurugram\nAn open market retail-cum-office destination',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/leaf-journey.webp',
           heading: '2013',
           title: 'THE LEAF',
           text: 'Sector – 85, Gurugram\nExquisite homes above all else',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/coralwood-journey.webp',
           heading: '2011',
           title: 'THE CORALWOOD',
           text: 'Sector – 84, Gurugram\nAn upscale yet affordable residential township',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/almeria-journey.webp',
           heading: '2011',
           title: 'ALMERIA',
           text: 'Sector – 84, Gurugram\nAn exclusive low-rise independent residential lifestyle',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/plaza-journey.webp',
           heading: '2011',
           title: 'SS PLAZA',
           text: 'Sector – 50, Gurugram\nAn address where business meets pleasure',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/hibiscus-journey.webp',
           heading: '2009',
           title: 'THE HIBISCUS',
           text: 'Sector – 50, Gurugram\nA luxury township low in density and high on esteem',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/aaron-ville-journey.webp',
           heading: '2009',
           title: 'AARON VILLE',
           text: 'Sector – 48, Gurugram\nPremium villas with unparalleled luxury, grace, and sophistication',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/lilac-journey.webp',
           heading: '2009',
           title: 'THE LILAC (I & 2)',
           text: 'Sector – 49, Gurugram\nAn affordable housing and comfortable living',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/lilac-journey.webp',
           heading: '2008',
           title: 'DELIGHT AND SPLENDOURS',
           text: 'Sector – 57, Gurugram\nThe high rise condominium complex with modern amenities',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/paladian-journey.webp',
           heading: '2008',
           title: 'THE PALLADIANS',
           text: 'Sector – 47-52, Gurugram\nAn independent luxury floors',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/georgion-residency-journey.webp',
           heading: '2004',
           title: 'GEORGIAL RESIDENCY',
           text: 'Sector – 50-51, Gurugram\nA distinctive residential lifestyle',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/southend-elite-journey.webp',
           heading: '2004',
           title: 'SOUTHEND ELITE',
           text: 'Sector – 49, Gurugram\nExclusively designed premium floors',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/Radiance-Recidency-journey.webp',
           heading: '2003',
           title: 'RADIANCE RESIDENCY',
           text: 'Sector – 49, Gurugram\nExtra spacious independent floors',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/southend-floor-journey.webp',
           heading: '2002',
           title: 'SOUTHEND FLOORS',
           text: 'Sector – 49, Gurugram\nLimited floors ranging from 180 sq.yds. to 300 sq.yds.',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/southend-journey.webp',
           heading: '1997',
           title: 'SOUTHEND',
           text: 'Sector – 48, Gurugram\nThe first-of-its-kind integrated township in Delhi NCR',
         },
         {
-          imageSrc: '/history-banner01.webp',
+          imageSrc: '/mayfield-garden-journey.webp',
           heading: '1994',
           title: 'MAYFIELD GARDENS',
           text: 'Sector – 47, 50 & 51, Gurugram\nOne of the largest modern cosmopolitan townships in Gurugram',
@@ -155,7 +156,7 @@ export default class DynamicSliders extends Component {
       fade: true,
       responsive: [
         {
-          breakpoint: 630, 
+          breakpoint: 990, 
           settings: {
             arrows: false, 
           },
@@ -169,7 +170,7 @@ export default class DynamicSliders extends Component {
             <div className="col-12 text-center title">
               <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>OUR JOURNEY</h3>
             </div>
-            <div className="col-lg-10 m-auto col-12 position-relative" data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="800" data-aos-once='true'>
+            <div className="col-lg-10 m-auto col-12 position-relative image-effect-section" data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="800" data-aos-once='true'>
               <Slider
                 asNavFor={this.state.nav2}
                 ref={slider => (this.slider1 = slider)}
@@ -177,7 +178,7 @@ export default class DynamicSliders extends Component {
               >
                 {circleContent.map((circle, index) => (
                   <div key={index}>
-                    <img src={circle.imageSrc} alt={circle.title} />
+                    <Image src={circle.imageSrc} alt={circle.title} width='1600' height='800' priority/>
                   </div>
                 ))}
               </Slider>

@@ -1,0 +1,323 @@
+{
+    "categories": {
+        "homes": {
+            "LuxuryResidences": [
+                {
+                    "ProjectName": "SS CENDANA",
+                    "slug": "ss-cendana",
+                    "location": "Sector 83, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/196255779205.webp",
+                    "linkActive": "1",
+                    "pro_type": "Luxury Residences",
+                    "pro_status": "New Launch"
+                },
+                {
+                    "ProjectName": "SS LINDEN FLOORS",
+                    "slug": "ss-linden",
+                    "location": "SECTOR 84-85 GURUGRAM",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/90151102011.webp",
+                    "linkActive": "0",
+                    "pro_type": "Luxury Residency",
+                    "pro_status": "Ongoing"
+                },
+                {
+                    "ProjectName": "The Leaf",
+                    "slug": "the-leaf",
+                    "location": "Sector 85, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/189364246812.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Ongoing"
+                },
+                {
+                    "ProjectName": "The Hibiscus",
+                    "slug": "the-hibiscus",
+                    "location": "Sector 50, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/82221530005.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "The Leaf Penthouse",
+                    "slug": "the-leaf-penthouse",
+                    "location": "Sector 85, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/153812511502.webp",
+                    "linkActive": "0",
+                    "pro_type": "Luxury Penthouse",
+                    "pro_status": "Ongoing"
+                }
+            ],
+            "category_title": "homes",
+            "category_bimage": "https:\/\/www.ssgroup-india.com\/images\/2792623762644991homes.webp",
+            "filterval": {
+                "locations": [
+                    "Sector 83, Gurugram",
+                    "Sector 84-85 Gurugram",
+                    "Sector 49, Gurugram",
+                    "Sector 48, Gurugram",
+                    "Sector 50, Gurugram",
+                    "Gurugram",
+                    "Sector 51, Gurugram",
+                    "Sector 57, Gurugram",
+                    "Sector\ufffd84, Gurugram",
+                    "Sector 84, Gurugram",
+                    "Sector 85, Gurugram"
+                ],
+                "types": [
+                    "Luxury Residences",
+                    "Luxury Residency",
+                    "Residential",
+                    "Luxury Penthouse"
+                ],
+                "status": [
+                    "New Launch",
+                    "Ongoing",
+                    "Delivered"
+                ]
+            },
+            "DeliveredProjects": [
+                {
+                    "ProjectName": "Southend Floor (Block A,B &amp; C)",
+                    "slug": "southend-floor-block-a-b-c",
+                    "location": "Sector 49, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1464780970southend-floor-journey.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "Radiance Residency",
+                    "slug": "radiance-residency",
+                    "location": "Sector 49, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1659902879Radiance-Recidency-journey.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "The Lilac",
+                    "slug": "the-lilac",
+                    "location": "Sector 49, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/297707762lilac-journey.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "Southend Elite",
+                    "slug": "southend-elite",
+                    "location": "Sector 49, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1335922573southend-elite-journey.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "Aaron Ville",
+                    "slug": "aaron-ville",
+                    "location": "Sector 48, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1790161043aaron-ville-journey.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "The Hibiscus",
+                    "slug": "the-hibiscus",
+                    "location": "Sector 50, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/385660060hibiscus-journey.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "SOUTHEND",
+                    "slug": "homes-southend",
+                    "location": "Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/800765259southend-journey - Copy.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "MAYFIELD GARDENS",
+                    "slug": "mayfield-gardens",
+                    "location": "Sector 51, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/345349204mayfield-garden-journey.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "DELIGHT AND SPLENDOUR",
+                    "slug": "delight-and-splendour",
+                    "location": "Sector 57, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1423918489spro07.jpg",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "The Hibiscus Penthouse",
+                    "slug": "the-hibiscus-penthouse",
+                    "location": "Sector 50, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/67675341THE HIBISCUS PENTHOUSE.jpg",
+                    "linkActive": "0",
+                    "pro_type": "Luxury Penthouse",
+                    "pro_status": "Delivered"
+                }
+            ],
+            "PremiumResidences": [
+                {
+                    "ProjectName": "Almeria",
+                    "slug": "almeria",
+                    "location": "Sector\ufffd84, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/602935718almeria-journey.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "The Coralwood",
+                    "slug": "the-coralwood",
+                    "location": "Sector 84, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/45689523814.webp",
+                    "linkActive": "0",
+                    "pro_type": "Residential",
+                    "pro_status": "Delivered"
+                }
+            ]
+        },
+        "retail": {
+            "LuxuryResidences": [
+                {
+                    "ProjectName": "SS STRADA",
+                    "slug": "ss-strada",
+                    "location": "Sector 84 Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1224851172ss-strada.webp",
+                    "linkActive": "1",
+                    "pro_type": "Highstreet",
+                    "pro_status": "New Launch"
+                },
+                {
+                    "ProjectName": "SS100",
+                    "slug": "ss100",
+                    "location": "Sector 49, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1796305306ss100.webp",
+                    "linkActive": "0",
+                    "pro_type": "Commercial",
+                    "pro_status": "Ongoing"
+                },
+                {
+                    "ProjectName": "SS HIGHPOINT",
+                    "slug": "ss-highpoint",
+                    "location": "Sector 86, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1240198941highpoint.webp",
+                    "linkActive": "0",
+                    "pro_type": "Commercial",
+                    "pro_status": "Ongoing"
+                }
+            ],
+            "category_title": "Retail",
+            "category_bimage": "https:\/\/www.ssgroup-india.com\/images\/2559885941403241430homes copy.webp",
+            "filterval": {
+                "locations": [
+                    "Sector 84 Gurugram",
+                    "Sector 86, New Gurugram",
+                    "Sector 47, Gurugram",
+                    "Sector 49, Gurugram",
+                    "Sector 86, Gurugram"
+                ],
+                "types": [
+                    "Highstreet",
+                    "Commercial"
+                ],
+                "status": [
+                    "New Launch",
+                    "Delivered",
+                    "Ongoing"
+                ]
+            },
+            "DeliveredProjects": [
+                {
+                    "ProjectName": "SS OMNIA",
+                    "slug": "ss-omnia",
+                    "location": "Sector 86, New Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/1792774861ss-omnia copy.webp",
+                    "linkActive": "0",
+                    "pro_type": "Commercial",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "SS PLAZA",
+                    "slug": "ss-plaza",
+                    "location": "Sector 47, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/788021653ss-plaza.webp",
+                    "linkActive": "0",
+                    "pro_type": "Commercial",
+                    "pro_status": "Delivered"
+                }
+            ]
+        },
+        "offices": {
+            "DeliveredProjects": [
+                {
+                    "ProjectName": "SS OMNIA",
+                    "slug": "ss-omnia-1",
+                    "location": "Sector 86, New Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/223070710ss-omnia copy.webp",
+                    "linkActive": "0",
+                    "pro_type": "Commercial",
+                    "pro_status": "Delivered"
+                },
+                {
+                    "ProjectName": "SS PLAZA",
+                    "slug": "ss-plaza-1",
+                    "location": "Sector 47, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/981407651ss-plaza.webp",
+                    "linkActive": "0",
+                    "pro_type": "Commercial",
+                    "pro_status": "Delivered"
+                }
+            ],
+            "category_title": "Offices",
+            "category_bimage": "https:\/\/www.ssgroup-india.com\/images\/17723159811484805025office-banner.webp",
+            "filterval": {
+                "locations": [
+                    "Sector 86, New Gurugram",
+                    "Sector 47, Gurugram",
+                    "Sector 49, Gurugram",
+                    "Sector 86, Gurugram"
+                ],
+                "types": [
+                    "Commercial"
+                ],
+                "status": [
+                    "Delivered",
+                    "Ongoing"
+                ]
+            },
+            "LuxuryResidences": [
+                {
+                    "ProjectName": "SS100",
+                    "slug": "ss100-1",
+                    "location": "Sector 49, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/657648773ss100.webp",
+                    "linkActive": "0",
+                    "pro_type": "Commercial",
+                    "pro_status": "Ongoing"
+                },
+                {
+                    "ProjectName": "SS HIGHPOINT",
+                    "slug": "ss-highpoint-1",
+                    "location": "Sector 86, Gurugram",
+                    "imageSrc": "https:\/\/www.ssgroup-india.com\/..\/images\/483257070highpoint.webp",
+                    "linkActive": "0",
+                    "pro_type": "Commercial",
+                    "pro_status": "Ongoing"
+                }
+            ]
+        }
+    }
+}

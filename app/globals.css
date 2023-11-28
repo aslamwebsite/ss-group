@@ -62,7 +62,7 @@ footer,
 .slick-slide div,
 .react-parallax,
 .locationheading,
-.locationinfo {
+.locationinfo, .accordions .MuiButtonBase-root {
   width: 100%;
   float: left;
 }

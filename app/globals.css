@@ -62,7 +62,7 @@ footer,
 .slick-slide div,
 .react-parallax,
 .locationheading,
-.locationinfo, .accordions .MuiButtonBase-root {
+.locationinfo, .slide {
   width: 100%;
   float: left;
 }
@@ -512,6 +512,7 @@ footer,
 .accordions .MuiButtonBase-root {
   border-bottom: 1px solid #d9d6d6;
   padding: 0;
+  display: flex;
 }
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {

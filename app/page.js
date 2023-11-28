@@ -80,7 +80,7 @@ export default function Home() {
 ];
   return (
     <>
-      {/* <Loader /> */}
+      <Loader />
       <Header />
       <main className="d-flex flex-wrap float-start col-12">
         <section id="slider">

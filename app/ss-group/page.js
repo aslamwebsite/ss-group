@@ -8,7 +8,6 @@ import Numbers from "@/component/Numbers";
 import OurEthos from "@/component/OurEthos";
 import Journey from "@/component/Journey";
 import React from "react";
-import CustomCursor from "@/component/CustomCursor";
 import MDDesk from "@/component/MDDesk";
 import VisionMission from "@/component/VisionMission";
 
@@ -88,7 +87,6 @@ const page = () => {
   const managemobileview = 'managemobileview'; 
   return (
     <>
-      <CustomCursor />
       <Header />
       <main className="d-flex flex-wrap float-start col-12">
         <Banner imageSrc={aboutUsImage} pagename="SS GROUP" />

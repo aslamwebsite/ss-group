@@ -2,12 +2,10 @@
 import React from "react";
 import Header from "@/component/Header";
 import Footer from "@/component/Footer";
-import CustomCursor from "@/component/CustomCursor";
 
 const page = () => {
   return (
     <>
-      <CustomCursor />
       <Header className="blackheader" />
       <section>
         <div className="container">

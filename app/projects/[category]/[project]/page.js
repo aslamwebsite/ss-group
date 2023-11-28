@@ -1,5 +1,4 @@
 "use client"
-import CustomCursor from '@/component/CustomCursor'
 import Footer from '@/component/Footer'
 import Header from '@/component/Header'
 import React, { useState, useEffect } from 'react';
@@ -62,7 +61,6 @@ const page = () => {
   }, []);
   return (
     <>
-    <CustomCursor />
     <Header className='blackheader' />
     <div className='col-12 float-start'>
                     <div className="container">

@@ -32,7 +32,6 @@ const News = () => {
   ];
   return (
     <>
-      <section>
         <div className='slide'>
         <div className='container'>
                 <div className='web-container'>
@@ -55,7 +54,6 @@ const News = () => {
             </div>
             </div>
         </div>
-      </section>
     </>
   );
 };

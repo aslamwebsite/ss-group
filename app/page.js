@@ -6,11 +6,9 @@ import About from "@/component/About";
 import News from "@/component/News";
 import Numbers from "@/component/Numbers";
 import Projectslider from "@/component/Projectslider";
-// import projectData from '@/json/project.json';
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import Accordian from "@/component/Accordian";
-import CustomCursor from "@/component/CustomCursor";
 import Loader from "@/component/Loader";
 import axios from "axios";
 
@@ -82,8 +80,7 @@ export default function Home() {
 ];
   return (
     <>
-      <Loader />
-      <CustomCursor />
+      {/* <Loader /> */}
       <Header />
       <main className="d-flex flex-wrap float-start col-12">
         <section id="slider">

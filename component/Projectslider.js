@@ -72,8 +72,10 @@ const Projectslider = ({ categoryData }) => {
                                             <Image src={categoryData.homes.LuxuryResidences[index].imageSrc} width='680' height='680' alt='' />
                                             : null}
                                             <figcaption>
-                                                <h4>{categoryData.homes.LuxuryResidences[index].ProjectName}</h4>
-                                                <p>{categoryData.homes.LuxuryResidences[index].location}</p>
+                                                {/* <h4>{categoryData.homes.LuxuryResidences[index].ProjectName}</h4>
+                                                <p>{categoryData.homes.LuxuryResidences[index].location}</p> */}
+                                                 <h4 dangerouslySetInnerHTML={{ __html: categoryData.homes.LuxuryResidences[index].ProjectName }} />
+<p dangerouslySetInnerHTML={{ __html: categoryData.homes.LuxuryResidences[index].location }} />
                                                 <p><a href='#'>Know More</a></p>
                                        </figcaption>
                               </figure>
@@ -131,8 +133,10 @@ const Projectslider = ({ categoryData }) => {
                                             <Image src={categoryData.retail.LuxuryResidences[index].imageSrc} width='680' height='680' alt='' />
                                             : null}
                                             <figcaption>
-                                                <h4>{categoryData.retail.LuxuryResidences[index].ProjectName}</h4>
-                                                <p>{categoryData.retail.LuxuryResidences[index].location}</p>
+                                                {/* <h4>{categoryData.retail.LuxuryResidences[index].ProjectName}</h4>
+                                                <p>{categoryData.retail.LuxuryResidences[index].location}</p> */}
+                                                <h4 dangerouslySetInnerHTML={{ __html: categoryData.retail.LuxuryResidences[index].ProjectName }} />
+<p dangerouslySetInnerHTML={{ __html: categoryData.retail.LuxuryResidences[index].location }} />
                                                 <p><a href='#'>Know More</a></p>
                                        </figcaption>
                               </figure>

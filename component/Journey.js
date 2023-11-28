@@ -88,7 +88,7 @@ export default class DynamicSliders extends Component {
           text: 'Sector – 49, Gurugram\nAn affordable housing and comfortable living',
         },
         {
-          imageSrc: '/lilac-journey.webp',
+          imageSrc: '/delighted-journey.webp',
           heading: '2008',
           title: 'DELIGHT AND SPLENDOURS',
           text: 'Sector – 57, Gurugram\nThe high rise condominium complex with modern amenities',

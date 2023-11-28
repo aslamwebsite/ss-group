@@ -1,5 +1,4 @@
 "use client"
-import CustomCursor from '@/component/CustomCursor'
 import Footer from '@/component/Footer'
 import Header from '@/component/Header'
 import Mediatabs from '@/component/Mediatabs';
@@ -9,7 +8,6 @@ import React from 'react'
 const page = () => {
   return (
     <>
-        <CustomCursor />
         <Header className='blackheader' />
         <main className="d-flex flex-wrap float-start col-12 mt-5">
         <section>

@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import CustomCursor from "@/component/CustomCursor";
 import Footer from "@/component/Footer";
 import Header from "@/component/Header";
 import ScrollDown from "@/component/ScrollDown";
@@ -154,7 +153,6 @@ const page = () => {
 
   return (
     <>
-      <CustomCursor />
       <Header />
       <main className="d-flex flex-wrap float-start col-12">
         <section className="overflow-hidden ">

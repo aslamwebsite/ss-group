@@ -1,7 +1,6 @@
 "use client"
 import Accordian from '@/component/Accordian'
 import Banner from '@/component/Banner'
-import CustomCursor from '@/component/CustomCursor'
 import Footer from '@/component/Footer'
 import Header from '@/component/Header'
 import React from 'react'
@@ -10,7 +9,6 @@ const page = () => {
   const careerUsImage = '/career-banner.webp';
   return (
     <>
-    <CustomCursor />
     <Header />
     <main className="d-flex flex-wrap float-start col-12">
     <Banner imageSrc={careerUsImage} pagename="career"/>
@@ -41,7 +39,7 @@ const page = () => {
                 </div>
         </div>
     </section>    
-    <Accordian />
+    {/* <Accordian /> */}
     </main>
     <Footer />
     </>

@@ -23,7 +23,7 @@ const Form = () => {
 
   return (
     <>
-   <div className='col-10 m-auto' data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="600" data-aos-once='true'>
+   <div className='col-12 m-auto' data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="600" data-aos-once='true'>
     <div className='row'>
     <form onSubmit={handleSubmit}>
         <div className='row'>

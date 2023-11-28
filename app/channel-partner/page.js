@@ -1,6 +1,5 @@
 "use client"
 import Banner from '@/component/Banner'
-import CustomCursor from '@/component/CustomCursor'
 import Footer from '@/component/Footer'
 import Header from '@/component/Header'
 import React from 'react'
@@ -9,7 +8,7 @@ const page = () => {
   const channelUsImage = '/channelpartner-banner.webp';
   return (
     <>
-        <CustomCursor />
+     
         <Header />
         <main className="d-flex flex-wrap float-start col-12">
         <Banner imageSrc={channelUsImage} pagename="Channel Partner"/>
@@ -25,7 +24,7 @@ const page = () => {
                     </div>
                     <div className='col-12 float-start text-center'>
                         <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>Get ready for a life of growth and prosperity with one of the largest real estate developers in Gurugram. Become a SS Group authorized channel partner and delight your customers with a wide range of residential and commercial properties to choose from across Gurugram.</p>
-                        <p data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="600" data-aos-once='true'>For Channel Partner queries, email us at <a href='mailto:sales@ssgroup-india.com'>sales@ssgroup-india.com</a></p>
+                        <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="600" data-aos-once='true'>For Channel Partner queries, email us at <a href='mailto:sales@ssgroup-india.com'>sales@ssgroup-india.com</a></p>
                     </div>
                 </div>
                 </div>

@@ -81,8 +81,8 @@ const Slick = () => {
                                     <img src={slide.imageSrc} width='1920' height='954'  alt={slide.altText} />
                                     </div>
                                     <div className='home_slidertext position-absolute top-55 text-center text-white'>
-                                        <h4><a>{slide.heading}</a></h4>
-                                        {slide.subHeading && <p><a>{slide.subHeading}</a></p>}
+                                        <h4>{slide.heading}</h4>
+                                        {slide.subHeading && <p>{slide.subHeading}</p>}
                                     </div>
                                 </div>
                                         </div>

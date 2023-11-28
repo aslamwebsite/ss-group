@@ -2457,7 +2457,7 @@ h3.effectheading.aos-init.aos-animate {
   z-index: 1;
 }
 
-.locationmapcta button {
+.locationmapcta button, .css-1hw9j7s:hover {
   background: transparent;
   border: none;
   color: inherit;

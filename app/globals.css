@@ -394,7 +394,6 @@ header {
 
 .remove-shadow::before {
   border: none;
-  background-color: #fff !important;
 }
 
 .MuiCollapse-entered .MuiAccordion-region:before,
@@ -510,9 +509,7 @@ footer,
 }
 
 .accordions .MuiButtonBase-root {
-  border-bottom: 1px solid #d9d6d6;
   padding: 0;
-  display: flex;
 }
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {

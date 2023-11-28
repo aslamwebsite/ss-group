@@ -2240,8 +2240,8 @@ header.blackheader .fil0 {
 
 .projectcontent ul li {
   padding: 0 10px;
-  border-left: solid 1px var(--black-color);
-  color: var(--black-color);
+  border-left: 1px solid rgb(0 0 0 / 75%);
+  color: rgb(0 0 0 / 75%);
   width: auto;
   float: left;
   font-size: 14px;

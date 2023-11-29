@@ -58,7 +58,7 @@ const Header = (props) => {
               </div>
               <div className='col-lg-4'>
                 <div className='menustn d-flex justify-content-end align-items-center'>
-                  <div className='categories d-flex desktop-show'>
+                  <div className='categories desktop-show'>
                     <ul className='d-flex gap-5 m-0'>
                       <li>
                         <Link href='/projects/homes' onClick={handleLinkClick}>HOMES</Link>

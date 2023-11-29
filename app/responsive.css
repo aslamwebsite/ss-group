@@ -422,6 +422,32 @@
 }
 
 @media all and (max-width:990px) {
+    .numbercolumn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .aboutus.col-12.float-start .imagemanager{
+        max-height: 65vh;
+    }
+    .aboutus.col-12.float-start.managemobileview .imagemanager {
+        max-height: 100vh;
+    }
+    .numberrow.position-absolute.col-12.float-start.flex-center.gap-5.align-items-center.justify-content-evenly .numbercolumn:nth-child(1) {
+        padding: 0;
+    }
+
+    .aboutus .imagemanager .About_parallaxImageInner__a0xKv img {
+        width: 100%;
+        height: 150vh;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .numbercolumn:last-child {
+        margin: 0;
+    }
+
     .position-relative.image-effect-section button.slick-arrow{
         right: auto;
         bottom: -20%;
@@ -627,9 +653,6 @@
         margin: 0 !important;
     }
 
-    .numbercolumn {
-        width: 30%;
-    }
 
     .col-lg-6.col-12.row.align-items-center.abstractshape {
         flex-direction: column-reverse;
@@ -775,7 +798,9 @@
     .mediasection {
         margin-top: 25px;
     }
-
+    .ssgroupformtext .text-transform h2 {
+        font-size: 6em;
+    }
     .insidenavbarbutton .slick-arrow.slick-next,
     .insidenavbarbutton .slick-arrow.slick-prev {
         width: 30px;
@@ -948,32 +973,7 @@
         width: 90%;
     }
 
-    .numbercolumn {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .aboutus.col-12.float-start .imagemanager{
-        max-height: 65vh;
-    }
-    .aboutus.col-12.float-start.managemobileview .imagemanager {
-        max-height: 100vh;
-    }
-    .numberrow.position-absolute.col-12.float-start.flex-center.gap-5.align-items-center.justify-content-evenly .numbercolumn:nth-child(1) {
-        padding: 0;
-    }
-
-    .aboutus .imagemanager .About_parallaxImageInner__a0xKv img {
-        width: 100%;
-        height: 150vh;
-        object-fit: cover;
-        object-position: top;
-    }
-
-    .numbercolumn:last-child {
-        margin: 0;
-    }
-
+   
     .thambnailslider .slick-list {
         width: 350%;
         margin-left: 12%;
@@ -1039,7 +1039,9 @@
 }
 
 @media all and (max-width:480px) {
-    
+    .ssgroupformtext .text-transform h2 {
+        font-size: 4em;
+    }
     .ethoscontent h4 {
         font-size: 19px;
         line-height: 30px;
@@ -1073,7 +1075,7 @@
     }
 
     .home_slidertext p {
-        font-size: 10;
+        font-size: 14px;
         line-height: 16px;
     }
 
@@ -1174,7 +1176,10 @@
         height: 35px;
         font-size: 15px;
     }
-
+    .countercount {
+        font-size: 40px;
+        line-height: 40px;
+    }
     .heading h3 {
         font-size: 26px;
         line-height: 30px;

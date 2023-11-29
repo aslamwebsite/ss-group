@@ -31,7 +31,9 @@ export default function Enquiry({ enquireText, requestCallbackText }) {
                 <div className='col-12 float-start text-center title'>
                   <h3 className='border-0 text-white'>{requestCallbackText}</h3>
                 </div>
-                <Form />
+               <div className="container">
+               <Form />
+               </div>
               </div>
               <div className='col-lg-3'>
                 <div className='ssgroupformtext position-relative col-12 float-start'>

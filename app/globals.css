@@ -62,7 +62,7 @@ footer,
 .slick-slide div,
 .react-parallax,
 .locationheading,
-.locationinfo, .slide {
+.locationinfo, .slide, .lg-react-element {
   width: 100%;
   float: left;
 }
@@ -1298,7 +1298,9 @@ h3.effectheading.aos-init.aos-animate, .locationheading h4, .lightcont h4,
   background: var(--secondary-color);
   z-index: 9;
 }
-
+.slide{
+  background: var(--secondary-color);
+}
 .projectslider.image-effect .srv_layer,
 .col-11.float-end.homes.aos-init.aos-animate .srv_layer,
 .ethos.col-12.float-start.position-relative.aos-init.aos-animate .srv_layer {
@@ -2591,7 +2593,7 @@ h3.effectheading.aos-init.aos-animate {
   padding: 0;
 }
 
-.mediasection .MuiTabs-indicator.css-1aquho2-MuiTabs-indicator, .slide, .realstatebtn:before, .realstatebtn:after, .circle  {
+.mediasection .MuiTabs-indicator.css-1aquho2-MuiTabs-indicator, .realstatebtn:before, .realstatebtn:after, .circle  {
   background-color: var(--primary-color);
 }
 
@@ -3069,4 +3071,9 @@ a[href="#"] {
 }
 .projectcontent ul li strong {
   color: rgb(0 0 0 / 65%);
+}
+.mediasection .mediabutton button {
+  width: 100%;
+  max-width: 100%;
+  background: #000;
 }

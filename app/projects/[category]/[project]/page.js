@@ -9,6 +9,7 @@ import GallerySlider from '@/component/GallerySlider';
 import LocationMap from '@/component/LocationMap';
 import Accordian from '@/component/Accordian';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const page = () => {
   const [loading, setLoading] = useState(true); 
@@ -104,31 +105,59 @@ const page = () => {
         <GallerySlider galleryData={project.sliderContent}/>
         <LocationMap locationData={project.locationData} />
         <section>
-          <div className='quicklink col-12 float-start'>
-            <div className='container'>
-              <div className='web-container'>
-              <div className='col-12 flaot-start flex-center'>
-                                <div className='heading text-center border-0'>
-                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="150" data-aos-duration="1000" data-aos-once='true'>quick link</h3>
-                                    </div>
-                            </div>
-                <div className='col-lg-10 col-12 m-auto'>
-                  <div className='row'>
-                    <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white"><span className="text-white">BROCHURE</span></button>
-                    </div>
-                    <div className='col-lg-4 col-12'>
-                      <button className="realstatebtn text-white"><span className="text-white">FLOOR PLANS</span></button>
-                    </div>
-                    <div className='col-lg-4 col-12'>
-                      <a href={"/construction/" + slug}><button className="realstatebtn text-white"><span className="text-white">CONSTRUCTION UPDATES</span></button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <div className='quicklink col-12 float-start'>
+    <div className='container'>
+      <div className='web-container'>
+        <div className='col-12 flaot-start flex-center'>
+          <div className='heading text-center border-0'>
+            <h3
+              className='effectheading'
+              data-aos="fade-in"
+              data-aos-easing="ease-in"
+              data-aos-offset="150"
+              data-aos-duration="1000"
+              data-aos-once='true'
+            >
+              quick link
+            </h3>
+          </div>
+        </div>
+        <div className='col-lg-10 col-12 m-auto'>
+          <div className='row'>
+            <div className='col-lg-4 col-12'>
+              {project.ebroucher && (
+                <a href={project.ebroucher} target='_blank'>
+                  <button className="realstatebtn text-white">
+                    <span className="text-white">BROCHURE</span>
+                  </button>
+                </a>
+              )}
+            </div>
+            <div className='col-lg-4 col-12'>
+              {project.application && (
+                <a href={project.application} target='_blank'>
+                  <button className="realstatebtn text-white">
+                    <span className="text-white">FLOOR PLANS</span>
+                  </button>
+                </a>
+              )}
+            </div>
+            <div className='col-lg-4 col-12'>
+              {slug && (
+                <Link href={"/construction/" + slug}>
+                  <button className="realstatebtn text-white">
+                    <span className="text-white">CONSTRUCTION UPDATES</span>
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
         <Accordian faqData={project.faq}/>
         </main>
       <Footer />

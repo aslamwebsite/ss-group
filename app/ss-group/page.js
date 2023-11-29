@@ -12,7 +12,7 @@ import MDDesk from "@/component/MDDesk";
 import VisionMission from "@/component/VisionMission";
 
 const page = () => {
-  const aboutUsImage = "/about-banner.jpg";
+  const aboutUsImage = "/about-banner.webp";
   const overviewRef = useRef(null);
   const ethosRef = useRef(null);
   const journeyRef = useRef(null);

@@ -50,7 +50,7 @@ function Mediatabs() {
             </div>
           ))}
         </div>
-        <div className="filterbottommenu">
+        <div className="filterbottommenu col-12 float-start">
           <Tabs value={tabValue} onChange={handleTabChange} centered>
             {['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].map((month, index) => (
               <Tab
@@ -58,6 +58,7 @@ function Mediatabs() {
                 label={month}
                 style={tabValue === index ? { color: '#f58634' } : {}}
                 onClick={() => handleMonthTabClick(month)}
+                className='col-12 float-start'
               />
             ))}
           </Tabs>

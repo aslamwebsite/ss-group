@@ -412,7 +412,6 @@ header {
 
 .projectslickslider .projectslider {
   width: 90%;
-  margin-left: 10%;
   position: relative;
   max-height: 680px;
 }
@@ -2575,8 +2574,9 @@ h3.effectheading.aos-init.aos-animate {
 .mediasection button {
   padding: 0;
   position: relative;
-  min-width: auto;
   overflow: visible;
+  min-width: 90px;
+  max-width: 90px;
 }
 
 .mediasection button:before {
@@ -3066,4 +3066,7 @@ h3.effectheading.aos-init.aos-animate {
 
 a[href="#"] {
   cursor: default;
+}
+.projectcontent ul li strong {
+  color: rgb(0 0 0 / 65%);
 }

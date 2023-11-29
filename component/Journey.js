@@ -150,7 +150,7 @@ export default class DynamicSliders extends Component {
     const { circleContent } = this.state;
 
     const autoplaySettings = {
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
       speed: 1000,
       fade: true,

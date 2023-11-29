@@ -74,7 +74,7 @@ const page = () => {
           <div className='overview col-12 float-start'>
         
             <div className='container'>
-              <div className="col-lg-5 col-12 m-auto text-center">
+              <div className="col-lg-9 col-12 m-auto text-center">
                 <div className="heading">
                   {showH1 && <h1 className="runtext lh-1 text-uppercase">{project.ProjectName}</h1>}
                   {showH2 && <h2>{project.Location}</h2>}

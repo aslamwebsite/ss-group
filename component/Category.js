@@ -81,7 +81,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
         </div>
         <div className={(slugValue=='homes') ? "Marquee" : "Marquee flex-center"}>
         <div className={(slugValue=='homes') ? "Marquee-content sm-padding-0" : ""}>
-        <div className="col-12 float-start d-flex gap-2">
+        <div className="col-12 float-start d-flex gap-2 align-items-start">
                 {Object.keys(categoryToShow.DeliveredProjects).map((pd1, index) => (
                         <div key={index} className='Marquee-tag categoryimage' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>
                             <Link href="#">

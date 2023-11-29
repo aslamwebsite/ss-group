@@ -10,9 +10,9 @@ const Projectslider = ({ categoryData }) => {
   const sectionRef = useRef(null);
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 1000,
-    slidesToShow: 2.1,
+    slidesToShow: 2.2,
     slidesToScroll: 1,
     autoplaySpeed: 5000,
     autoplay: false,
@@ -125,7 +125,7 @@ const Projectslider = ({ categoryData }) => {
               {categoryData.retail.LuxuryResidences && Object.keys(categoryData.retail.LuxuryResidences).map((pd1, index) => (
                   <div key={index}>
                     {/* <Link href={(categoryData.retail.LuxuryResidences[index].linkActive==1) ? "/projects/retail/" + categoryData.retail.LuxuryResidences[index].slug : ""}> */}
-                    <Link href='#'>
+                   
                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
                                         <span className='srv_layer'></span>
@@ -141,7 +141,7 @@ const Projectslider = ({ categoryData }) => {
                                        </figcaption>
                               </figure>
                         </div>
-                        </Link>
+                        {/* </Link> */}
                   </div>
                 ))}
                 {categoryData.retail.PremiumResidences && Object.keys(categoryData.retail.PremiumResidences).map((pd1, index) => (

@@ -213,6 +213,15 @@
     .circle-context h5 {
         font-size: 14px;
     }
+    .loadingtext span:first-child {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    
+    .loadingtext {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 
 @media all and (max-width:1380px) {

@@ -6,6 +6,7 @@ import { Integrity } from './svg-components/Integrity';
 import { Sustainable } from './svg-components/Sustainable';
 import { Innovative } from './svg-components/Innovative';
 import { Excellence } from './svg-components/Excellence';
+import { Commitment } from './svg-components/Commitment';
 
 const circleData = [
   {
@@ -21,7 +22,8 @@ const circleData = [
   {
     title: 'COMMITMENT',
     description: 'We believe in always delivering upon our promises, irrespective of the circumstances.',
-    icon: <Integrity />,
+    // icon: <Commitment />,
+    image: 'commitment.png'
   },
   {
     title: 'QUALITY',
@@ -56,7 +58,8 @@ const Circleeffect = () => {
               {circleData.map((circle, index) => (
                 <div key={index} className="text-center p-2" data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="300" data-aos-duration="800" data-aos-once='true'>
                   <div className="circle">
-                    <span>{circle.icon}</span>
+                    {circle.icon && <span>{circle.icon}</span>}
+                    {circle.image && <span><img src={circle.image} alt={circle.title} /></span>}
                   </div>
                   <div className="circlecont">
                     <h4>{circle.title}</h4>

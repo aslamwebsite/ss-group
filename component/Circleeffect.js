@@ -22,8 +22,8 @@ const circleData = [
   {
     title: 'COMMITMENT',
     description: 'We believe in always delivering upon our promises, irrespective of the circumstances.',
-    // icon: <Commitment />,
-    image: 'commitment.png'
+    icon: <Commitment />,
+    // image: 'commitment.png'
   },
   {
     title: 'QUALITY',

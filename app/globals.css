@@ -3089,7 +3089,7 @@ a[href="#"] {
   background-color: var(--gray-color);
 }
 .infographics .homeslider .slick-dots li{
-  z-index: 9;
+  z-index: 2;
 }
 header.blackheader .fixed .hemburgur:hover span {
   background-color: var(--white-color);

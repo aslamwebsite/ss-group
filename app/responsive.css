@@ -83,7 +83,11 @@
     .fulltextcolumn {
         width: 96vw;
     }
-
+    .mediasection button {
+        min-width: 60px;
+        max-width: 60px;
+    }
+    .aboutus .imagemanager img {height: 130vh;}
     .lg-react-element a {
         width: 30%;
     }
@@ -216,6 +220,10 @@
         width: 90%;
     }
 
+    .bannerimagecont h2, .heading h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
     .address,
     .contact {
         padding-bottom: 15px;
@@ -338,6 +346,7 @@
     .heading h3,
     .projectcontent h3 {
         font-size: 26px;
+        line-height: 32px;
     }
 
     .circle-context p,

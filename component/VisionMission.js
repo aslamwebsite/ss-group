@@ -13,7 +13,7 @@ const VisionMission = () => {
                             <div className="col-lg-6 col-12 row align-items-center abstractshape">
                                 <div className="col-lg-9 col-12">
                                 <h4>VISION</h4>
-                                <p>Our vision includes becoming the progressive developer of Delhi NCR, that prides itself in identifying locations and transforming them into landmarks. With this transformation comes stakeholder and investor value and admiration. We will always be recognized for who we are and what we do in improving the quality of life of our customers through the implementation of our quality design-build-deliver process.</p>
+                                <p>Our vision is to become an organization synonymous with quality, innovation and integrity in the field of real estate development and to be number one when it comes to customer preference.</p>
                                 </div>
                                 <div className="col-lg-3 col-12">
                                     <Vision />
@@ -21,8 +21,8 @@ const VisionMission = () => {
                             </div>
                             <div className="col-lg-6 col-12 row align-items-center abstractshape">
                                 <div className="col-lg-9 col-12 flex-direction-row">
-                                <h4>CORE VALUES</h4>
-                                <p>Our decisions and actions are guided by the Values we believe in. We are determined to create long-term worth for our customers, clients and partners, as well as our employees, community, and our environment.</p>
+                                <h4>MISSION</h4>
+                                <p>Our mission is to create an enduring and sustainable lifestyle for the new urban India.</p>
                                 </div>
                                 <div className="col-lg-3 col-12">
                                 <CoreValues />                                

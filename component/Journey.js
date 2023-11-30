@@ -10,16 +10,16 @@ export default class DynamicSliders extends Component {
       nav2: null,
       circleContent: [
         {
-          imageSrc: '/strada-journey.webp',
-          heading: '2023',
-          title: 'SS STRADA',
-          text: 'Sector – 84, Gurugram\nThe next-door go-to-shopping destination',
-        },
-        {
           imageSrc: '/cendana-journey.webp',
           heading: '2023',
           title: 'SS CENDANA',
           text: 'Sector – 83, Gurugram\nThe perfect blend of luxury and comfort',
+        },
+        {
+          imageSrc: '/strada-journey.webp',
+          heading: '2023',
+          title: 'SS STRADA',
+          text: 'Sector – 84, Gurugram\nThe next-door go-to-shopping destination',
         },
         {
           imageSrc: '/linden-floors-journey.webp',

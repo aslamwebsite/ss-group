@@ -59,7 +59,6 @@ main,
 section,
 header,
 footer,
-.slick-slide div,
 .react-parallax,
 .locationheading,
 .locationinfo, .slide, .lg-react-element {
@@ -192,7 +191,7 @@ header {
 
 
 
-.hemburgur:hover span {
+.hemburgur:hover span{
   background-color: var(--white-color);
   width: 100%;
 }
@@ -315,7 +314,7 @@ header {
 .numbercount:before {
   content: '';
   background: rgb(0 0 0 / 45%);
-  float: left;
+  position: absolute;
 }
 
 .popup,
@@ -862,15 +861,23 @@ figure.snip0016 p:last-child,
 .heading h1, .arrow-down:after, .runtext,
 h3.effectheading.aos-init.aos-animate, .locationheading h4, .lightcont h4,
 .lightcont h5, .mediasection button:before, .Marquee-tag h4, .Marquee-tag p, .Marquee-tag .projectslider, .homeslider .slick-dots li button,
-.heading h1  {
+.heading h1, .infographics .homeslider .slick-dots li  {
   margin: 0;
 }
 
-.homeslider .slick-dots li.slick-active button:before {
+.homeslider .slick-dots li.slick-active button:before, 
+.infographics .homeslider .slick-dots li.slick-active 
+button:before {
   font-size: 15px;
-  color: #f1883f;
+  color: var(--primary-color);
+}
+.infographics .homeslider .slick-dots {
+  bottom: -10%;
 }
 
+.infographics .homeslider .slick-dots li button:before {
+  color: var(--black-color);
+}
 .home_slidertext p {
   font-size: 21px;
 }
@@ -1295,10 +1302,9 @@ h3.effectheading.aos-init.aos-animate, .locationheading h4, .lightcont h4,
   left: 0;
   opacity: 1;
   transition: height 0.5s cubic-bezier(1, 0, 1, 1) 0.5s;
-  background: var(--secondary-color);
   z-index: 9;
 }
-.slide{
+.slide, .srv_layer {
   background: var(--secondary-color);
 }
 .projectslider.image-effect .srv_layer,
@@ -1581,6 +1587,7 @@ figure.snip0016 a {
   line-height: 13px;
   padding: 0;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .aboutnavbar ul li:last-child {
@@ -1668,8 +1675,7 @@ figure.snip0016 a {
   margin-top: 10px;
 }
 
-.abstractshape p,
-.circlecont p {
+.abstractshape p{
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.8px;
@@ -1843,7 +1849,6 @@ figure.snip0016 a {
   fill: var(--primary-color);
   stroke: var(--primary-color);
 }
-
 .bannerimagecont h2,
 .heading h1 {
   font-size: 52px;
@@ -3075,5 +3080,17 @@ a[href="#"] {
 .mediasection .mediabutton button {
   width: 100%;
   max-width: 100%;
-  background: #000;
+  background: var(--black-color);
+}
+.numbercolumn {
+  width: 25%;
+}
+.infographics .circle{
+  background-color: var(--gray-color);
+}
+.infographics .homeslider .slick-dots li{
+  z-index: 9;
+}
+header.blackheader .fixed .hemburgur:hover span {
+  background-color: var(--white-color);
 }

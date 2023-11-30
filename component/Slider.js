@@ -80,7 +80,7 @@ const Slick = () => {
                                     <div className={`projectbanner ${isOddSlide ? 'zoom-in' : 'zoom-out'}`}>
                                     <img src={slide.imageSrc} width='1920' height='954'  alt={slide.altText} />
                                     </div>
-                                    <div className='home_slidertext position-absolute top-55 text-center text-white'>
+                                    <div className='home_slidertext position-absolute top-55 text-center text-white col-12 flex-center d-grid'>
                                         <h4>{slide.heading}</h4>
                                         {slide.subHeading && <p>{slide.subHeading}</p>}
                                     </div>

@@ -55,7 +55,7 @@ const page = () => {
     triggerTypingEffect();
   }, []);
   const numberData = [
-    { startValue: 5, endValue: 29, speed: 400, label: "YEARS", Plus: "+" },
+    { startValue: 5, endValue: 29, speed: 400, label: "YEARS OF EXPERIENCE", Plus: "+" },
     {
       startValue: 50,
       endValue: 173,
@@ -66,7 +66,7 @@ const page = () => {
       startValue: 7000,
       endValue: 75000,
       speed: 200,
-      label: "CUSTOMERS",
+      label: "CUSTOMER BASE",
       Plus: "+",
     },
     {
@@ -82,6 +82,10 @@ const page = () => {
       speed: 200,
       label: "LAKH SQ.FT. IN PLANNING",
       Plus: "+",
+    },
+    {
+      Heading: "HUGE",
+      label: "LAND BANK IN DELHI NCR",     
     },
   ];
   const managemobileview = 'managemobileview'; 

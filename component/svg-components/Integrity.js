@@ -11,11 +11,6 @@ export const Integrity = (props) => {
     {...props}
   >
     <defs>
-      <style>
-        {
-          ".cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}"
-        }
-      </style>
     </defs>
     <circle cx={35.05} cy={16.85} r={15.85} className="cls-1" />
     <path

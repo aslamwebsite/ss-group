@@ -44,10 +44,31 @@ const Circleeffect = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplaySpeed: 3000, 
+    autoplaySpeed: 3000,
     autoplay: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
+  
 
   return (
     <section>

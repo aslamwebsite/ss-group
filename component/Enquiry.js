@@ -20,7 +20,7 @@ export default function Enquiry({ enquireText, requestCallbackText }) {
       </button>
               <div className={`popup flex-center ${isPopupOpen ? 'active' : ''}`}>
           <div className='popupContent col-12 pull-start'>
-            <a className='position-absolute top-0 start-50 py-5 cursor-pointer'>
+            <a className='position-absolute col-12 start-0 top-0 py-5 cursor-pointer'>
               <span onClick={togglePopup} className='p-2'>
                 Close -
               </span>
@@ -31,9 +31,7 @@ export default function Enquiry({ enquireText, requestCallbackText }) {
                 <div className='col-12 float-start text-center title'>
                   <h3 className='border-0 text-white'>{requestCallbackText}</h3>
                 </div>
-               <div className="container">
                <Form />
-               </div>
               </div>
               <div className='col-lg-3'>
                 <div className='ssgroupformtext position-relative col-12 float-start'>

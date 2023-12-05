@@ -19,7 +19,7 @@ const MDDesk = () => {
                     FROM THE MD&quot;S DESK
                   </h3>
                 </div>
-                <div className="col-12 float-start text-center p-0 mt-5">
+                <div className="col-lg-11 m-auto col-12 float-start text-center p-0 mt-5">
                 <div className="quotes">
                 <div className="row">
                   <div className="float-start col-12">
@@ -50,7 +50,7 @@ const MDDesk = () => {
                   >
                    For 29+ years, SS Group has etched an illustrious track record in
 the dynamic landscape of residential and commercial
-developments in Gurugram
+developments in Gurugram.
                   </p>
                   <p
                     data-aos="fade-up"
@@ -92,7 +92,7 @@ remains resolute to go beyond construction and provide maximum
 value to our stakeholders and investors.
                   </p>
                 </div>
-                <div className="col-12 pt-5 mt-5 float-start text-center">
+                <div className="col-12 pt-4 mt-4 float-start text-center">
                   <p
                     className="text-uppercase m-0 text-black"
                     data-aos="fade-down"

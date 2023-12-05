@@ -4,7 +4,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const Accordian = ( {faqData} ) => {
+const Accordian = ({ faqData }) => {
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const handleAccordionChange = (accordionIndex) => {
@@ -15,9 +15,13 @@ const Accordian = ( {faqData} ) => {
     }
   };
 
+  // Check if faqData exists and has at least one item
+  if (!faqData || faqData.length === 1) {
+    return null; // Hide the section if there is no content
+  }
+
   return (
     <section>
-    {faqData!='' ?
       <div className='container'>
         <div className='row'>
           <div className='web-container'>
@@ -26,32 +30,28 @@ const Accordian = ( {faqData} ) => {
             </div>
             <div className='col-lg-11 m-auto col-12' data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
               <div className='col-12 float-start accordions' data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
-                {faqData?
-                <>
                 {faqData.map((faqItem, index) => (
-                  <Accordion
-                    key={index}
-                    className={openAccordion === index ? 'remove-shadow' : 'remove-shadow'}
-                    expanded={openAccordion === index}
-                    onChange={() => handleAccordionChange(index)}
-                  >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                      {faqItem.question}
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      {/* {faqItem.answer} */}
-                      <p dangerouslySetInnerHTML={{ __html: faqItem.answer }} />
-                    </AccordionDetails>
-                  </Accordion>
+                  faqItem.question.trim() !== '' && (
+                    <Accordion
+                      key={index}
+                      className={openAccordion === index ? 'remove-shadow' : 'remove-shadow'}
+                      expanded={openAccordion === index}
+                      onChange={() => handleAccordionChange(index)}
+                    >
+                      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                        {faqItem.question}
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <p dangerouslySetInnerHTML={{ __html: faqItem.answer }} />
+                      </AccordionDetails>
+                    </Accordion>
+                  )
                 ))}
-                </>
-: null }
               </div>
             </div>
           </div>
         </div>
       </div>
-    : null}
     </section>
   );
 };

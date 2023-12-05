@@ -56,6 +56,7 @@ const Projectslider = ({ categoryData }) => {
         <div className='row'>
           <div className='projectslickslider pb-5 mb-5'>
             <div className='col-12 float-start text-center title' data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>
+            <span className="colorborder position-relative"><em></em></span>
               <h3>Homes BY SS GROUP</h3>
             </div>
             <div className='col-11 float-end homes' data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="300" data-aos-duration="1000" data-aos-once='true'>
@@ -76,7 +77,7 @@ const Projectslider = ({ categoryData }) => {
                                                 <p>{categoryData.homes.LuxuryResidences[index].location}</p> */}
                                                  <h4 dangerouslySetInnerHTML={{ __html: categoryData.homes.LuxuryResidences[index].ProjectName }} />
 <p dangerouslySetInnerHTML={{ __html: categoryData.homes.LuxuryResidences[index].location }} />
-                                                <p><a href='#'>Know More</a></p>
+                                                <p>Know More</p>
                                        </figcaption>
                               </figure>
                         </div>
@@ -95,7 +96,7 @@ const Projectslider = ({ categoryData }) => {
                                             <figcaption>
                                                 <h4>{categoryData.homes.PremiumResidences[index].ProjectName}</h4>
                                                 <p>{categoryData.homes.PremiumResidences[index].location}</p>
-                                                <p><a href='#'>Know More</a></p>
+                                                <p>Know More</p>
                                        </figcaption>
                               </figure>
                         </div>
@@ -124,7 +125,7 @@ const Projectslider = ({ categoryData }) => {
               <Slider {...settings}>
               {categoryData.retail.LuxuryResidences && Object.keys(categoryData.retail.LuxuryResidences).map((pd1, index) => (
                   <div key={index}>
-                    {/* <Link href={(categoryData.retail.LuxuryResidences[index].linkActive==1) ? "/projects/retail/" + categoryData.retail.LuxuryResidences[index].slug : ""}> */}
+                    <Link href={(categoryData.retail.LuxuryResidences[index].linkActive==1) ? "/projects/retail/" + categoryData.retail.LuxuryResidences[index].slug : ""}>
                    
                     <div className={`projectslider`} ref={(el) => projectSliders.current.push(el)}>
                                         <figure className='snip0016'>
@@ -137,11 +138,11 @@ const Projectslider = ({ categoryData }) => {
                                                 <p>{categoryData.retail.LuxuryResidences[index].location}</p> */}
                                                 <h4 dangerouslySetInnerHTML={{ __html: categoryData.retail.LuxuryResidences[index].ProjectName }} />
 <p dangerouslySetInnerHTML={{ __html: categoryData.retail.LuxuryResidences[index].location }} />
-                                                <p><a href='#'>Know More</a></p>
+                                                <p>Know More</p>
                                        </figcaption>
                               </figure>
                         </div>
-                        {/* </Link> */}
+                        </Link>
                   </div>
                 ))}
                 {categoryData.retail.PremiumResidences && Object.keys(categoryData.retail.PremiumResidences).map((pd1, index) => (
@@ -156,7 +157,7 @@ const Projectslider = ({ categoryData }) => {
                                             <figcaption>
                                                 <h4>{categoryData.retail.PremiumResidences[index].ProjectName}</h4>
                                                 <p>{categoryData.retail.PremiumResidences[index].location}</p>
-                                                <p><a href='#'>Know More</a></p>
+                                                <p>Know More</p>
                                        </figcaption>
                               </figure>
                         </div>
@@ -175,7 +176,7 @@ const Projectslider = ({ categoryData }) => {
                                             <figcaption>
                                                 <h4>{categoryData.retail.OngoingProjects[index].ProjectName}</h4>
                                                 <p>{categoryData.retail.OngoingProjects[index].location}</p>
-                                                <p><a href='#'>Know More</a></p>
+                                                <p>Know More</p>
                                        </figcaption>
                               </figure>
                         </div>

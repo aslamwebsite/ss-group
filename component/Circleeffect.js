@@ -78,6 +78,7 @@ const Circleeffect = () => {
             <Slider {...slickSettings}>
               {circleData.map((circle, index) => (
                 <div key={index} className="text-center p-2" data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="300" data-aos-duration="800" data-aos-once='true'>
+                  <div className="col-lg-11 m-auto col-12">
                   <div className="circle">
                     {circle.icon && <span>{circle.icon}</span>}
                     {circle.image && <span><img src={circle.image} alt={circle.title} /></span>}
@@ -85,6 +86,7 @@ const Circleeffect = () => {
                   <div className="circlecont">
                     <h4>{circle.title}</h4>
                     <p>{circle.description}</p>
+                  </div>
                   </div>
                 </div>
               ))}

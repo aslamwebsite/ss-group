@@ -3094,11 +3094,12 @@ header.blackheader .fixed .hemburgur:hover span {
   justify-content: end;
 }
 .mantainde h4 {
-    margin: 0;
-    font-size: 19px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 20px;
+  margin: 0;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-weight: 600;
 }
 
 .sscompleted .slick-initialized .slick-slide {
@@ -3168,3 +3169,7 @@ header.blackheader .fixed .hemburgur:hover span {
     opacity: 0;
   }
 }
+
+.completeslide.simillarBox .completeproject {
+  width: 28% !important;
+} 

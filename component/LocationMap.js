@@ -32,7 +32,7 @@ export const LocationMap = ({ locationData }) => {
     <>
        {locationData &&
       locationData.map((locationD, index) => (
-        locationD.locationImage.trim() !== '' && Object.keys(locationD.locationInfo).length > 0 ? (
+        locationD.locationImage.trim() !== '' ? (
           <section key={locationD.locationTitle}>
             <div className="locationmap sm-overflow">
               <div className="container">

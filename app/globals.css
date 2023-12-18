@@ -3052,7 +3052,7 @@ header.blackheader .fixed .hemburgur:hover span {
   bottom: 0;
   background: rgb(0 0 0 / 50%);
   color: #fff;
-  padding: 15px;
+  padding: 10px;
   align-items: flex-end;
   justify-content: start;
   transition: ease all 0.5s;
@@ -3173,3 +3173,7 @@ header.blackheader .fixed .hemburgur:hover span {
 .completeslide.simillarBox .completeproject {
   width: 28% !important;
 } 
+.completeproject:last-child {
+  width: 16%;
+}
+.mantainde p {letter-spacing: 1px;font-size: 12px;}

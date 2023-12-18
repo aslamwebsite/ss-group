@@ -76,8 +76,8 @@ const Ssdelivered = ({ deliveredData }) => {
                                 </div>
                                 <div className="completedetails">
                                   <div className="mantainde">
-                                    <h4>{project.ProjectName}</h4>
-                                    <p>{project.location}</p>
+                                  <h4 dangerouslySetInnerHTML={{ __html: project.ProjectName }} />
+                                    <p className='m-0'>{project.location}</p>
                                   </div>
                                 </div>
                               </div>

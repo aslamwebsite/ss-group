@@ -193,8 +193,7 @@ const page = () => {
               <div className="container">
                 <div className="row">
                   <div className="web-container">
-                    <div
-                      className="col-12 float-start"
+                    <div className="col-12 float-start"
                       data-aos="fade-left"
                       data-aos-easing="ease-in"
                       data-aos-offset="50"
@@ -215,11 +214,7 @@ const page = () => {
             </div>
           </div>
         </section>
-        <Category
-          categoryToShow={categoryData}
-          filtersearchResult={filteredProjects ? filteredProjects : ""}
-          slugValue={slug}
-        />
+        <Category categoryToShow={categoryData} filtersearchResult={filteredProjects ? filteredProjects : ""} slugValue={slug}/>
       </main>
       <Footer />
     </>

@@ -14,7 +14,7 @@ export const AdvanceBanner = ({ bannerData }) => {
                 <h3 className='text-uppercase'>{section.content.title}</h3>
                 <ul>
                   {section.content.points.map((point, pointIndex) => (
-                    <li key={pointIndex}>
+                    <li key={pointIndex} >
                       <strong>{point.split(' ')[0]}</strong> {point.slice(point.split(' ')[0].length)}
                     </li>
                   ))}

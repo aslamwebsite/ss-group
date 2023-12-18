@@ -1,8 +1,7 @@
-// QuickLinks.js
 import React from 'react';
 import Link from 'next/link';
 
-const QuickLinks = ({ ebroucher, application, slug }) => {
+const QuickLinks = ({ ebroucher, application, slug, const_status, virtualtour }) => {
   return (
     <div className='quicklink col-12 float-start'>
       <div className='container'>
@@ -23,33 +22,44 @@ const QuickLinks = ({ ebroucher, application, slug }) => {
           </div>
           <div className='col-lg-10 col-12 m-auto'>
             <div className='row flex-center'>
-              <div className='col-lg-4 col-12'>
                 {ebroucher && (
+              <div className='col-lg-4 col-12'>
                   <a href={ebroucher} target='_blank'>
                     <button className="realstatebtn text-white">
                       <span className="text-white">BROCHURE</span>
                     </button>
                   </a>
-                )}
               </div>
-              <div className='col-lg-4 col-12'>
+                )}
                 {application && (
+              <div className='col-lg-4 col-12'>
                   <a href={application} target='_blank'>
                     <button className="realstatebtn text-white">
                       <span className="text-white">FLOOR PLANS</span>
                     </button>
                   </a>
-                )}
               </div>
+                )}
+              {virtualtour && (
               <div className='col-lg-4 col-12'>
-                {slug && (
-                  <Link href={"/construction/" + slug}>
+              
+                  <a href={virtualtour} target='_blank'>
                     <button className="realstatebtn text-white">
-                      <span className="text-white">CONSTRUCTION UPDATES</span>
+                      <span className="text-white">360<sup>0</sup> View</span>
                     </button>
-                  </Link>
-                )}
-              </div>
+                  </a>
+              </div>              
+              )}
+              {const_status === "1" && slug && (
+              <div className='col-lg-4 col-12'> 
+    <Link href={"/construction/" + slug}>
+      <button className="realstatebtn text-white">
+        <span className="text-white">CONSTRUCTION UPDATES</span>
+      </button>
+    </Link>
+</div>
+)}
+
             </div>
           </div>
         </div>

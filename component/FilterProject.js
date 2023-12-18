@@ -80,9 +80,7 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
               </Button>
             </div>
             <div className="col-lg-4 p-0">            
-              <Button type="button" variant="contained" color="primary" className='col-12 realstatebtn' onClick={handleReset}>
-                <span className='text-white'>Reset</span>
-              </Button>
+                <span onClick={handleReset}><strong className='text-uppercase cursor-pointer'>Reset</strong></span>
             </div>
           </div>
         </div>

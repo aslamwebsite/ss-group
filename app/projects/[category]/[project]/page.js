@@ -12,6 +12,7 @@ import QuickLinks from "@/component/QuickLinks";
 import ProjectOverview from "@/component/ProjectOverview";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectContent from '@/component/ProjectContent'
 
 const page = () => {
   const [loading, setLoading] = useState(true);
@@ -41,9 +42,29 @@ const page = () => {
     return <p>No project found!</p>;
     return false;
   }
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
 
+  useEffect(() => {
+    if (!loading) {
+      const loaderElement = document.querySelector(".loader");
+      if (loaderElement) {
+        loaderElement.classList.add("hideloader");
+      }
+    }
+  }, [loading]);
   return (
     <>
+    <div className="loader">
+      <div className={`manageloader position-relative overflow-hidden `}>
+        <div className="loaderlogo">
+        <div className='spinner'></div>
+        </div>
+      </div>
+    </div>
       <Header className="blackheader" />
       <div className="col-12 float-start">
         <div className="container">
@@ -81,7 +102,10 @@ const page = () => {
         </section>
         <GallerySlider galleryData={project.sliderContent} />
         <LocationMap locationData={project.locationData} />
-        <QuickLinks ebroucher={project.ebroucher} application={project.application} slug={slug}/>
+        {(project.seotitle && project.seodesc) ? 
+        <ProjectContent seoheading={project.seoheading} seoTitle={project.seotitle} seoDesc={project.seodesc}/>
+        : null}
+        <QuickLinks const_status={project.const_status} ebroucher={project.ebroucher} application={project.application} slug={slug} virtualtour={project.virtualtour}/>
         <Accordian faqData={project.faq} />
       </main>
       <Footer />

@@ -42,7 +42,7 @@ const Navbar = () => {
                                     </div>
                                     <div className='col-lg-8 col-12'>
                                         <ul className='d-flex gap-4 text-uppercase sidemenus'>
-                                            <li><Link href='/media' onClick={handleToggle}>Media</Link></li>
+                                            <li><Link href='/media/ad-campaigns' onClick={handleToggle}>Media</Link></li>
                                             <li><Link href='/career' onClick={handleToggle}>Career</Link></li>
                                             <li><Link href='/channel-partner' onClick={handleToggle}>Channel Partner</Link></li>
                                         </ul>

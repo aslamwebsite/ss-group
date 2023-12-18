@@ -16,7 +16,7 @@ const Accordian = ({ faqData }) => {
   };
 
   // Check if faqData exists and has at least one item
-  if (!faqData || faqData.length === 1) {
+  if (!faqData || faqData.length === 0) {
     return null; // Hide the section if there is no content
   }
 

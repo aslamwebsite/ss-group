@@ -65,7 +65,7 @@ export const GallerySlider = ({ galleryData }) => {
         src={slide.imageSrc}
         width='1500'
         height='1000'
-        alt={slide.altText || 'SS GROUP'} 
+        alt={slide.alttitle || 'SS GROUP'} 
       />
     </div>
   </div>

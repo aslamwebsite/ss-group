@@ -19,7 +19,7 @@ const MDDesk = () => {
                     FROM THE MD&quot;S DESK
                   </h3>
                 </div>
-                <div className="col-lg-11 m-auto col-12 float-start text-center p-0 mt-5">
+                <div className="col-lg-10 m-auto col-12 float-start text-center p-0 mt-5">
                 <div className="quotes">
                 <div className="row">
                   <div className="float-start col-12">

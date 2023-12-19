@@ -93,7 +93,7 @@ export const LocationMap = ({ locationData }) => {
                             data-aos-once="true"
                           >
                             <div className="locationcont">
-                              <div className="locationheading">
+                              <div className="locationheading mb-3">
                                 <h4>{locationD.locationTitle}</h4>
                               </div>
                               {Object.keys(locationD.locationInfo).map(

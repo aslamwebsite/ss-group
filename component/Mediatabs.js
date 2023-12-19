@@ -86,11 +86,11 @@ function Mediatabs() {
         <div className="filtertabtopmenu flex-center justify-content-start gap-1">
           {pagedata.mediayears && pagedata.mediayears.map((yearVal) => (
             <div className="menubtn" key={yearVal.year}>
-              <Link href={`/media/${slug}?year=${yearVal.year}`}>
+              <a href={`/media/${slug}?year=${yearVal.year}`}>
                   <span className={yearVal.class} onClick={() => handleYearButtonClick(yearVal.year)}>
                     {yearVal.year}
                   </span>
-              </Link>
+              </a>
             </div>
           ))}
         </div>

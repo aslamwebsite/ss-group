@@ -207,6 +207,16 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                     data-aos-duration="500"
                     data-aos-once="true"
                   >
+                      <Link
+                            href={
+                              searchResult.linkActive != 0
+                                ? "/projects/" +
+                                  slugValue +
+                                  "/" +
+                                  searchResult.slug
+                                : ""
+                            }
+                          >
                     <div
                       className={`projectslider`}
                       ref={(el) => projectSliders.current.push(el)}
@@ -227,6 +237,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                         </figcaption>
                       </figure>
                     </div>
+                    </Link>
                   </div>
                 ))}
               </div>

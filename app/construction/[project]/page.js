@@ -22,7 +22,7 @@ const page = () => {
                                <div className='col-lg-10 col-12 m-auto '>
                                <div className='row'>
                                     <div className='col-lg-12 col-12'>
-                                        <div className='mediasection'>
+                                        <div className='mediasection col-12 float-start'>
                                               <ConstructionUpdates />                                        
                                         </div>
                                 </div>

@@ -80,14 +80,53 @@
 }
 
 @media all and (max-width:1450px) {
-    .fulltextcolumn {
-        width: 96vw;
+    .projectfilter .MuiSelect-select{
+        padding: 10px 0;
+        letter-spacing: 2px;
     }
+    .mantainde h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .mantainde p {
+        letter-spacing: 0.5px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+    figure.snip0016 figcaption::before {
+        border-width: 3px;
+        height: 50px;
+        top: -20%;
+        transform: translateY(50%);
+    }
+
+    figure.snip0016 figcaption {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .effectheading.newheading {
+        font-size: 80px;
+    }
+
+    .vimision .effectheading.newheading {
+        font-size: 50px;
+    }
+
+    .fulltextcolumn {
+        width: 92vw;
+    }
+
     .mediasection button {
         min-width: 60px;
         max-width: 60px;
     }
-    .aboutus .imagemanager img {height: 130vh;}
+
+    .aboutus .imagemanager img {
+        height: 130vh;
+    }
+
     .lg-react-element a {
         width: 30%;
     }
@@ -130,7 +169,7 @@
     }
 
     .hiddentextcolumn .scroll-animated-text {
-        right: 120%;
+        right: 115%;
     }
 
     .imagemanager {
@@ -165,8 +204,9 @@
     }
 
     body {
-        font-size: 16px;
-        line-height: 26px;
+        line-height: 22px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
     }
 
     .effectlayer::after {
@@ -213,11 +253,12 @@
     .circle-context h5 {
         font-size: 14px;
     }
+
     .loadingtext span:first-child {
         font-size: 32px;
         line-height: 50px;
     }
-    
+
     .loadingtext {
         font-size: 18px;
         line-height: 26px;
@@ -225,14 +266,38 @@
 }
 
 @media all and (max-width:1380px) {
+    .web-container {
+        width: 80%;
+    }
+    figure.snip0016 h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    figure.snip0016 p {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+
+    .fulltextcolumn {
+        width: 96vw;
+    }
+
+    .hiddentextcolumn .scroll-animated-text {
+        right: 120%;
+    }
+
     .rightbox {
         width: 90%;
     }
 
-    .bannerimagecont h2, .heading h1 {
+    .bannerimagecont h2,
+    .heading h1 {
         font-size: 40px;
         line-height: 60px;
     }
+
     .address,
     .contact {
         padding-bottom: 15px;
@@ -325,6 +390,7 @@
         padding: 7px 60px;
         letter-spacing: 4px;
         font-size: 15px;
+        line-height: 35px;
     }
 
     .accordions .MuiButtonBase-root {
@@ -352,19 +418,37 @@
         font-size: 10px;
     }
 
-    .heading h3,
+    .heading h3 {
+        line-height: 30px;
+    }
+
     .projectcontent h3 {
         font-size: 26px;
         line-height: 32px;
     }
-
+    .locationheading h4 {
+        font-size: 16px;
+    }
+    .locationcont{
+        padding: 15px;
+    }
+    .locationinfo ul li{
+        gap: 5px;
+    }
     .circle-context p,
     .projectcontent ul li {
-        font-size: 13px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 16px;
     }
 }
-
+@media all and (max-width:1280px) {
+.fulltextcolumn {
+    width: 107vw;
+}
+.hiddentextcolumn .scroll-animated-text {
+    right: 133%;
+}
+}
 @media all and (max-width:1180px) {
     .col-lg-6.col-12.row.align-items-center.abstractshape {
         width: 100%;
@@ -440,17 +524,49 @@
 }
 
 @media all and (max-width:990px) {
+    .effectheading.newheading {
+        width: 100%;
+        float: left;
+        left: 0;
+        line-height: 80px;
+    }
+    
+    .overview .heading {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .overview p {
+        width: 100%;
+        text-align: center;
+    }
+    .rightbox .title h3 {
+        white-space: nowrap;
+    }
+    .popup.active .popupContent .col-lg-6 {
+        width: 90%;
+        margin: 0px auto;
+    }
+    .togmenu {
+        width: 90%;
+    }
+    
+    .css-heg063-MuiTabs-flexContainer {
+        overflow: auto;
+    }
     .numbercolumn {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .aboutus.col-12.float-start .imagemanager{
+    .aboutus.col-12.float-start .imagemanager {
         max-height: 65vh;
     }
+
     .aboutus.col-12.float-start.managemobileview .imagemanager {
         max-height: 100vh;
     }
+
     .numberrow.position-absolute.col-12.float-start.flex-center.gap-5.align-items-center.justify-content-evenly .numbercolumn:nth-child(1) {
         padding: 0;
     }
@@ -466,40 +582,47 @@
         margin: 0;
     }
 
-    .position-relative.image-effect-section button.slick-arrow{
+    .position-relative.image-effect-section button.slick-arrow {
         right: auto;
         bottom: -20%;
     }
+
     .position-relative.image-effect-section button.slick-arrow.slick-next {
         right: 30px;
     }
+
     .ssgroupformtext .text-transform {
         transform: rotate(180deg) translate(0%, 0%);
         height: auto;
         text-align: center;
         width: 100%;
     }
-    
+
     .ssgroupformtext .text-transform h2 {
         text-align: center;
         justify-content: center;
     }
-    
+
     .popup .MuiFormControl-root {
         margin: 15px 0;
     }
+
     figure.snip0016 h4 {
         font-size: 19px;
     }
-    .hiddentextcolumn .scroll-animated-text{
+
+    .hiddentextcolumn .scroll-animated-text {
         -webkit-text-stroke: 1px rgb(255, 255, 255);
     }
+
     .menubar {
         width: 100%;
     }
+
     .ethoscontent h4 span {
-        padding-left:5px;
+        padding-left: 5px;
     }
+
     .menubar ul {
         display: flex;
         justify-content: space-between;
@@ -558,6 +681,8 @@
     .projectcontent ul li {
         margin: 4px 0;
         padding: 0 8px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .overview {
@@ -573,14 +698,16 @@
         object-fit: cover;
     }
 
-    .Marquee-tag:nth-child(even), .Marquee-tag:nth-child(odd) {
+    .Marquee-tag:nth-child(even),
+    .Marquee-tag:nth-child(odd) {
         width: 49%;
         height: auto;
     }
+
     .Marquee-content.sm-padding-0 {
         animation: none;
     }
-    
+
     .Marquee-content.sm-padding-0 .col-12.float-start.d-flex.gap-2 {
         flex-wrap: wrap;
         padding: 0 15px;
@@ -640,17 +767,21 @@
         margin-left: 35%;
     }
 
-    .abstractshape::before, figure.snip0016 p:nth-child(2) {
+    .abstractshape::before,
+    figure.snip0016 p:nth-child(2) {
         display: none;
     }
+
     figure.snip0016 p:last-child {
         position: static;
         transform: initial;
         text-align: left;
     }
+
     figure.snip0016:hover figcaption::before {
         left: 5px;
     }
+
     .banner {
         height: 50vh;
     }
@@ -692,9 +823,11 @@
     figure.snip0016 figcaption {
         padding: 30px 1em;
     }
-    figure.snip0016 a{
+
+    figure.snip0016 a {
         font-size: 10px;
     }
+
     .ssgroupfooter {
         border: none !important;
         padding: 0;
@@ -707,7 +840,8 @@
     .ssgroupfooter form .row {
         gap: 25px;
     }
-    .thambnailslider button.slick-arrow.slick-prev,      
+
+    .thambnailslider button.slick-arrow.slick-prev,
     .thambnailslider button.slick-arrow.slick-next,
     .mobile-show {
         display: block !important;
@@ -800,7 +934,7 @@
         padding: 0 25px;
     }
 
-    .heading h3,
+    
     .projectcontent h3 {
         font-size: 24px;
         line-height: 32px;
@@ -812,13 +946,20 @@
 }
 
 @media all and (max-width:630px) {
-   
+    body {
+        line-height: 26px;
+        font-size: 16px;
+        letter-spacing: 0.6px;
+    }
+
     .mediasection {
         margin-top: 25px;
     }
+
     .ssgroupformtext .text-transform h2 {
         font-size: 6em;
     }
+
     .insidenavbarbutton .slick-arrow.slick-next,
     .insidenavbarbutton .slick-arrow.slick-prev {
         width: 30px;
@@ -831,7 +972,8 @@
     }
 
     .pgallery .container,
-    .locationmap .container, .ethossection .container {
+    .locationmap .container,
+    .ethossection .container {
         max-width: 100%;
     }
 
@@ -891,7 +1033,7 @@
     }
 
     .quotes p:before {
-        font-size: 300px;
+        font-size: 200px;
         top: -50%;
         font-family: sans-serif;
     }
@@ -901,7 +1043,7 @@
         padding: 15px !important;
     }
 
-    
+
 
     .col-lg-6.col-12.row.align-items-center.abstractshape {
         padding: 50px 10px;
@@ -952,10 +1094,15 @@
         font-size: 14px;
     }
 
-    .swiperslider img {
+    .projectbanner{
         height: 85vh;
     }
-
+    .bannerimage.position-relative.full-height {
+        height: 83vh;
+    }
+    .swiperslider img {
+        height: 100%;
+    }
     .aboutimg {
         height: 65vh;
     }
@@ -991,7 +1138,7 @@
         width: 90%;
     }
 
-   
+
     .thambnailslider .slick-list {
         width: 350%;
         margin-left: 12%;
@@ -1012,7 +1159,8 @@
     }
 
     .countercount {
-        font-size: 50px;
+        font-size: 60px;
+        line-height: 60px;
     }
 
     .bannerimagecont h2,
@@ -1047,27 +1195,79 @@
         padding: 0 1px;
     }
 
-    .title h3,
+    
     .realstatebtn span {
         font-size: 12px;
     }
+    .title h3{
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
     footer.pb-5 .col-10.m-auto {
-    width: 100%;
-}
+        width: 100%;
+    }
+    .completeproject, .completeslide.simillarBox .completeproject {
+        width: 100% !important;
+    }
+    
+    .completeslide {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .mantainde {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    .filterpadding .col-lg-3.col-12 {
+        margin: 5px 0;
+    }
+    .projectfilter .MuiSelect-select{
+        text-align: left;
+        padding-left: 20px;
+    }
+    .sscompleted {
+        overflow: hidden;
+    }
+    .mantainde p {
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+    
+    .mantainde h4 {
+        font-size: 19px;
+        line-height: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .completeslide:nth-child(odd) {
+        margin-bottom: 10px;
+    }
 }
 
 @media all and (max-width:480px) {
+    .effectheading.newheading {
+        font-size: 50px;
+        line-height: 50px;
+    }
     .ssgroupformtext .text-transform h2 {
         font-size: 4em;
     }
+
     .ethoscontent h4 {
-        font-size: 19px;
-        line-height: 30px;
+        font-size: 21px;
+        line-height: 36px;
     }
+
     .header .realstatebtn {
         max-height: 32px;
         padding: 0 10px;
     }
+
     .lg-react-element a {
         width: 100%;
     }
@@ -1081,9 +1281,6 @@
         margin-bottom: 1.5rem !important;
     }
 
-    body {
-        letter-spacing: 0.5px;
-    }
 
     .home_slidertext h4,
     .addressbox span {
@@ -1115,7 +1312,7 @@
         max-width: 70px;
     }
 
-    
+
     .vimision svg {
         width: 100px;
     }
@@ -1133,8 +1330,6 @@
 
     .title h3 {
         padding: 2px 20px;
-        letter-spacing: 1px;
-        font-size: 12px;
     }
 
     .ethoscontent h4 {
@@ -1184,20 +1379,25 @@
 }
 
 @media all and (max-width:350px) {
-    .home_slidertext h4, .addressbox span {
+
+    .home_slidertext h4,
+    .addressbox span {
         font-size: 24px;
         line-height: 30px;
         padding: 0 5px;
     }
+
     .cross em {
         width: 35px;
         height: 35px;
         font-size: 15px;
     }
+
     .countercount {
         font-size: 40px;
         line-height: 40px;
     }
+
     .heading h3 {
         font-size: 26px;
         line-height: 30px;

@@ -63,7 +63,7 @@ footer,
 .locationheading,
 .locationinfo,
 .slide,
-.lg-react-element, .completeimg, .completedetails {
+.lg-react-element, .completeimg, .completedetails, .locationinfo ul {
   width: 100%;
   float: left;
 }
@@ -101,7 +101,9 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
+.Gallerybox .lg-react-element{
+  justify-content: center;
+}
 .navbar {
   width: 50px;
   margin-left: 50px;
@@ -884,7 +886,7 @@ h3.effectheading.aos-init.aos-animate,
 .Marquee-tag .projectslider,
 .homeslider .slick-dots li button,
 .heading h1,
-.infographics .homeslider .slick-dots li, .homeslider .slick-dots li {
+.infographics .homeslider .slick-dots li, .homeslider .slick-dots li, .locationcont .locationinfo:nth-child(2) {
   margin: 0;
 }
 
@@ -2280,15 +2282,26 @@ header.blackheader .fil0 {
 
 .projectcontent ul li {
   padding: 0 10px;
-  border-left: 1px solid rgb(0 0 0 / 50%);
   width: auto;
   float: left;
   font-size: 14px;
-  line-height: 14px;
-  margin: 5px 0;
+  line-height: 20px;
   text-transform: uppercase;
+  position: relative;
 }
-
+.projectcontent ul li + li{
+  margin: 3px 0;
+}
+.projectcontent ul li:before {
+  content: '';
+  width: 0.5px;
+  height: 70%;
+  background: rgb(0 0 0 / 50%);
+  position: absolute;
+  left: 0;
+  transform: translate(-50%,-50%);
+  top: 50%;
+}
 .projectcontent ul {
   width: 100%;
   float: left;
@@ -2415,15 +2428,18 @@ h3.effectheading.aos-init.aos-animate {
 }
 
 .locationheading h4 {
-  font-size: 21px;
+  font-size: 19px;
   line-height: 30px;
   font-weight: bold;
   color: var(--black-color);
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .locationinfo {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .locationinfo ul li {
@@ -2433,16 +2449,18 @@ h3.effectheading.aos-init.aos-animate {
   font-size: 15px;
   line-height: 20px;
   gap: 10px;
+  letter-spacing: 0.5px;
 }
 
 .locationinfo ul li span {
   padding-left: 10px;
-  border-left: solid 1px #000;
+  border-left: solid 1px rgb(0 0 0 / 50%);
 }
 
 .locationinfo ul li strong {
   text-transform: uppercase;
   color: var(--primary-color);
+  letter-spacing: 2px;
 }
 
 /* Apply custom styles to the scrollbar */
@@ -2497,9 +2515,10 @@ h3.effectheading.aos-init.aos-animate {
 
 .locationmapcta {
   z-index: 1;
-  background: #f6f6f6;
-  width: 120px;
+  background: #d9bd8b;
+  width: auto;
   right: 0;
+  border: solid 1px #f6efe1;
 }
 
 .locationmapcta button,
@@ -2606,8 +2625,9 @@ h3.effectheading.aos-init.aos-animate {
 .menubar ul li {
   padding: 15px 20px;
   border-top: solid 1px #dddddd;
-  text-transform: capitalize;
+  text-transform: uppercase;
   white-space: nowrap;
+  font-weight: 400;
 }
 
 .menubar ul li a {
@@ -2641,11 +2661,15 @@ h3.effectheading.aos-init.aos-animate {
 .mediasection .MuiTabs-indicator.css-1aquho2-MuiTabs-indicator,
 .realstatebtn:before,
 .realstatebtn:after,
-.circle {
+.circle, .pagination .active>.page-link, .filterbottommenu .Mui-selected span {
   background-color: var(--primary-color);
 }
-
-.activemenu {
+.filterbottommenu .Mui-selected span {
+  height: 1px;
+  bottom: 0;
+  top: inherit;
+}
+.activemenu{
   background: var(--black-color);
   color: var(--primary-color);
 }
@@ -2696,7 +2720,7 @@ h3.effectheading.aos-init.aos-animate {
   width: 100%;
 }
 
-.btns:hover span {
+.btns:hover span, .pagination .active>.page-link {
   color: var(--white-color);
 }
 
@@ -2900,7 +2924,7 @@ h3.effectheading.aos-init.aos-animate {
   object-position: top;
 }
 
-.css-17o5nyn.Mui-expanded {
+.css-17o5nyn.Mui-expanded{
   color: var(--primary-color);
 }
 
@@ -2938,6 +2962,7 @@ a[href="#"] {
   width: 100%;
   max-width: 100%;
   background: var(--black-color);
+  overflow: hidden;
 }
 
 .numbercolumn {
@@ -3183,4 +3208,14 @@ figure.snip0016 a[href='#'] {cursor: default;}
   margin-bottom: 15px;
   display: inline-block;
   width: 100%;
+}
+.pagination .page-item.disabled {
+  opacity: .6;
+}
+.pagination .active>.page-link{
+  border: var(--primary-color) solid 1px;
+}
+.pagination .page-item a{
+  color: var(--black-color);
+  cursor: pointer;
 }

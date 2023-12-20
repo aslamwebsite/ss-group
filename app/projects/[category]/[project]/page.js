@@ -100,8 +100,9 @@ const page = () => {
             </div>
           </div>
         </section>
-        <GallerySlider galleryData={project.sliderContent} />
+        
         <LocationMap locationData={project.locationData} />
+        <GallerySlider galleryData={project.sliderContent} />
         {(project.seotitle && project.seodesc) ? 
         <ProjectContent seoheading={project.seoheading} seoTitle={project.seotitle} seoDesc={project.seodesc}/>
         : null}

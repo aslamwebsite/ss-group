@@ -21,26 +21,26 @@ const Slick = () => {
     const sliderContent = [
         {
             imageSrc: '/banner-01.webp',
-            altText: 'Image 1',
+            altText: 'The Hibiscus',
             heading: 'CRAFTING LIFESTYLE FOR EXQUISITE LIVING',
         },
         {
             imageSrc: '/banner-02.webp',
-            altText: 'Image 2',
+            altText: 'SS Cendana',
             heading: 'A LUXURY CALLED HOME',
-            subHeading: 'SS Cendana, Sector 83, Gurugram',
+            subHeading: 'SS Cendana, Sector 83, New Gurugram',
         },
         {
             imageSrc: '/banner-03.webp',
-            altText: 'Image 3',
+            altText: 'SS Strada',
             heading: 'THE MOJO OF NEIGHBOURHOOD',
-            subHeading: 'SS Strada Sector 84, Gurugram',
+            subHeading: 'SS Strada Sector 84, New Gurugram',
         },
         {
             imageSrc: '/banner-04.webp',
-            altText: 'Image 4',
+            altText: 'SS Linden Floors',
             heading: 'EXQUISITE LIVING AWAITS YOU',
-            subHeading: 'SS Linden Sector 84-85, Gurugram',
+            subHeading: 'SS Linden Floors Sector 84-85, New Gurugram',
         },
     ];
 

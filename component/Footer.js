@@ -53,7 +53,7 @@ const Footer = () => {
                           <div className="addressbox">
                               <span>A</span>
                               <p>77, SS House, <br />
-Sector- 44, Gurgaon,<br />
+Sector- 44, Gurugram,<br />
 (Haryana)- 122003</p>
                           </div>
                         </div>

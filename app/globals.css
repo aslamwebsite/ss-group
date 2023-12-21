@@ -3,12 +3,13 @@ body {
   font-family: 'AvertaStd';
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   line-height: 28px;
   margin: 0;
   outline: 0;
   overflow-x: hidden;
   height: 100vh;
+  outline: 0;
 }
 
 :root {
@@ -582,7 +583,7 @@ footer .title h3:after, .sscompleted .slick-initialized .slick-slide.slick-activ
 .home_slidertext p,
 .home_slidertext h4,
 .aboutnavbar ul li,
-.text-transform h2 {
+.text-transform h2, .home_slidertext a {
   -webkit-background-clip: text;
 }
 
@@ -790,7 +791,7 @@ footer .title h3:after, .sscompleted .slick-initialized .slick-slide.slick-activ
 }
 
 .home_slidertext p,
-.home_slidertext h4 {
+.home_slidertext h4, .home_slidertext a {
   pointer-events: all;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
@@ -805,7 +806,7 @@ footer.pb-5.aos-init.aos-animate .text-transform h2,
 .menus .togmenu .sidemenus li:hover a,
 .rightbox .addressbox p:hover,
 .aboutnavbar ul li:hover,
-.popup.active .ssgroupformtext .text-transform h2 {
+.popup.active .ssgroupformtext .text-transform h2, .home_slidertext a {
   background-position: 0;
 }
 
@@ -1900,14 +1901,14 @@ figure.snip0016 a {
 }
 
 .zoom-in {
-  animation: zoom-in 4s forwards;
+  animation: zoom-in 8s forwards;
 }
 
 .zoom-out {
-  animation: zoom-out 15s forwards;
+  animation: zoom-out 8s forwards;
 }
 
-.gallerybanner.zoom-out,
+/* .gallerybanner.zoom-out,
 .swiperslider.position-relative.zoom-out {
   animation: zoom-out 10s forwards;
 }
@@ -1915,7 +1916,7 @@ figure.snip0016 a {
 .gallerybanner.zoom-in,
 .swiperslider.position-relative.zoom-in {
   animation: zoom-in 10s forwards;
-}
+} */
 
 /* CSS file or your component's styles */
 @keyframes zoom-in {
@@ -2289,9 +2290,6 @@ header.blackheader .fil0 {
   text-transform: uppercase;
   position: relative;
   margin: 3px 0;
-}
-.projectcontent ul li:nth-child(1){
- margin-top: 0;;
 }
 .projectcontent ul li:before {
   content: '';
@@ -2912,7 +2910,7 @@ h3.effectheading.aos-init.aos-animate {
 }
 
 .lefspace {
-  width: 75%;
+  width: 80%;
   float: right;
 }
 
@@ -3219,4 +3217,20 @@ figure.snip0016 a[href='#'] {cursor: default;}
 .pagination .page-item a{
   color: var(--black-color);
   cursor: pointer;
+}
+.home_slidertext a {
+  font-size: 13px;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 3;
+  font-weight: 600;
+  border-bottom: solid 1px #ddd;
+  display: inline-block;
+  line-height: 20px;
+  padding: 2px 0;
+  margin-top: 5px;
+}
+.home_slidertext span:hover a {
+  -webkit-text-fill-color: var(--primary-color);
+  border-color:var(--primary-color);
 }

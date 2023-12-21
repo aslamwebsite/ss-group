@@ -36,9 +36,11 @@ const ProjectOverview = ({ project }) => {
               {showH2 && <h2>{project.Location}</h2>}
             </div>
             <div className="col-12 float-start">
-              <p className={showP ? "m-0 fade-up show text-center" : "m-0 fade-up"}>
-                {project.Overview}
-              </p>
+            <p
+  className={showP ? "m-0 fade-up show text-center" : "m-0 fade-up"}
+  dangerouslySetInnerHTML={{ __html: project.Overview }}
+/>
+
             </div>
           </div>
         </div>

@@ -34,13 +34,13 @@ const Slick = () => {
             imageSrc: '/banner-03.webp',
             altText: 'SS Strada',
             heading: 'THE MOJO OF NEIGHBOURHOOD',
-            subHeading: 'SS Strada Sector 84, New Gurugram',
+            subHeading: 'SS Strada, Sector 84, New Gurugram',
         },
         {
             imageSrc: '/banner-04.webp',
             altText: 'SS Linden Floors',
             heading: 'EXQUISITE LIVING AWAITS YOU',
-            subHeading: 'SS Linden Floors Sector 84-85, New Gurugram',
+            subHeading: 'SS Linden Floors, Sector 84-85, New Gurugram',
         },
     ];
 

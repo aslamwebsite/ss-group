@@ -38,6 +38,11 @@ const VisionMission = () => {
       <div className="container">
           <div className="row">
             <div className="col-lg-9 m-auto col-12 float-start sm-padding-0">
+                <div className='col-12 flaot-start flex-center mb-5'>
+                <div className='heading p-0 h-auto border-0 mb-2'>
+                <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>OUR CORPORATE ETHOS UNVEILED</h3>
+              </div>
+                </div>
               <div className="overview col-lg-7 float-start">
                <div className="row align-items-center">
                 <div className="col-lg-4 col-12">

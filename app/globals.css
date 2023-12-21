@@ -516,7 +516,7 @@ footer,
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before,
 footer .title h3:before,
-footer .title h3:after, .sscompleted .slick-initialized .slick-slide.slick-active.slick-current:before  {
+footer .title h3:after, .sscompleted .slick-initialized .slick-slide.slick-active.slick-current:before, .projectcontent ul li.remove-border:before  {
   display: none;
 }
 
@@ -2288,9 +2288,10 @@ header.blackheader .fil0 {
   line-height: 20px;
   text-transform: uppercase;
   position: relative;
-}
-.projectcontent ul li + li{
   margin: 3px 0;
+}
+.projectcontent ul li:nth-child(1){
+ margin-top: 0;;
 }
 .projectcontent ul li:before {
   content: '';

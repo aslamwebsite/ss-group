@@ -67,7 +67,7 @@ const Header = (props) => {
                         <Link href='/projects/retail' onClick={handleLinkClick}>RETAIL</Link>
                       </li>
                       <li>
-                        <Link href='/projects/offices' onClick={handleLinkClick}>OFFICE</Link>
+                        <Link href='/projects/offices' onClick={handleLinkClick}>OFFICES</Link>
                       </li>
                     </ul>
                   </div>

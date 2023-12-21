@@ -15,10 +15,13 @@ const News = () => {
   };
   const newsItems = [
     {
-      content: "The Leaf  Project is now  Ready-To-Move-In",
+      content: "Roongta Cinemas coming soon at SS Highpoint Sector – 86, New Gurugram.",
     },
     {
-      content: "SS Cendana Residences Project Successfully  Launched at Sector - 83, New Gurugram",
+      content: "SS Cendana project construction is in full swing.",
+    },
+    {
+      content: "SS Strada project construction is in full swing",
     },
     {
       content: "SS Cendana Residences Project Successfully  Launched at Sector - 83, New Gurugram",
@@ -27,7 +30,10 @@ const News = () => {
       content: "SS Strada Commercial Project Successfully  Launched at Sector - 84, New Gurugram",
     },
     {
-      content: "ICICI Bank is now Operational at SS Omnia Sector 86, New Gurugram",
+      content: "Gurugram's long-awaited Dwarka Expressway nearing completion, set to open soon.",
+    },
+    {
+      content: "SS Linden Floors project construction is in full swing.",
     }
   ];
   return (

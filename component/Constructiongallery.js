@@ -54,7 +54,7 @@ function Gallerybox({ gallery_data }) {
 {gallery_data.projects.flatMap(
   (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
 ).length > itemsPerPage && (
-  <ul className="pagination">
+  <ul className="pagination col-12 float-start">
     {/* "Start" button */}
     <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
       <button onClick={() => paginate(1)} className="page-link">

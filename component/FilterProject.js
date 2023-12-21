@@ -22,6 +22,26 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
       ...prevData,
       [name]: value,
     }));
+
+    if (name === "location") {
+      const typeVal = formData.type;
+      const statusVal = formData.statusval;
+      const url = `${window.location.pathname}?location=${value}&type=${typeVal}&statusval=${statusVal}`;
+      window.location.href = url;
+      }
+    if (name === "type") {
+        const locationVal = formData.location;
+        const statusVal = formData.statusval;
+        const url = `${window.location.pathname}?location=${locationVal}&type=${value}&statusval=${statusVal}`;
+        window.location.href = url;
+        }
+    if (name === "statusval") {
+          const locationVal = formData.location;
+          const typeVal = formData.type;
+          const url = `${window.location.pathname}?location=${locationVal}&type=${typeVal}&statusval=${value}`;
+          window.location.href = url;
+          }
+
   };
 
   // Handle form submission
@@ -47,7 +67,7 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
   // Render the form
   return (
     <form onSubmit={handleSubmit}>
-      <div className='row'>
+      <div className='row justify-content-center'>
         <div className='col-lg-3 col-12'>
           <Select id="location" name="location" value={formData.location} onChange={handleChange} displayEmpty fullWidth>
             <MenuItem value="" disabled>Location</MenuItem>
@@ -72,7 +92,7 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
             ))}
           </Select>
         </div>
-        <div className='col-lg-3 col-12 m-auto ssgroupbtn d-flex'>
+        {/* <div className='col-lg-3 col-12 m-auto ssgroupbtn d-flex'>
           <div className="row">
             <div className="col-lg-8">
               <Button type="submit" variant="contained" color="primary" className='col-12 realstatebtn'>
@@ -83,7 +103,7 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
                 <span onClick={handleReset}><strong className='text-uppercase cursor-pointer'>Reset</strong></span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </form>
   );

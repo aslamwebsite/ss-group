@@ -22,6 +22,19 @@ const FilterConstruction = ({
       ...prevData,
       [name]: value,
     }));
+    // If the year changes, trigger form submission
+    if (name === "year") {
+      // handleSubmit(event);
+      const url = `${window.location.pathname}?year=${value}&month=`;
+      window.location.href = url;
+    }
+    // If the month changes, trigger form submission
+    if (name === "month") {
+      // handleSubmit(event);
+      const yearVal = formData.year;
+      const url = `${window.location.pathname}?year=${yearVal}&month=${value}`;
+      window.location.href = url;
+    }
   };
 
   const handleSubmit = (event) => {
@@ -46,7 +59,7 @@ const FilterConstruction = ({
       <div className="col-lg-8 m-auto col-12 flex-center">
       <form onSubmit={handleSubmit} className="col-12 float-start">
       <div className="row">
-     <div className="col-lg-1"></div>
+     <div className="col-lg-2"></div>
         <div className="col-lg-4 col-12">
           <Select
             id="year"
@@ -90,7 +103,8 @@ const FilterConstruction = ({
             )}
           </Select>
         </div>
-        <div className="col-lg-2 col-12 overflow-hidden mediabutton p-0 flex-center">
+        <div className="col-lg-2"></div>
+        {/* <div className="col-lg-2 col-12 overflow-hidden mediabutton p-0 flex-center">
               <Button
                 type="submit"
                 variant="contained"
@@ -99,7 +113,7 @@ const FilterConstruction = ({
               >
                 <span className="text-white"> Submit</span>
               </Button>
-            </div>
+            </div> */}
           </div>
     </form>
       </div>

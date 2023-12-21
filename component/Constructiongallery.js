@@ -54,12 +54,12 @@ function Gallerybox({ gallery_data }) {
 {gallery_data.projects.flatMap(
   (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
 ).length > itemsPerPage && (
-  <ul className="pagination col-12 float-start">
+  <ul className="pagination col-12 float-start flex-center mt-5">
     {/* "Start" button */}
     <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
-      <button onClick={() => paginate(1)} className="page-link">
-        Start
-      </button>
+      <a onClick={() => paginate(1)} className="page-link">
+      «
+      </a>
     </li>
 
     {/* Numbered pages */}
@@ -67,9 +67,9 @@ function Gallerybox({ gallery_data }) {
       (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
     ).length / itemsPerPage) }, (_, i) => (
       <li key={i + 1} className={`page-item ${currentPage === i + 1 ? "active" : ""}`}>
-        <button onClick={() => paginate(i + 1)} className="page-link">
+        <a onClick={() => paginate(i + 1)} className="page-link">
           {i + 1}
-        </button>
+        </a>
       </li>
     ))}
 
@@ -77,14 +77,14 @@ function Gallerybox({ gallery_data }) {
     <li className={`page-item ${currentPage === Math.ceil(gallery_data.projects.flatMap(
       (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
     ).length / itemsPerPage) ? "disabled" : ""}`}>
-      <button
+      <a
         onClick={() => paginate(Math.ceil(gallery_data.projects.flatMap(
           (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
         ).length / itemsPerPage))}
         className="page-link"
       >
-        End
-      </button>
+          »
+      </a>
     </li>
   </ul>
 )}

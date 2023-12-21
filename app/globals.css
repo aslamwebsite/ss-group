@@ -3234,3 +3234,7 @@ figure.snip0016 a[href='#'] {cursor: default;}
   -webkit-text-fill-color: var(--primary-color);
   border-color:var(--primary-color);
 }
+li.page-item.active {
+  position: relative;
+  z-index: 2;
+}

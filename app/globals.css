@@ -1493,7 +1493,7 @@ figure.snip0016 a {
   position: fixed;
   top: 0;
   left: 0;
-  background: #ffefe4;
+  background: #fff;
   z-index: 9999;
   perspective: 1000px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

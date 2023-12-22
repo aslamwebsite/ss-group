@@ -85,7 +85,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <main className="d-flex flex-wrap float-start col-12">
+      <main className="d-flex flex-wrap float-start col-12 mt-3">
         <ProjectOverview project={project} />
         <section>
           <div className="projectwrap">

@@ -64,7 +64,10 @@ footer,
 .locationheading,
 .locationinfo,
 .slide,
-.lg-react-element, .completeimg, .completedetails, .locationinfo ul {
+.lg-react-element,
+.completeimg,
+.completedetails,
+.locationinfo ul {
   width: 100%;
   float: left;
 }
@@ -97,14 +100,17 @@ ul {
 .enquirecross,
 .loader,
 .loadingtext,
-.Marquee.flex-center .col-12.float-start.d-flex.gap-2, .completedetails {
+.Marquee.flex-center .col-12.float-start.d-flex.gap-2,
+.completedetails {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.Gallerybox .lg-react-element{
+
+.Gallerybox .lg-react-element {
   justify-content: center;
 }
+
 .navbar {
   width: 50px;
   margin-left: 50px;
@@ -431,7 +437,8 @@ footer {
 }
 
 footer,
-.directormessage, .projectcont {
+.directormessage,
+.projectcont {
   padding: 100px 0;
 }
 
@@ -517,7 +524,9 @@ footer,
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before,
 footer .title h3:before,
-footer .title h3:after, .sscompleted .slick-initialized .slick-slide.slick-active.slick-current:before, .projectcontent ul li.remove-border:before  {
+footer .title h3:after,
+.sscompleted .slick-initialized .slick-slide.slick-active.slick-current:before,
+.projectcontent ul li.remove-border:before {
   display: none;
 }
 
@@ -583,7 +592,8 @@ footer .title h3:after, .sscompleted .slick-initialized .slick-slide.slick-activ
 .home_slidertext p,
 .home_slidertext h4,
 .aboutnavbar ul li,
-.text-transform h2, .home_slidertext a {
+.text-transform h2,
+.home_slidertext a {
   -webkit-background-clip: text;
 }
 
@@ -791,7 +801,8 @@ footer .title h3:after, .sscompleted .slick-initialized .slick-slide.slick-activ
 }
 
 .home_slidertext p,
-.home_slidertext h4, .home_slidertext a {
+.home_slidertext h4,
+.home_slidertext a {
   pointer-events: all;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
@@ -806,7 +817,8 @@ footer.pb-5.aos-init.aos-animate .text-transform h2,
 .menus .togmenu .sidemenus li:hover a,
 .rightbox .addressbox p:hover,
 .aboutnavbar ul li:hover,
-.popup.active .ssgroupformtext .text-transform h2, .home_slidertext a {
+.popup.active .ssgroupformtext .text-transform h2,
+.home_slidertext a {
   background-position: 0;
 }
 
@@ -887,7 +899,9 @@ h3.effectheading.aos-init.aos-animate,
 .Marquee-tag .projectslider,
 .homeslider .slick-dots li button,
 .heading h1,
-.infographics .homeslider .slick-dots li, .homeslider .slick-dots li, .locationcont .locationinfo:nth-child(2) {
+.infographics .homeslider .slick-dots li,
+.homeslider .slick-dots li,
+.locationcont .locationinfo:nth-child(2) {
   margin: 0;
 }
 
@@ -1407,7 +1421,8 @@ figure.snip0016 p {
 
 }
 
-figure.snip0016 p, .mantainde p {
+figure.snip0016 p,
+.mantainde p {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 2px;
@@ -1493,6 +1508,8 @@ figure.snip0016 a {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background: #fff;
   z-index: 9999;
   perspective: 1000px;
@@ -2291,6 +2308,7 @@ header.blackheader .fil0 {
   position: relative;
   margin: 3px 0;
 }
+
 .projectcontent ul li:before {
   content: '';
   width: 0.5px;
@@ -2298,9 +2316,10 @@ header.blackheader .fil0 {
   background: rgb(0 0 0 / 50%);
   position: absolute;
   left: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
 }
+
 .projectcontent ul {
   width: 100%;
   float: left;
@@ -2653,18 +2672,22 @@ h3.effectheading.aos-init.aos-animate {
   top: 50%;
   padding: 0;
 }
+
 .mediasection .MuiTabs-indicator.css-1aquho2-MuiTabs-indicator,
-.realstatebtn:before,
 .realstatebtn:after,
-.circle, .pagination .active>.page-link, .filterbottommenu .Mui-selected span {
+.circle,
+.pagination .active>.page-link,
+.filterbottommenu .Mui-selected span {
   background-color: var(--primary-color);
 }
+
 .filterbottommenu .Mui-selected span {
   height: 1px;
   bottom: 0;
   top: inherit;
 }
-.activemenu{
+
+.activemenu {
   background: var(--black-color);
   color: var(--primary-color);
 }
@@ -2715,7 +2738,8 @@ h3.effectheading.aos-init.aos-animate {
   width: 100%;
 }
 
-.btns:hover span, .pagination .active>.page-link {
+.btns:hover span,
+.pagination .active>.page-link {
   color: var(--white-color);
 }
 
@@ -2885,7 +2909,8 @@ h3.effectheading.aos-init.aos-animate {
 }
 
 .image-effect-section .slick-next:hover:before,
-.image-effect-section .slick-prev:hover:before, .mediasection button:nth-child(1)::before {
+.image-effect-section .slick-prev:hover:before,
+.mediasection button:nth-child(1)::before {
   opacity: 0;
 }
 
@@ -2919,7 +2944,7 @@ h3.effectheading.aos-init.aos-animate {
   object-position: top;
 }
 
-.css-17o5nyn.Mui-expanded{
+.css-17o5nyn.Mui-expanded {
   color: var(--primary-color);
 }
 
@@ -2968,7 +2993,7 @@ a[href="#"] {
   background-color: var(--white-color);
   width: 140px;
   height: 140px;
-  border:solid 1px var(--gray-color)
+  border: solid 1px var(--gray-color)
 }
 
 .infographics .circle:after {
@@ -3010,55 +3035,74 @@ header.blackheader .fixed .hemburgur:hover span {
   text-align: justify;
   letter-spacing: 0.4px;
 }
+
 .vimision .effectheading.newheading {
   font-size: 75px;
 }
-.vimision .overview:last-child .row {flex-direction: row-reverse;}
+
+.vimision .overview:last-child .row {
+  flex-direction: row-reverse;
+}
 
 .overview.float-end h3.effectheading.newheading {
   left: 0;
 }
-.title h3:after, .title h3:before {
+
+.title h3:after,
+.title h3:before {
   content: "";
   position: absolute;
   left: 50%;
   bottom: -5px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
+
 .title h3:before {
   width: 0;
   background: var(--primary-color);
   height: 3px;
 }
+
 .title h3:after {
   border-top: 3px solid #f1883f;
-  border-right:10px  solid transparent;
+  border-right: 10px solid transparent;
   width: 60px;
 }
 
-.cls-2{fill:none;stroke:var(--primary-color);stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
-.circlecont h4{
+.cls-2 {
+  fill: none;
+  stroke: var(--primary-color);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px
+}
+
+.circlecont h4 {
   color: var(--black-color);
 }
+
 .manageloader .logoload2 {
   width: 120px;
   transition: opacity 1.5s;
-  -webkit-clip-path: polygon(0 0,100% 0,100% 0,0 0);
-  clip-path: polygon(0 0,100% 0,100% 0,0 0);
-  transition: opacity 1.5s ease-in-out,-webkit-clip-path 1.5s ease-in-out;
-  transition: clip-path 1.5s ease-in-out,opacity 1.5s ease-in-out;
-  transition: clip-path 1.5s ease-in-out,opacity 1.5s ease-in-out,-webkit-clip-path 1.5s ease-in-out;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: opacity 1.5s ease-in-out, -webkit-clip-path 1.5s ease-in-out;
+  transition: clip-path 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  transition: clip-path 1.5s ease-in-out, opacity 1.5s ease-in-out, -webkit-clip-path 1.5s ease-in-out;
   opacity: 0.5;
 }
+
 .manageloader.viewlogo .logoload2 {
-  -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
-  clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   opacity: 1;
 }
+
 .logoload1 {
   filter: grayscale(1);
   opacity: 0.2;
 }
+
 .completeslide {
   width: 100%;
   float: left;
@@ -3067,6 +3111,7 @@ header.blackheader .fixed .hemburgur:hover span {
   gap: 0.5%;
   align-items: flex-start;
 }
+
 .completedetails {
   position: absolute;
   top: 0;
@@ -3079,6 +3124,7 @@ header.blackheader .fixed .hemburgur:hover span {
   transition: ease all 0.5s;
   height: 100%;
 }
+
 .completeproject {
   width: 24%;
   float: left;
@@ -3090,6 +3136,7 @@ header.blackheader .fixed .hemburgur:hover span {
 .completeproject img {
   width: 100%;
 }
+
 .completeslide:nth-child(odd) {
   align-items: flex-end;
   margin-bottom: 0.5%;
@@ -3099,7 +3146,8 @@ header.blackheader .fixed .hemburgur:hover span {
   width: 25%;
 }
 
-.completeslide:nth-child(odd) .completeproject:nth-child(3), .completeslide:nth-child(even) .completeproject:nth-child(3) {
+.completeslide:nth-child(odd) .completeproject:nth-child(3),
+.completeslide:nth-child(even) .completeproject:nth-child(3) {
   width: 30%;
 }
 
@@ -3107,13 +3155,16 @@ header.blackheader .fixed .hemburgur:hover span {
   width: 23%;
 }
 
-.completeslide:nth-child(odd) .completeproject:nth-child(1), .completeslide:nth-child(even) .completeproject:nth-child(4),
+.completeslide:nth-child(odd) .completeproject:nth-child(1),
+.completeslide:nth-child(even) .completeproject:nth-child(4),
 .completeslide:nth-child(even) .completeproject:nth-child(1) {
   width: 20%;
 }
+
 .completeslide:nth-child(even) {
   justify-content: end;
 }
+
 .mantainde h4 {
   margin: 0;
   font-size: 17px;
@@ -3133,6 +3184,7 @@ header.blackheader .fixed .hemburgur:hover span {
   opacity: 1;
   filter: none;
 }
+
 .sscompleted button.slick-arrow.slick-prev {
   left: 47%;
 }
@@ -3140,12 +3192,14 @@ header.blackheader .fixed .hemburgur:hover span {
 .sscompleted button.slick-arrow.slick-next {
   left: 50%;
 }
+
 .sscompleted button.slick-arrow {
   bottom: -10%;
 }
+
 .sscompleted .slick-initialized .slick-slide:before {
   content: '';
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
   position: absolute;
   width: 10%;
   height: 100%;
@@ -3157,23 +3211,28 @@ header.blackheader .fixed .hemburgur:hover span {
   height: 0;
   opacity: 0;
 }
-.projectcont{
+
+.projectcont {
   background-color: var(--gray-color);
 }
+
 .spinner {
-	position: relative;
-	top: 35%;
+  position: relative;
+  top: 35%;
   width: 80px;
   height: 80px;
   margin: 0 auto;
-  background-color: #fff;
-  border-radius: 100%;  
+  background-color:#ebebeb;
+  border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
 }
 
 @-webkit-keyframes sk-scaleout {
-  0% { -webkit-transform: scale(0) }
+  0% {
+    -webkit-transform: scale(0)
+  }
+
   100% {
     -webkit-transform: scale(1.0);
     opacity: 0;
@@ -3181,10 +3240,12 @@ header.blackheader .fixed .hemburgur:hover span {
 }
 
 @keyframes sk-scaleout {
-  0% { 
+  0% {
     -webkit-transform: scale(0);
     transform: scale(0);
-  } 100% {
+  }
+
+  100% {
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
     opacity: 0;
@@ -3193,27 +3254,40 @@ header.blackheader .fixed .hemburgur:hover span {
 
 .completeslide.simillarBox .completeproject {
   width: 28% !important;
-} 
+}
+
 .completeproject:last-child {
   width: 16%;
 }
-.mantainde p {letter-spacing: 1px;font-size: 12px;}
-figure.snip0016 a[href='#'] {cursor: default;}
+
+.mantainde p {
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+figure.snip0016 a[href='#'] {
+  cursor: default;
+}
+
 .quicklink a {
   margin-bottom: 15px;
   display: inline-block;
   width: 100%;
 }
+
 .pagination .page-item.disabled {
   opacity: .6;
 }
-.pagination .active>.page-link{
+
+.pagination .active>.page-link {
   border: var(--primary-color) solid 1px;
 }
-.pagination .page-item a{
+
+.pagination .page-item a {
   color: var(--black-color);
   cursor: pointer;
 }
+
 .home_slidertext a {
   font-size: 13px;
   letter-spacing: 2px;
@@ -3226,1331 +3300,1395 @@ figure.snip0016 a[href='#'] {cursor: default;}
   padding: 2px 0;
   margin-top: 5px;
 }
+
 .home_slidertext span:hover a {
   -webkit-text-fill-color: var(--primary-color);
-  border-color:var(--primary-color);
+  border-color: var(--primary-color);
 }
+
 li.page-item.active {
   position: relative;
   z-index: 2;
 }
+
+.realstatebtn:before {
+  background-color: var(--primary-color) !important;
+}
+.jobheading span, .jobdescription span {
+  width: 20px;
+  margin-right: 10px;
+}
+.jobdescription span {
+  width: 25px;
+  margin-right: 2px;
+  position: relative;
+  left: -5px;
+}
+.jobdescription {
+  margin: 10px 0 15px 0;
+}
+.jobheading p {
+  width: 90%;
+}
 @media all and (max-width:1700px) {
   .lefspace {
-      width: 90%;
+    width: 90%;
   }
 
   .hiddentextcolumn .scroll-animated-text {
-      right: 98%;
+    right: 98%;
   }
 
   .fulltextcolumn {
-      width: 78vw;
+    width: 78vw;
   }
 
   .scroll-animated-text {
-      font-size: 270px;
+    font-size: 270px;
   }
 
   .ssgroupformtext .text-transform h2 {
-      font-size: 9.7em;
+    font-size: 9.7em;
   }
 
   .abstractshape p {
-      max-height: 140px;
-      overflow: auto;
+    max-height: 140px;
+    overflow: auto;
   }
 }
 
 @media all and (max-width:1600px) {
   .fulltextcolumn {
-      width: 83vw;
+    width: 83vw;
   }
 
   .hiddentextcolumn .scroll-animated-text {
-      right: 105%;
+    right: 105%;
   }
 
   .countercount {
-      font-size: 65px;
+    font-size: 65px;
   }
 
   .ethoscontent h4 {
-      font-size: 36px;
-      line-height: 50px;
+    font-size: 36px;
+    line-height: 50px;
   }
 
   .abstractshape {
-      height: 220px;
+    height: 220px;
   }
 
   .rightbox {
-      width: 100%;
+    width: 100%;
   }
 
   .rightbox .title h3 {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .address,
   .contact {
-      padding-bottom: 15px;
-      margin-bottom: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .menus .togmenu .sidemenus li a {
-      font-size: 11px;
-      letter-spacing: 4px;
-      white-space: nowrap;
+    font-size: 11px;
+    letter-spacing: 4px;
+    white-space: nowrap;
   }
 
   .abstractshape p,
   .circlecont p {
-      font-size: 13px;
-      line-height: 18px;
-      max-height: 120px;
+    font-size: 13px;
+    line-height: 18px;
+    max-height: 120px;
   }
 
   .menus .togmenu ul li {
-      padding: 15px 0;
+    padding: 15px 0;
   }
 }
 
 @media all and (max-width:1450px) {
-  .projectfilter .MuiSelect-select{
-      padding: 10px 0;
-      letter-spacing: 2px;
+  .projectfilter .MuiSelect-select {
+    padding: 10px 0;
+    letter-spacing: 2px;
   }
+
   .mantainde h4 {
-      font-size: 14px;
-      line-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
   }
-  
+
   .mantainde p {
-      letter-spacing: 0.5px;
-      font-size: 10px;
-      white-space: nowrap;
+    letter-spacing: 0.5px;
+    font-size: 10px;
+    white-space: nowrap;
   }
+
   figure.snip0016 figcaption::before {
-      border-width: 3px;
-      height: 50px;
-      top: -20%;
-      transform: translateY(50%);
+    border-width: 3px;
+    height: 50px;
+    top: -20%;
+    transform: translateY(50%);
   }
 
   figure.snip0016 figcaption {
-      padding-top: 10px;
-      padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .effectheading.newheading {
-      font-size: 80px;
+    font-size: 80px;
   }
 
   .vimision .effectheading.newheading {
-      font-size: 50px;
+    font-size: 50px;
   }
 
   .fulltextcolumn {
-      width: 92vw;
+    width: 92vw;
   }
 
   .mediasection button {
-      min-width: 60px;
-      max-width: 60px;
+    min-width: 60px;
+    max-width: 60px;
   }
 
   .aboutus .imagemanager img {
-      height: 130vh;
+    height: 130vh;
   }
 
   .lg-react-element a {
-      width: 30%;
+    width: 30%;
   }
 
   .locationinfo {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 
   .abstractshape {
-      height: 196px;
+    height: 196px;
   }
 
   .heading h3,
   .projectcontent h3 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   header.blackheader {
-      min-height: 100px;
+    min-height: 100px;
   }
 
   .breadcumtab ul li {
-      font-size: 11px;
+    font-size: 11px;
   }
 
   .locationheading h4 {
-      font-size: 17px;
+    font-size: 17px;
   }
 
   /* header.blackheader .header {
       padding: 15px 0;
   } */
   .heading h1 {
-      font-size: 44px;
+    font-size: 44px;
   }
 
   .countercount {
-      font-size: 65px;
-      white-space: nowrap;
+    white-space: nowrap;
   }
 
   .hiddentextcolumn .scroll-animated-text {
-      right: 115%;
+    right: 115%;
   }
 
   .imagemanager {
-      max-height: 360px;
+    max-height: 360px;
   }
 
   section.image-effect-section .slick-prev,
   section.image-effect-section .slick-next {
-      width: 50px;
+    width: 50px;
   }
 
   .numberrow.position-absolute.col-12.float-start.flex-center.gap-5.align-items-center.justify-content-evenly .numbercolumn:nth-child(1) {
-      padding-left: 30px;
+    padding-left: 30px;
   }
 
   main,
   .bannerwrap {
-      gap: 50px;
+    gap: 50px;
   }
 
 
   .abstractshape::before {
-      height: 100%;
+    height: 100%;
   }
 
   section.image-effect-section .slick-next {
-      left: 4%;
+    left: 4%;
   }
 
   .text-transform h2 {
-      font-size: 100px;
+    font-size: 100px;
   }
 
   body {
-      line-height: 22px;
-      font-size: 14px;
-      letter-spacing: 0.5px;
+    line-height: 22px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
   }
 
   .effectlayer::after {
-      width: 388px;
+    width: 388px;
   }
 
   .circle {
-      width: 150px;
-      height: 150px;
+    width: 150px;
+    height: 150px;
   }
 
   .circle:after {
-      width: 180px;
-      height: 180px;
+    width: 180px;
+    height: 180px;
   }
 
   .circlecont h4,
   .abstractshape h4 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .directormessage {
-      padding: 50px 0;
+    padding: 50px 0;
   }
 
   .circle-context p,
   .locationinfo ul li {
-      font-size: 13px;
-      line-height: 17px;
-      letter-spacing: 0.5px;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.5px;
   }
 
   .circles .circle {
-      width: 200px;
-      height: 200px;
+    width: 200px;
+    height: 200px;
   }
 
   .quotes p,
   .circle-context h4 {
-      font-size: 19px;
-      line-height: 24px;
+    font-size: 19px;
+    line-height: 24px;
   }
 
   .circle-context h5 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .loadingtext span:first-child {
-      font-size: 32px;
-      line-height: 50px;
+    font-size: 32px;
+    line-height: 50px;
   }
 
   .loadingtext {
-      font-size: 18px;
-      line-height: 26px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
 @media all and (max-width:1380px) {
   .web-container {
-      width: 80%;
+    width: 80%;
   }
+
   figure.snip0016 h4 {
-      font-size: 20px;
-      line-height: 30px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   figure.snip0016 p {
-      font-size: 12px;
-      letter-spacing: 1.5px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
   }
 
-
+  .home_slidertext a{
+    font-size: 12px;
+  }
   .fulltextcolumn {
-      width: 96vw;
+    width: 96vw;
   }
 
   .hiddentextcolumn .scroll-animated-text {
-      right: 120%;
+    right: 120%;
   }
 
   .rightbox {
-      width: 90%;
+    width: 90%;
   }
 
   .bannerimagecont h2,
   .heading h1 {
-      font-size: 40px;
-      line-height: 60px;
+    font-size: 40px;
+    line-height: 60px;
   }
 
   .address,
   .contact {
-      padding-bottom: 15px;
-      margin-bottom: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .projectcontent {
-      padding: 15px;
-      width: 400px;
+    padding: 15px;
+    width: 400px;
   }
 
   .projectcontent ul li {
-      margin: 3px 0;
-      padding: 0 5px;
+    margin: 3px 0;
+    padding: 0 5px;
   }
 
   .togmenu ul li a,
   .pseudo-text-effect {
-      font-size: 50px;
-      line-height: 50px;
+    font-size: 50px;
+    line-height: 50px;
   }
 
   .cross em {
-      width: 80px;
-      height: 80px;
+    width: 80px;
+    height: 80px;
   }
 
   .cross {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .logo {
-      max-width: 75px;
+    max-width: 75px;
   }
 
   .realstatebtn span {
-      font-size: 10px;
-      letter-spacing: 2px;
+    font-size: 10px;
+    letter-spacing: 2px;
   }
 
   .header .realstatebtn {
-      max-width: 100px;
-      max-height: 35px;
+    max-width: 100px;
+    max-height: 35px;
   }
 
   .categories ul li {
-      font-size: 11px;
-      letter-spacing: 4px;
+    font-size: 11px;
+    letter-spacing: 4px;
   }
 
   .home_slidertext h4 {
-      font-size: 32px;
-      line-height: 40px;
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .home_slidertext p {
-      font-size: 17px;
+    font-size: 17px;
   }
 
   .runtext,
   h3.effectheading.aos-init.aos-animate {
-      letter-spacing: 0.10em;
+    letter-spacing: 0.10em;
   }
 
   .header {
-      padding: 15px 0;
+    padding: 15px 0;
   }
 
   .header.fixed {
-      padding: 10px 0;
+    padding: 10px 0;
   }
 
   .header.fixed .logo {
-      max-width: 60px;
+    max-width: 60px;
   }
 
   ul.d-flex.gap-5.m-0 {
-      gap: 2rem !important;
+    gap: 2rem !important;
   }
 
   .effectlayer::after {
-      width: 379px;
+    width: 379px;
   }
 
   .countercount {
-      font-size: 60px;
+    font-size: 60px;
   }
 
   .title h3 {
-      padding: 7px 60px;
-      letter-spacing: 4px;
-      font-size: 15px;
-      line-height: 35px;
+    letter-spacing: 4px;
+    font-size: 15px;
+    line-height: 35px;
   }
 
   .accordions .MuiButtonBase-root {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .scroll-animated-text {
-      font-size: 250px;
-      line-height: 310px;
+    font-size: 250px;
+    line-height: 310px;
   }
 
   .btns {
-      margin: 10px auto;
-      font-size: 11px;
-      letter-spacing: 4px;
+    margin: 10px auto;
+    font-size: 11px;
+    letter-spacing: 4px;
   }
 
 
   footer.pb-5 {
-      margin-top: 50px;
-      padding-bottom: 25px !important;
+    margin-top: 50px;
+    padding-bottom: 25px !important;
   }
 
   .copyrights p {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .heading h3 {
-      line-height: 30px;
+    line-height: 30px;
   }
 
   .projectcontent h3 {
-      font-size: 26px;
-      line-height: 32px;
+    font-size: 26px;
+    line-height: 32px;
   }
+
   .locationheading h4 {
-      font-size: 16px;
+    font-size: 16px;
   }
-  .locationcont{
-      padding: 15px;
+
+  .locationcont {
+    padding: 15px;
   }
-  .locationinfo ul li{
-      gap: 5px;
+
+  .locationinfo ul li {
+    gap: 5px;
   }
+
   .circle-context p,
   .projectcontent ul li {
-      font-size: 12px;
-      line-height: 16px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
+
 @media all and (max-width:1280px) {
-.fulltextcolumn {
-  width: 107vw;
+  .fulltextcolumn {
+    width: 107vw;
+  }
+
+  .hiddentextcolumn .scroll-animated-text {
+    right: 133%;
+  }
 }
-.hiddentextcolumn .scroll-animated-text {
-  right: 133%;
-}
-}
+
 @media all and (max-width:1180px) {
   .col-lg-6.col-12.row.align-items-center.abstractshape {
-      width: 100%;
-      height: 300px;
-      margin: 25px 0;
+    width: 100%;
+    height: 300px;
+    margin: 25px 0;
   }
 
   .vimision .abstractshape:last-child {
-      margin: 0;
+    margin: 0;
   }
 
   .abstractshape::before {
-      height: 335px;
-      background-repeat: no-repeat;
-      background-size: contain;
+    height: 335px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .aboutus .row {
-      display: grid;
+    display: grid;
   }
 
   .aboutus .row .col-lg-4.col-12,
   .aboutus .row .col-lg-7.col-12,
   .vimision svg {
-      width: 100%;
+    width: 100%;
   }
 
   .lefspace {
-      margin-bottom: 50px;
-      margin-right: 5%;
+    margin-bottom: 50px;
+    margin-right: 5%;
   }
 
   .aboutimg {
-      margin: auto;
-      width: 100%;
+    margin: auto;
+    width: 100%;
   }
 
   .fulltextcolumn {
-      width: 50vw;
+    width: 50vw;
   }
 
   .effectlayer::after {
-      width: 50vw;
+    width: 50vw;
   }
 
   .scroll-animated-text {
-      font-size: 200px;
-      right: -140%;
-      line-height: 200px;
+    font-size: 200px;
+    right: -140%;
+    line-height: 200px;
   }
 
   .textmovement {
-      bottom: 0;
+    bottom: 0;
   }
 
   .hiddentextcolumn,
   .effectlayer:before {
-      width: 50vw;
+    width: 50vw;
   }
 
   .hiddentextcolumn .scroll-animated-text {
-      right: -40%;
+    right: -40%;
   }
 
   section.image-effect-section .slick-prev:before,
   section.image-effect-section .slick-next:before {
-      display: none;
+    display: none;
   }
 
   .text-transform h2 {
-      font-size: 90px;
+    font-size: 90px;
   }
 }
 
 @media all and (max-width:990px) {
+  .projectbanner {
+    height: 95vh;
+  }
+
+  section.category-section .categoryimage {
+    padding: 0;
+  }
+
+  .aboutuspage {
+    margin-top: -50px;
+  }
+
   .effectheading.newheading {
-      width: 100%;
-      float: left;
-      left: 0;
-      line-height: 80px;
+    width: 100%;
+    float: left;
+    left: 0;
+    line-height: 80px;
   }
-  
-  .overview .heading {
-      width: 100%;
-      text-align: center;
-  }
-  
+
+  .overview .heading,
   .overview p {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
+    margin: 0;
   }
+
+  .filterpadding {
+    padding: 20px 0 40px 0;
+  }
+
   .rightbox .title h3 {
-      white-space: nowrap;
+    white-space: nowrap;
   }
+
   .popup.active .popupContent .col-lg-6 {
-      width: 90%;
-      margin: 0px auto;
+    width: 90%;
+    margin: 0px auto;
   }
+
   .togmenu {
-      width: 90%;
+    width: 90%;
   }
-  
+
   .css-heg063-MuiTabs-flexContainer {
-      overflow: auto;
+    overflow: auto;
   }
+
   .numbercolumn {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .aboutus.col-12.float-start .imagemanager {
-      max-height: 65vh;
+    max-height: 65vh;
   }
 
   .aboutus.col-12.float-start.managemobileview .imagemanager {
-      max-height: 100vh;
+    max-height: 100vh;
   }
 
   .numberrow.position-absolute.col-12.float-start.flex-center.gap-5.align-items-center.justify-content-evenly .numbercolumn:nth-child(1) {
-      padding: 0;
+    padding: 0;
   }
 
   .aboutus .imagemanager .About_parallaxImageInner__a0xKv img {
-      width: 100%;
-      height: 150vh;
-      object-fit: cover;
-      object-position: top;
+    width: 100%;
+    height: 150vh;
+    object-fit: cover;
+    object-position: top;
   }
 
   .numbercolumn:last-child {
-      margin: 0;
+    margin: 0;
   }
 
   .position-relative.image-effect-section button.slick-arrow {
-      right: auto;
-      bottom: -20%;
+    right: auto;
+    bottom: -20%;
   }
 
   .position-relative.image-effect-section button.slick-arrow.slick-next {
-      right: 30px;
+    right: 30px;
   }
 
   .ssgroupformtext .text-transform {
-      transform: rotate(180deg) translate(0%, 0%);
-      height: auto;
-      text-align: center;
-      width: 100%;
+    transform: rotate(180deg) translate(0%, 0%);
+    height: auto;
+    text-align: center;
+    width: 100%;
   }
 
   .ssgroupformtext .text-transform h2 {
-      text-align: center;
-      justify-content: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .popup .MuiFormControl-root {
-      margin: 15px 0;
+    margin: 15px 0;
   }
 
-  figure.snip0016 h4 {
-      font-size: 19px;
-  }
+
 
   .hiddentextcolumn .scroll-animated-text {
-      -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
 
   .menubar {
-      width: 100%;
+    width: 100%;
   }
 
-  .ethoscontent h4 span {
-      padding-left: 5px;
-  }
+
 
   .menubar ul {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   .menubar ul li {
-      border: none;
-      width: 25%;
-      text-align: center;
-      padding: 20px 0;
+    border: none;
+    width: 25%;
+    text-align: center;
+    padding: 20px 0;
   }
 
   .menubar ul li a {
-      border-right: solid 1px #d7d7d7;
-      width: 100%;
-      float: left;
+    border-right: solid 1px #d7d7d7;
+    width: 100%;
+    float: left;
   }
 
   .menubar ul li:last-child a {
-      border: none;
+    border: none;
   }
 
   .filtertabtopmenu {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
 
   .mediasection {
-      width: 100%;
-      float: left;
+    width: 100%;
+    float: left;
   }
 
   .lg-react-element {
-      width: 100%;
-      justify-content: space-between;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .lg-react-element a {
-      width: 31%;
+    width: 31%;
+  }
+
+  .vimision {
+    overflow: hidden;
   }
 
   .banner img {
-      width: 100%;
-      height: 120%;
-      object-fit: cover;
-      object-position: center;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .banner .row,
   .banner .row .col-12,
   .About_parallaxImageInner__a0xKv {
-      height: 100%;
+    height: 100%;
   }
 
   .projectcontent ul li {
-      margin: 4px 0;
-      padding: 0 8px;
-      font-size: 14px;
-      line-height: 20px;
-  }
-
-  .overview {
-      margin-top: 25px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .gallerybanner {
-      height: 50vh;
+    height: 50vh;
   }
 
   .react-parallax img.react-parallax-bgimage {
-      height: 75vh !important;
-      object-fit: cover;
+    height: 75vh !important;
+    object-fit: cover;
   }
 
   .Marquee-tag:nth-child(even),
   .Marquee-tag:nth-child(odd) {
-      width: 49%;
-      height: auto;
+    width: 49%;
+    height: auto;
   }
 
   .Marquee-content.sm-padding-0 {
-      animation: none;
+    animation: none;
   }
 
   .Marquee-content.sm-padding-0 .col-12.float-start.d-flex.gap-2 {
-      flex-wrap: wrap;
-      padding: 0 15px;
+    flex-wrap: wrap;
+    padding: 0 15px;
   }
 
   .locationcont {
-      padding: 10px;
-      height: auto;
-      margin-top: 15px;
-      border: 0;
+    padding: 10px;
+    height: auto;
+    margin-top: 15px;
+    border: 0;
   }
 
   .locationinfo {
-      width: 48%;
-      margin: 10px 1%;
+    width: 48%;
+    margin: 10px 1%;
   }
 
   .transform-component-module_content__FBWxo {
-      height: auto !important;
+    height: auto !important;
   }
 
   .locationheading {
-      text-align: center;
+    text-align: center;
   }
 
   .Marquee-tag h4 {
-      font-size: 16px;
-      line-height: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .projectbanner img.full-height {
-      object-fit: cover;
+    object-fit: cover;
   }
 
   .bannerimagecont h2,
   .heading h1 {
-      font-size: 40px;
-      letter-spacing: 3px;
+    font-size: 40px;
+    letter-spacing: 3px;
   }
 
   .Marquee-tag p {
-      font-size: 12px;
-      letter-spacing: 0.5px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
   }
 
   footer.pb-5 {
-      padding-top: 50px;
+    padding-top: 50px;
   }
 
   .circles .circle {
-      width: 250px;
-      height: 250px;
+    width: 250px;
+    height: 250px;
   }
 
   .thambnailslider .slick-list {
-      width: 150%;
-      margin-left: 35%;
+    width: 150%;
+    margin-left: 35%;
   }
 
   .abstractshape::before,
   figure.snip0016 p:nth-child(2) {
-      display: none;
+    display: none;
   }
 
   figure.snip0016 p:last-child {
-      position: static;
-      transform: initial;
-      text-align: left;
+    position: static;
+    transform: initial;
+    text-align: left;
   }
 
   figure.snip0016:hover figcaption::before {
-      left: 5px;
-  }
-
+    left: 5px;
+    top: 50%;
+    height: 60%;
+    transform: translateY(-50%);
+}
+figure.snip0016 p {
+  font-size: 11px;
+  line-height: 16px;
+}
   .banner {
-      height: 50vh;
+    height: 50vh;
   }
 
   .vimision svg {
-      width: 130px;
+    width: 130px;
   }
 
   .infographics .col-lg-3.col-12 {
-      margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   .position-absolute.bottom-0.start-0.end-0.pb-5.thambnailslider.overflow-hidden.pt-3 {
-      position: static !important;
+    position: static !important;
   }
 
   .vimision .col-lg-11.m-auto.col-12 {
-      margin: 0 !important;
+    margin: 0 !important;
   }
 
 
   .col-lg-6.col-12.row.align-items-center.abstractshape {
-      flex-direction: column-reverse;
-      padding-bottom: 50px;
-      padding-left: 100px;
-      padding-right: 100px;
-      text-align: center;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
   }
 
   .abstractshape p {
-      text-align: center;
+    text-align: center;
   }
 
   .numberrow {
-      flex-wrap: wrap;
-      gap: 0 !important;
+    flex-wrap: wrap;
+    gap: 0 !important;
   }
 
   figure.snip0016 figcaption {
-      padding: 30px 1em;
+    padding: 15px 1em;
   }
 
   figure.snip0016 a {
-      font-size: 10px;
+    font-size: 10px;
+    position: relative;
   }
 
   .ssgroupfooter {
-      border: none !important;
-      padding: 0;
+    border: none !important;
+    padding: 0;
   }
 
   .ssgroupfooter .col-lg-4.col-12.flex-center.align-items-start.aos-init.aos-animate {
-      justify-content: start;
+    justify-content: start;
   }
 
   .ssgroupfooter form .row {
-      gap: 25px;
+    gap: 25px;
   }
 
   .thambnailslider button.slick-arrow.slick-prev,
   .thambnailslider button.slick-arrow.slick-next,
   .mobile-show {
-      display: block !important;
+    display: block !important;
   }
 
   .desktop-show {
-      display: none !important;
+    display: none !important;
   }
 
   .copyrights,
   .copyrights p {
-      text-align: center;
+    text-align: center;
   }
 
   .header .col-12.float-start.flex-center {
-      justify-content: space-between;
+    justify-content: space-between;
   }
 
   .web-container {
-      width: 90%;
+    width: 90%;
   }
 
   section.image-effect-section {
-      overflow: hidden;
+    overflow: hidden;
   }
 
   .projectslickslider .projectslider {
-      width: 96%;
+    width: 96%;
   }
 
   .sm-gap-3 {
-      gap: 25px;
+    gap: 25px;
   }
 
   .sm-dflex {
-      display: flex;
+    display: flex;
   }
 
   .sm-overflow {
-      overflow: hidden;
+    overflow: hidden;
   }
 
   .sm-padding-0 {
-      padding: 0;
+    padding: 0;
   }
 
   .ssgroupfooter .col-12.mt-5.text-center,
   .navbar {
-      margin: 0 !important;
+    margin: 0 !important;
   }
 
   .ethoscontent h4 {
-      font-size: 30px;
-      line-height: 50px;
-      padding: 0 10px;
-      white-space: nowrap;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 0 10px;
+    white-space: nowrap;
   }
 
   .ethos {
-      background-size: cover;
-      background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-
-  /* .thambnailslider button.slick-arrow.slick-next:before,
-  .thambnailslider button.slick-arrow.slick-prev:before {
-      color: #59595b;
-      content: '';
-  } */
-
-  /* .thambnailslider button.slick-arrow.slick-next,
-  .thambnailslider button.slick-arrow.slick-prev {
-      bottom: -15%;
-      top: inherit;
-      right: 0;
-      text-transform: uppercase;
-      background-image: url(/r-arrow.webp);
-      width: 100px;
-      height: 30px;
-      opacity: 0.3;
-      background-repeat: no-repeat;
-  }
-
-  .thambnailslider button.slick-arrow.slick-prev {
-      right: inherit;
-      background-image: url(/arrow.webp);
-  } */
 
   .heading {
-      margin-bottom: 25px;
-      padding: 0 25px;
+    margin-bottom: 25px;
+    padding: 0;
+    width: 100%;
   }
 
-  
   .projectcontent h3 {
-      font-size: 24px;
-      line-height: 32px;
+    font-size: 24px;
+    line-height: 32px;
   }
+
+  .media h3.effectheading.aos-init.aos-animate {
+    white-space: inherit;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
 
   .heading h1 {
-      padding-top: 10px;
+    padding-top: 10px;
   }
 }
 
 @media all and (max-width:630px) {
   body {
-      line-height: 26px;
-      font-size: 16px;
-      letter-spacing: 0.6px;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.6px;
   }
 
   .mediasection {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 
   .ssgroupformtext .text-transform h2 {
-      font-size: 6em;
+    font-size: 6em;
   }
 
   .insidenavbarbutton .slick-arrow.slick-next,
   .insidenavbarbutton .slick-arrow.slick-prev {
-      width: 30px;
-      height: 30px;
+    width: 30px;
+    height: 30px;
   }
 
   .css-1wf8b0h-MuiTabs-flexContainer,
   .menubar ul {
-      overflow: auto;
+    overflow: auto;
   }
 
   .pgallery .container,
   .locationmap .container,
   .ethossection .container {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .menubar {
-      overflow: auto;
+    overflow: auto;
   }
 
   .menubar ul {
-      margin: 0;
-      min-width: 600px;
+    margin: 0;
+    min-width: 600px;
   }
 
   header.blackheader {
-      min-height: 50px;
+    min-height: 50px;
   }
 
 
   .menubar ul li {
-      padding: 10px 0;
+    padding: 10px 0;
   }
 
   .lg-react-element a {
-      width: 47%;
+    width: 47%;
   }
 
   .galleryimage {
-      height: 250px;
+    height: 250px;
   }
 
   .ethos {
-      height: 50vh;
+    height: 40vh;
+  }
+
+  .vimision h3.effectheading.aos-init.aos-animate {
+    white-space: inherit;
+    text-align: center;
+    line-height: initial;
   }
 
   .abstractshape p,
   .circlecont p {
-      font-size: 16px;
-      line-height: 24px;
-      max-height: none;
+    font-size: 16px;
+    line-height: 24px;
+    max-height: none;
   }
 
   .circle {
-      width: 180px;
-      height: 180px;
+    width: 180px;
+    height: 180px;
   }
 
   .aboutnavbar ul li {
-      width: auto;
-      padding-right: 20px;
-      margin-right: 20px;
-      font-size: 11px;
-      letter-spacing: 2px;
+    width: auto;
+    padding-right: 20px;
+    margin-right: 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
   }
 
   .journey .slick-slide img {
-      height: 250px;
-      object-fit: cover;
+    height: 250px;
+    object-fit: cover;
   }
 
   .quotes p:before {
-      font-size: 200px;
-      top: -50%;
-      font-family: sans-serif;
+    font-size: 200px;
+    top: -50%;
+    font-family: sans-serif;
   }
 
   .aboutnavbar ul {
-      overflow-y: auto;
-      padding: 15px !important;
+    overflow-y: auto;
+    padding: 15px !important;
   }
 
 
 
   .col-lg-6.col-12.row.align-items-center.abstractshape {
-      padding: 50px 10px;
-      margin: 0;
-      height: auto;
-      background: #f2f2f2;
-      border-bottom: solid 1px #fff;
+    padding: 50px 10px;
+    margin: 0;
+    height: auto;
+    background: #f2f2f2;
+    border-bottom: solid 1px #fff;
   }
 
   .abstractshape p {
-      max-height: fit-content;
+    max-height: fit-content;
   }
 
   .cross {
-      transform: inherit;
-      right: 50px;
-      left: inherit;
-      display: flex;
-      width: 95%;
-      justify-content: flex-end;
-      top: 30px;
+    transform: inherit;
+    right: 50px;
+    left: inherit;
+    display: flex;
+    width: 95%;
+    justify-content: flex-end;
+    top: 30px;
   }
 
   .rightbox,
   .menuslide:after,
   .cross:before,
   .mediasection button:before {
-      display: none !important;
+    display: none !important;
   }
 
   .web-container,
   .menus.active .menuslide:before,
   .togmenu ul {
-      width: 100%;
+    width: 100%;
   }
 
   .mediasection button {
-      padding: 0 15px;
+    padding: 0 15px;
   }
 
   .title {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 
-  .title h3 {
-      padding: 7px 30px;
-      letter-spacing: 2px;
-      font-size: 14px;
+  .newstitle h3 {
+    font-size: 13px;
+    letter-spacing: 3px;
   }
 
-  .projectbanner{
-      height: 85vh;
+  .projectbanner,
+  .col-12.float-start.homeslider.position-relative {
+    height: 85vh;
   }
+
   .bannerimage.position-relative.full-height {
-      height: 83vh;
+    height: 83vh;
   }
+
   .swiperslider img {
-      height: 100%;
+    height: 100%;
   }
+
   .aboutimg {
-      height: 65vh;
+    height: 65vh;
   }
 
   .hiddentextcolumn .scroll-animated-text {
-      right: -200%;
+    right: -200%;
   }
 
   .effectlayer::after,
   .effectlayer:before {
-      height: 150px;
+    height: 150px;
   }
 
   .scroll-animated-text {
-      font-size: 100px;
-      right: -300%;
-      line-height: 100px;
+    font-size: 100px;
+    right: -300%;
+    line-height: 100px;
   }
 
   .cross em {
-      width: 50px;
-      height: 50px;
-      font-size: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
   }
 
   .togmenu ul li a,
   .pseudo-text-effect {
-      font-size: 40px;
-      line-height: 45px;
+    font-size: 40px;
+    line-height: 45px;
   }
 
   .togmenu {
-      width: 90%;
+    width: 90%;
   }
 
 
   .thambnailslider .slick-list {
-      width: 350%;
-      margin-left: 12%;
+    width: 350%;
+    margin-left: 12%;
   }
 
   .col-12.pt-5.mt-5.float-start.text-center {
-      padding-top: 1rem !important;
-      margin-top: 1rem !important;
+    padding-top: 1rem !important;
+    margin-top: 1rem !important;
   }
 
   .infographics .col-lg-3.col-12:last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 
   .ethoscontent h4 {
-      font-size: 26px;
-      line-height: 40px;
+    font-size: 26px;
+    line-height: 40px;
   }
 
   .countercount {
-      font-size: 60px;
-      line-height: 60px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .menus .togmenu ul li {
+    padding: 10px 0;
   }
 
   .bannerimagecont h2,
   .heading h1 {
-      font-size: 32px;
-      letter-spacing: 2px;
-      line-height: 40px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 40px;
   }
 
   .projectcontent {
-      width: 101%;
-      float: left;
-      padding: 25px 0;
-      padding-left: 20px;
-      left: -1px;
-      transform: translateZ(0) !important;
+    width: 101%;
+    float: left;
+    padding: 25px 0;
+    padding-left: 20px;
+    left: -1px;
+    transform: translateZ(0) !important;
   }
 
   .projectwrap .container {
-      max-width: 100%;
+    max-width: 100%;
   }
 
-  .projectwrap .col-12.float-start {
-      padding: 0;
+  .projectwrap .col-12.float-start, .web-container {
+    padding: 0;
   }
-
+  .accordions .MuiButtonBase-root {
+    font-size: 15px;
+}
   .bannerwrap {
-      gap: 0;
+    gap: 0;
   }
 
   .locationmapcta button {
-      padding: 0 1px;
+    padding: 0 1px;
   }
 
-  
+
   .realstatebtn span {
-      font-size: 12px;
+    font-size: 12px;
   }
-  .title h3{
-      font-size: 14px;
-      letter-spacing: 3px;
+
+  .title h3 {
+    font-size: 14px;
+    letter-spacing: 3px;
   }
+
   footer.pb-5 .col-10.m-auto {
-      width: 100%;
+    width: 100%;
   }
-  .completeproject, .completeslide.simillarBox .completeproject {
-      width: 100% !important;
+
+  .completeproject,
+  .completeslide.simillarBox .completeproject {
+    width: 100% !important;
   }
-  
+
   .completeslide {
-      flex-wrap: wrap;
-      gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  
+
   .mantainde {
-      width: 100%;
-      float: left;
-      text-align: center;
+    width: 100%;
+    float: left;
+    text-align: center;
   }
-  .filterpadding .col-lg-3.col-12 {
-      margin: 5px 0;
+
+  .filterpadding .col-lg-3.col-12,
+  .galleryfilterstn .col-lg-4.col-12 {
+    margin: 5px 0;
   }
-  .projectfilter .MuiSelect-select{
-      text-align: left;
-      padding-left: 20px;
+
+  .projectfilter .MuiSelect-select {
+    text-align: left;
+    padding-left: 20px;
   }
+
   .sscompleted {
-      overflow: hidden;
+    overflow: hidden;
   }
+
   .mantainde p {
-      letter-spacing: 1px;
-      font-size: 12px;
+    letter-spacing: 1px;
+    font-size: 12px;
   }
-  
+
   .mantainde h4 {
-      font-size: 19px;
-      line-height: 20px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      width: 100%;
+    font-size: 19px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
   }
-  
+
   .completeslide:nth-child(odd) {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  .col-12.flaot-start.flex-center.mb-5 {
+    margin-bottom: 25px !important;
   }
 }
 
 @media all and (max-width:480px) {
   .effectheading.newheading {
-      font-size: 50px;
-      line-height: 50px;
-  }
-  .ssgroupformtext .text-transform h2 {
-      font-size: 4em;
+    font-size: 40px;
+    line-height: 40px;
   }
 
-  .ethoscontent h4 {
-      font-size: 21px;
-      line-height: 36px;
+  .ssgroupformtext .text-transform h2 {
+    font-size: 4em;
+  }
+
+  .vimision .effectheading.newheading {
+    font-size: 36px;
   }
 
   .header .realstatebtn {
-      max-height: 32px;
-      padding: 0 10px;
+    max-height: 32px;
+    padding: 0 10px;
   }
 
   .lg-react-element a {
-      width: 100%;
+    width: 100%;
   }
 
   .locationinfo {
-      width: 100%;
-      margin: 10px 0;
+    width: 100%;
+    margin: 10px 0;
   }
 
   .aboutnavbar.mb-5 {
-      margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
 
   .home_slidertext h4,
   .addressbox span {
-      font-size: 27px;
-      line-height: 34px;
-      padding: 0 10px;
+    font-size: 27px;
+    line-height: 34px;
+    padding: 0 10px;
+  }
+
+  .addressbox span {
+    padding: 0;
   }
 
   .home_slidertext p {
-      font-size: 14px;
-      line-height: 16px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .logo {
-      max-width: 80px;
+    max-width: 80px;
   }
 
   .projectslickslider.pb-5.mb-5 {
-      padding-bottom: 0.5rem !important;
-      margin-bottom: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .effectlayer::after,
   .effectlayer:before {
-      height: 100px;
+    height: 100px;
   }
 
   .header.fixed .logo {
-      max-width: 70px;
+    max-width: 70px;
   }
 
 
   .vimision svg {
-      width: 100px;
+    width: 100px;
   }
 
 }
@@ -4559,57 +4697,54 @@ li.page-item.active {
 
   .bannerimagecont h2,
   .heading h1 {
-      font-size: 24px;
-      letter-spacing: 1px;
-      line-height: 30px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 30px;
   }
 
-  .title h3 {
-      padding: 2px 20px;
-  }
 
   .ethoscontent h4 {
-      font-size: 17px;
-      line-height: 30px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .togmenu ul {
-      width: 100%;
+    width: 100%;
   }
 
   .circles .circle {
-      height: 220px;
-      width: 220px;
+    height: 220px;
+    width: 220px;
   }
 
   .togmenu ul {
-      gap: 10px !important;
+    gap: 10px !important;
   }
 
   .menus .togmenu .sidemenus li a {
-      letter-spacing: 3px;
+    letter-spacing: 3px;
   }
 
   .header {
-      padding: 10px 0;
+    padding: 10px 0;
   }
 
   .newslider p {
-      line-height: 22px;
-      font-size: 14px;
+    line-height: 22px;
+    font-size: 14px;
   }
 
   .realstatebtn span {
-      font-size: 9px;
-      letter-spacing: 1px;
+    font-size: 9px;
+    letter-spacing: 1px;
   }
 
   .logo {
-      max-width: 60px;
+    max-width: 60px;
   }
 
   .header.fixed .logo {
-      max-width: 50px;
+    max-width: 50px;
   }
 
 }
@@ -4618,38 +4753,34 @@ li.page-item.active {
 
   .home_slidertext h4,
   .addressbox span {
-      font-size: 24px;
-      line-height: 30px;
-      padding: 0 5px;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 5px;
   }
 
   .cross em {
-      width: 35px;
-      height: 35px;
-      font-size: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
   }
 
   .countercount {
-      font-size: 40px;
-      line-height: 40px;
+    font-size: 40px;
+    line-height: 40px;
   }
 
   .heading h3 {
-      font-size: 26px;
-      line-height: 30px;
+    font-size: 26px;
+    line-height: 30px;
   }
 
   .togmenu ul li a,
   .pseudo-text-effect {
-      font-size: 30px;
-      line-height: 36px;
+    font-size: 30px;
+    line-height: 36px;
   }
 
   .menus .togmenu ul li {
-      padding: 10px 0;
+    padding: 10px 0;
   }
 }
-
-/* @media screen and (min-width: 1680px) and (min-height: 1050px) {
- 
-} */

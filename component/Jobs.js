@@ -3,6 +3,8 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Suitecase from './svg-components/Suitecase'
+import Location from './svg-components/Location'
 
 const Jobs = ({ jobsdata }) => {
     console.log(jobsdata);
@@ -43,9 +45,13 @@ const Jobs = ({ jobsdata }) => {
                         {jobItem.title}
                       </AccordionSummary>
                       <AccordionDetails>
-                        <p dangerouslySetInnerHTML={{ __html: jobItem.description }} />
-                        <p><span>Location:</span> {jobItem.location}</p>
-                        <h6>Please send your updated resume, mentioning your current CTC, expected salary and notice period to <a href="mailto:hr@ssgroup-india.com">hr@ssgroup-india.com</a></h6>
+                       <div className='jobheading d-flex flex-wrap'>
+                       <span><Suitecase /></span> <p dangerouslySetInnerHTML={{ __html: jobItem.description }} className='m-0'/>
+                       </div>
+                       <div className='jobdescription d-flex flex-wrap'>
+                       <span><Location /></span> <p className='m-0'>{jobItem.location}</p>
+                       </div>
+                        <h6 className='m-0'>Please send your updated resume, mentioning your current CTC, expected salary and notice period to <a href="mailto:hr@ssgroup-india.com">hr@ssgroup-india.com</a></h6>
                       </AccordionDetails>
                     </Accordion>
                   )

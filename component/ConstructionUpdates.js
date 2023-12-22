@@ -58,7 +58,7 @@ function ConstructionUpdates() {
   };
   return (
     <>
-      <div className="galleryfilterstn col-12 float-start">
+      <div className="galleryfilterstn projectfilter bg-white col-12 float-start">
         <div
           className="col-12 float-start"
           data-aos="fade-left"

@@ -60,7 +60,7 @@ const FilterConstruction = ({
       <form onSubmit={handleSubmit} className="col-12 float-start">
       <div className="row">
      <div className="col-lg-2"></div>
-        <div className="col-lg-4 col-12">
+        <div className="col-lg-4 col-5">
           <Select
             id="year"
             name="year"
@@ -82,7 +82,7 @@ const FilterConstruction = ({
             )}
           </Select>
         </div>
-        <div className="col-lg-4 col-12">
+        <div className="col-lg-4 col-7">
           <Select
             id="month"
             name="month"

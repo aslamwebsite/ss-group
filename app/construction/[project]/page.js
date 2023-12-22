@@ -4,6 +4,7 @@ import Header from '@/component/Header'
 import ConstructionUpdates from '@/component/ConstructionUpdates';
 import React from 'react'
 import { useParams } from "next/navigation";
+import { useRouter } from 'next/router';
 
 const page = () => {
     const params = useParams();
@@ -13,7 +14,7 @@ const page = () => {
         <Header className='blackheader' />
         <main className="d-flex flex-wrap float-start col-12">
         <section>
-                <div className='media'>
+                <div className='media m-0'>
                     <div className='container'>
                         <div className='row'>
                             <div className="breadcumtab">
@@ -21,10 +22,10 @@ const page = () => {
               <li>
                   <a href="/">Home</a>
                 </li>
-                <li>
-                  <a href={"/construction/" + slug}>Construction Updates</a>
+                <li><a href='/'>{slug.replace(/-/g, " ")}</a></li>
+                <li>Construction Updates
                 </li>
-                <li>{slug.replace(/-/g, " ")}</li>
+               
               </ul>
             </div>
                                <div className="col-12 flaot-start flex-center mt-5">
@@ -36,7 +37,7 @@ const page = () => {
                                <div className='col-lg-10 col-12 m-auto '>
                                <div className='row'>
                                     <div className='col-lg-12 col-12'>
-                                        <div className='mediasection'>
+                                        <div className='mediasection m-0'>
                                               <ConstructionUpdates />                                        
                                         </div>
                                 </div>

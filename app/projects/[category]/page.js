@@ -83,7 +83,7 @@ const page = () => {
 
     const unzoomTimeout = setTimeout(() => {
       setIsZoomed(false);
-    }, 3000);
+    }, 8000);
 
     const textTimeout = setTimeout(() => {
       displayText();
@@ -165,7 +165,15 @@ const page = () => {
                 width={1920}
                 height={980}
                 alt={text}
-                className="full-height"
+                className="full-height desktop-show"
+                priority
+              />
+              <Image
+                src={categoryData.category_mimage || "/ss-banner.webp"}
+                width={630}
+                height={800}
+                alt={text}
+                className="full-height mobile-show"
                 priority
               />
             </div>

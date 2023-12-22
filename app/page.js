@@ -11,12 +11,12 @@ import Header from "@/component/Header";
 import Accordian from "@/component/Accordian";
 import Loader from "@/component/Loader";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [categoryData, setCategoryData] = useState([]);
-  // const categoryData = projectData.categories;
-  // console.log(categoryData);
+  const smoothRef = useRef(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +25,6 @@ export default function Home() {
           "https://www.ssgroup-india.com/admin_new/api/fetch_cat.php"
         );
         setCategoryData(response.data.categories);
-        // console.log(response.data.categories);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -34,14 +33,19 @@ export default function Home() {
     fetchData();
   }, []);
 
-  if (!categoryData) {
-    return <p>Error</p>;
-  }
-  const smoothRef = useRef(null);
   useEffect(() => {
-    setTimeout(() => {
+    const showLoader = !Cookies.get("loaderHidden");
+
+    if (showLoader) {
+      const loaderTimeout = setTimeout(() => {
+        setLoading(false);
+        Cookies.set("loaderHidden", true, { expires: 10 / (24 * 60) }); 
+      }, 3000);
+
+      return () => clearTimeout(loaderTimeout);
+    } else {
       setLoading(false);
-    }, 3000);
+    }
   }, []);
 
   useEffect(() => {

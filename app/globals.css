@@ -3991,10 +3991,11 @@ li.page-item.active {
 
   .menubar ul li {
     border: none;
-    width: 25%;
     text-align: center;
     padding: 20px 0;
-  }
+    width: 100%;
+    font-size: 13px;
+}
 
   .menubar ul li a {
     border-right: solid 1px #d7d7d7;

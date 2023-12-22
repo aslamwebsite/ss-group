@@ -127,6 +127,7 @@ ul {
   background: transparent;
   border: none;
   outline: 0;
+  padding: 0;
 }
 
 .header {
@@ -169,6 +170,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 0;
 }
 
 .hemburgur span:nth-child(1) {
@@ -349,6 +351,7 @@ header {
   color: var(--white-color);
   font-size: 82px;
   line-height: 90px;
+  font-family: 'Adobe Garamond Pro';
 }
 
 
@@ -3877,7 +3880,9 @@ li.page-item.active {
   .aboutuspage {
     margin-top: -50px;
   }
-
+  .heading h3 {
+    line-height: 40px;
+}
   .effectheading.newheading {
     width: 100%;
     float: left;

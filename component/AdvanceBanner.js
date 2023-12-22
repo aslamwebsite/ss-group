@@ -8,7 +8,7 @@ export const AdvanceBanner = ({ bannerData }) => {
     const isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
     const isMac = /MacIntel/.test(navigator.platform);
 
-    return isIOS || isMac ? 100 : 500;
+    return isIOS || isMac ? 100 : 300;
   };
 
   return (

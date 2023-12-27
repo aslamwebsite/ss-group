@@ -2,6 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 
 const QuickLinks = ({ ebroucher, application, slug, const_status, virtualtour }) => {
+  const anyLinkAvailable = ebroucher || application || virtualtour || (const_status === "1" && slug);
+  if (!anyLinkAvailable) {
+    return null;
+  }
   return (
     <div className='quicklink col-12 float-start'>
       <div className='container'>

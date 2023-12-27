@@ -3333,6 +3333,16 @@ li.page-item.active {
 .jobheading p {
   width: 90%;
 }
+.tbreadcrum {
+  top: 12vh;
+}
+
+.home_slidertext span a.fw-500.text-black {
+    background-image: linear-gradient(to right, #000, #000 50%, rgb(89 89 91 / 0%) 100%);
+}
+.z-index-9{
+  z-index: 1;
+}
 @media all and (max-width:1700px) {
   .lefspace {
     width: 90%;
@@ -3364,7 +3374,9 @@ li.page-item.active {
   .fulltextcolumn {
     width: 83vw;
   }
-
+  .tbreadcrum {
+    top: 14vh;
+}
   .hiddentextcolumn .scroll-animated-text {
     right: 105%;
   }
@@ -3869,6 +3881,9 @@ li.page-item.active {
 }
 
 @media all and (max-width:990px) {
+  .tbreadcrum {
+    top: 10vh;
+}
   .projectbanner {
     height: 95vh;
   }

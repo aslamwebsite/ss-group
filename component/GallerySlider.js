@@ -48,9 +48,7 @@ export const GallerySlider = ({ galleryData }) => {
     });
   };
 
-  const isOddSlide = currentSlide % 2 === 1;
-
-  return (
+    return (
     <>
       <section ref={sectionRef}>
         <div className="pgallery col-12 float-start">
@@ -77,10 +75,7 @@ export const GallerySlider = ({ galleryData }) => {
                       sliderContent.map((slide, index) => (
                         <div key={index}>
                           <div
-                            className={`gallerybanner position-relative ${
-                              isOddSlide ? "zoom-in" : "zoom-out"
-                            }`}
-                          >
+                            className={`gallerybanner position-relative`}                          >
                             <Image
                               src={slide.imageSrc}
                               width="1500"

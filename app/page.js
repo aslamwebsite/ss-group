@@ -12,11 +12,14 @@ import Accordian from "@/component/Accordian";
 import Loader from "@/component/Loader";
 import axios from "axios";
 import Cookies from "js-cookie";
+import ChatboxWidget from "@/component/ChatboxWidget"
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [categoryData, setCategoryData] = useState([]);
   const smoothRef = useRef(null);
+  const botId = 'bf3bc593-8a20-460f-8f79-7e1b5a5fb9d7';
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -85,6 +88,7 @@ export default function Home() {
   return (
     <>
       <Loader />
+      {/* <ChatboxWidget /> */}
       <Header />
       <main className="d-flex flex-wrap float-start col-12">
         <section id="slider">

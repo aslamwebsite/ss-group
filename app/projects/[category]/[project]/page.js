@@ -13,6 +13,7 @@ import ProjectOverview from "@/component/ProjectOverview";
 import Image from "next/image";
 import Link from "next/link";
 import ProjectContent from '@/component/ProjectContent'
+import ComingSoon from '@/component/ComingSoon'
 
 const page = () => {
   const [loading, setLoading] = useState(true);
@@ -56,6 +57,7 @@ const page = () => {
       }
     }
   }, [loading]);
+  const isComingSoon = project.slug === 'ss-kiavasa';
   return (
     <>
     <div className="loader">
@@ -66,7 +68,7 @@ const page = () => {
       </div>
     </div>
       <Header className="blackheader" />
-      <div className="col-12 float-start">
+      <div className="col-12 float-start position-relative z-index-9">
         <div className="container">
           <div className="row">
             <div className="breadcumtab">
@@ -84,7 +86,10 @@ const page = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>      
+      {isComingSoon ? (
+        <ComingSoon />
+      ) : (
       <main className="d-flex flex-wrap float-start col-12 mt-3">
         <ProjectOverview project={project} />
         <section>
@@ -109,6 +114,7 @@ const page = () => {
         <QuickLinks const_status={project.const_status} ebroucher={project.ebroucher} application={project.application} slug={slug} virtualtour={project.virtualtour}/>
         <Accordian faqData={project.faq} />
       </main>
+       )}
       <Footer />
     </>
   );

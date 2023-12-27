@@ -2,12 +2,12 @@ import React from 'react'
 import Form from './Form'
 import Link from 'next/link';
 
-const Footer = () => {
+const Footer = ({className}) => {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
   return (
     <>
-        <footer className="pb-5" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>
+        <footer className={`pb-5 ${className}`} data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>
             <div className="container">
              <div className="row">
              <div className="d-flex align-items-start justify-content-between flex-wrap">             

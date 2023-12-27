@@ -10,6 +10,91 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
     <>
       {!filtersearchResult ? (
         <>
+         {categoryToShow.LuxuryResidences ? (
+            <section className="category-section">
+              <div className="container">
+                <div className="web-container">
+                  <div className="title col-12 float-start text-center">
+                    <h3
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-in"
+                      data-aos-offset="50"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                    >
+                      New Launch
+                    </h3>
+                  </div>
+                  <div className="row">
+                    {Object.keys(categoryToShow.LuxuryResidences).map(
+                      (pd1, index) => (
+                        <div
+                          key={index}
+                          className="col-lg-6 col-sm-6 col-12 categoryimage"
+                          data-aos="fade-in"
+                          data-aos-easing="ease-in"
+                          data-aos-offset="50"
+                          data-aos-duration="500"
+                          data-aos-once="true"
+                        >
+                          {/* <Link href={"/projects/" + slugValue + "/" + categoryToShow.LuxuryResidences[index].slug}> */}
+                          <Link
+                            href={
+                              categoryToShow.LuxuryResidences[index]
+                                .linkActive != 0
+                                ? "/projects/" +
+                                  slugValue +
+                                  "/" +
+                                  categoryToShow.LuxuryResidences[index].slug
+                                : ""
+                            }
+                          >
+                            <div
+                              className={`projectslider`}
+                              ref={(el) => projectSliders.current.push(el)}
+                            >
+                              <figure className="snip0016">
+                                {categoryToShow.LuxuryResidences[index]
+                                  .imageSrc ? (
+                                  <Image
+                                    src={
+                                      categoryToShow.LuxuryResidences[index]
+                                        .imageSrc
+                                    }
+                                    width="655"
+                                    height="597"
+                                    alt={
+                                      categoryToShow.LuxuryResidences[index]
+                                        .ProjectName
+                                    }
+                                  />
+                                ) : null}
+                                <figcaption>
+                                  <h4>
+                                    {
+                                      categoryToShow.LuxuryResidences[index]
+                                        .ProjectName
+                                    }
+                                  </h4>
+                                  <p>
+                                    {
+                                      categoryToShow.LuxuryResidences[index]
+                                        .location
+                                    }
+                                  </p>
+                                  <p>Know More</p>
+                                </figcaption>
+                              </figure>
+                            </div>
+                          </Link>
+                        </div>
+                      )
+                    )}
+                  </div>
+                </div>
+              </div>
+            </section>
+          ) : null}
           {categoryToShow.LuxuryResidences ? (
             <section className="category-section">
               <div className="container">
@@ -22,7 +107,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                       data-aos-duration="500"
                       data-aos-once="true"
                     >
-                      On Going
+                      OnGoing
                     </h3>
                   </div>
                   <div className="row">

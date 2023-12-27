@@ -11,7 +11,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
       {!filtersearchResult ? (
         <>
          {categoryToShow.LuxuryResidences ? (
-            <section className="category-section">
+            <section className="category-section d-none">
               <div className="container">
                 <div className="web-container">
                   <div className="title col-12 float-start text-center">

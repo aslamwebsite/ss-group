@@ -1425,7 +1425,7 @@ figure.snip0016 p {
 }
 
 figure.snip0016 p,
-.mantainde p {
+.mantainde p, figure.snip00161 p {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 2px;
@@ -1438,7 +1438,7 @@ figure.snip0016 h4 {
   transition-delay: 0.3s;
 }
 
-figure.snip0016 p {
+figure.snip0016 p, figure.snip00161 p {
   font-weight: 300;
   -webkit-transform: translate3d(0%, 30%, 0);
   transform: translate3d(0%, 30%, 0);
@@ -3347,6 +3347,24 @@ li.page-item.active {
   height: 100vh;
   object-fit: cover;
 }
+.snip00161 {
+  border: solid 1px #f6f3f3;
+  float: left;
+}
+
+.snip00161 figcaption p {
+  margin: 0;
+  position: relative;
+  top: -6px;
+}
+.fitleroption figure.snip0016 {
+  height: 597px;
+}
+
+.fitleroption figure.snip0016 img {
+  object-fit: cover;
+  height: 100%;
+}
 @media all and (max-width:1700px) {
   .lefspace {
     width: 90%;
@@ -3627,7 +3645,7 @@ li.page-item.active {
     line-height: 30px;
   }
 
-  figure.snip0016 p {
+  figure.snip0016 p, figure.snip00161 p{
     font-size: 12px;
     letter-spacing: 1.5px;
   }
@@ -4162,7 +4180,7 @@ li.page-item.active {
     height: 60%;
     transform: translateY(-50%);
 }
-figure.snip0016 p {
+figure.snip0016 p, figure.snip00161 p {
   font-size: 11px;
   line-height: 16px;
 }

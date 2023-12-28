@@ -17,7 +17,7 @@ export const GallerySlider = ({ galleryData }) => {
     slidesToScroll: 1,
     fade: true,
     autoplaySpeed: 8000,
-    autoplay: true,
+    autoplay: false,
     afterChange: (index) => setCurrentSlide(index),
   };
 

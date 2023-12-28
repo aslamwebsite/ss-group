@@ -62,6 +62,7 @@ const page = () => {
       ...filterSubcategory(categoryData.LuxuryResidences),
       ...filterSubcategory(categoryData.DeliveredProjects),
       ...filterSubcategory(categoryData.PremiumResidences),
+      ...filterSubcategory(categoryData.NewLaunch),
     ];
 
     return filteredProjects;

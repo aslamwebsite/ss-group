@@ -3365,11 +3365,11 @@ li.page-item.active {
   object-fit: cover;
 }
 .projectlogo {
-  position: absolute;
-  z-index: 2;
   text-align: center;
   width: 100%;
-  padding: 20px;
+  margin-bottom: 25px;
+  margin-top: 70px;
+  float: left;
 }
 @media all and (max-width:1700px) {
   .lefspace {

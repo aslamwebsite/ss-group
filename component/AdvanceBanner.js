@@ -14,9 +14,7 @@ export const AdvanceBanner = ({ bannerData, project }) => {
 
   return (
     <>
-                    <div className='projectlogo'>
-                        <Image src={project.logo} width='300' height='140' alt={project.ProjectName}/>
-                    </div>
+                  
       {sections && sections.map((section, index) => (
         <div key={index} className="parallaximage col-12 float-start" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>
           <Parallax bgImage={section.imageUrl} strength={getStrengthValue()} className='h-auto'>

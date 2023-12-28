@@ -93,6 +93,9 @@ const page = () => {
       <main className="d-flex flex-wrap float-start col-12 mt-3">        
         <section>
         <ProjectOverview project={project} />
+        <div className='projectlogo'>
+                        <Image src={project.logo} width='300' height='140' alt={project.ProjectName}/>
+                    </div>
           <div className="projectwrap">
             <div className="container">
               <div className="row">

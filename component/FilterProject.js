@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import InputLabel from '@mui/material/InputLabel';
+import Reset from './svg-components/Reset'
 
 // Define the FilterProject component
 const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, initialQuery }) => {
@@ -92,19 +93,15 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
             ))}
           </Select>
         </div>
-        {/* <div className='col-lg-3 col-12 m-auto ssgroupbtn d-flex'>
-          <div className="row">
-            <div className="col-lg-8">
+        <div className='col-lg-1 col-12 d-flex align-items-center p-0'>
+            {/* <div className="col-lg-8">
               <Button type="submit" variant="contained" color="primary" className='col-12 realstatebtn'>
                 <span className='text-white'> Submit</span>
               </Button>
-            </div>
-            <div className="col-lg-4 p-0">            
-                <span onClick={handleReset}><strong className='text-uppercase cursor-pointer'>Reset</strong></span>
-            </div>
+            </div> */}      
+                <span onClick={handleReset}><strong className='text-uppercase cursor-pointer'><Reset /></strong></span>
           </div>
-        </div> */}
-      </div>
+        </div>
     </form>
   );
 };

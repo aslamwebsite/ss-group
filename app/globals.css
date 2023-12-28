@@ -3358,12 +3358,18 @@ li.page-item.active {
   top: -6px;
 }
 .fitleroption figure.snip0016 {
-  height: 597px;
+  min-height: 500px;
+  display: flex;
 }
-
 .fitleroption figure.snip0016 img {
   object-fit: cover;
-  height: 100%;
+}
+.projectlogo {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
 }
 @media all and (max-width:1700px) {
   .lefspace {

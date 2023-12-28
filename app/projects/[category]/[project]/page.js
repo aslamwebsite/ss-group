@@ -90,15 +90,15 @@ const page = () => {
       {isComingSoon ? (
         <ComingSoon />
       ) : (
-      <main className="d-flex flex-wrap float-start col-12 mt-3">
-        <ProjectOverview project={project} />
+      <main className="d-flex flex-wrap float-start col-12 mt-3">        
         <section>
+        <ProjectOverview project={project} />
           <div className="projectwrap">
             <div className="container">
               <div className="row">
                 <div className="col-12 float-start">
-                  <div className="bannerwrap d-flex flex-wrap">
-                    <AdvanceBanner bannerData={project.sections} />
+                  <div className="bannerwrap d-flex flex-wrap position-relative">
+                    <AdvanceBanner bannerData={project.sections} project={project}/>
                   </div>
                 </div>
               </div>

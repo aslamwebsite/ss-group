@@ -27,8 +27,7 @@ const ProjectOverview = ({ project }) => {
   }, []);
 
   return (
-    <section>
-      <div className='overview col-12 float-start'>
+      <div className='overview col-12 float-start mb-5'>
         <div className='container'>
           <div className="col-lg-8 col-12 m-auto text-center">
             <div className="heading">
@@ -45,7 +44,6 @@ const ProjectOverview = ({ project }) => {
           </div>
         </div>
       </div>
-    </section>
   );
 };
 

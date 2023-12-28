@@ -3367,9 +3367,12 @@ li.page-item.active {
 .projectlogo {
   text-align: center;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   margin-top: 70px;
   float: left;
+}
+.projectlogo img {
+  width: 250px;
 }
 @media all and (max-width:1700px) {
   .lefspace {
@@ -4337,6 +4340,10 @@ figure.snip0016 p, figure.snip00161 p {
 }
 
 @media all and (max-width:630px) {
+  
+.projectlogo img {
+  width: 200px;
+}
   body {
     line-height: 26px;
     font-size: 16px;

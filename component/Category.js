@@ -267,8 +267,92 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
               </div>
             </section>
           ) : null}
+          {categoryToShow.Completed ? (
+            <section className="category-section">
+              <div className="container">
+                <div className="web-container">
+                  <div className="title col-12 float-start text-center">
+                    <h3
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-in"
+                      data-aos-offset="50"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                    >
+                      Completed
+                    </h3>
+                  </div>
+                  <div className="row">
+                    {Object.keys(categoryToShow.Completed).map(
+                      (pd1, index) => (
+                        <div
+                          key={index}
+                          className="col-lg-6 col-sm-6 col-12 categoryimage"
+                          data-aos="fade-in"
+                          data-aos-easing="ease-in"
+                          data-aos-offset="50"
+                          data-aos-duration="500"
+                          data-aos-once="true"
+                        >
+                          <Link
+                            href={
+                              categoryToShow.Completed[index]
+                                .linkActive != 0
+                                ? "/projects/" +
+                                  slugValue +
+                                  "/" +
+                                  categoryToShow.Completed[index].slug
+                                : ""
+                            }
+                          >
+                            <div
+                              className={`projectslider`}
+                              ref={(el) => projectSliders.current.push(el)}
+                            >
+                              <figure className="snip0016">
+                                {categoryToShow.Completed[index]
+                                  .imageSrc ? (
+                                  <Image
+                                    src={
+                                      categoryToShow.Completed[index]
+                                        .imageSrc
+                                    }
+                                    width="655"
+                                    height="597"
+                                    alt={
+                                      categoryToShow.Completed[index]
+                                        .ProjectName
+                                    }
+                                  />
+                                ) : null}
+                                <figcaption>
+                                  <h4>
+                                    {
+                                      categoryToShow.Completed[index]
+                                        .ProjectName
+                                    }
+                                  </h4>
+                                  <p>
+                                    {
+                                      categoryToShow.Completed[index]
+                                        .location
+                                    }
+                                  </p>
+                                  <p>Know More</p>
+                                </figcaption>
+                              </figure>
+                            </div>
+                          </Link>
+                        </div>
+                      )
+                    )}
+                  </div>
+                </div>
+              </div>
+            </section>
+          ) : null}
           {categoryToShow.DeliveredProjects ? (
-            <Ssdelivered deliveredData={categoryToShow.DeliveredProjects}/>
+            <Ssdelivered deliveredData={categoryToShow.DeliveredProjects}  slugValue={slugValue}/>
           ) : null}
         </>
       ) : (

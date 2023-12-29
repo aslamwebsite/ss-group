@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 
-const Ssdelivered = ({ deliveredData }) => {
+const Ssdelivered = ({ deliveredData, slugValue }) => {
   console.log(deliveredData);
   var settings = {
     dots: false,
@@ -39,7 +39,7 @@ const Ssdelivered = ({ deliveredData }) => {
                 <span className="colorborder position-relative">
                   <em></em>
                 </span>
-                <h3>Completed</h3>
+                <h3> Delivered</h3>
               </div>
               <div className="col-lg-11 m-auto col-12 image-effect-section">
                 <Slider {...settings} className="col-12 float-start">

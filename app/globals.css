@@ -32,6 +32,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+ul{
+  padding: 0;
+}
 
 a {
   color: inherit;
@@ -2728,6 +2731,7 @@ h3.effectheading.aos-init.aos-animate {
 .btns.rounded::before {
   border-radius: 50px;
   width: 50px;
+  height: 50px;
   background: var(--gray-color);
 }
 
@@ -3649,7 +3653,7 @@ li.page-item.active {
     width: 80%;
   }
 
-  figure.snip0016 h4 {
+  figure.snip0016 h4, .snip00161 h4 {
     font-size: 20px;
     line-height: 30px;
   }
@@ -3912,6 +3916,16 @@ li.page-item.active {
 }
 
 @media all and (max-width:990px) {
+  .col-12.float-start.d-flex.align-items-center.p-4.justify-content-between.aos-init.aos-animate {display: grid !important;padding: 15px !important;gap: 15px;}
+
+  .category-section .projectslider {
+    margin: 2%;
+}
+  .filterpadding .col-lg-3.col-12,
+  .galleryfilterstn .col-lg-4.col-12 {
+    margin: 5px 0;
+  }
+
   .tbreadcrum {
     top: 10vh;
 }
@@ -3924,7 +3938,7 @@ li.page-item.active {
   }
 
   .aboutuspage {
-    margin-top: -50px;
+    margin-top: -25px;
   }
   .heading h3 {
     line-height: 40px;
@@ -3940,9 +3954,11 @@ li.page-item.active {
   .overview p {
     width: 100%;
     text-align: center;
-    margin: 0;
   }
-
+  .projectlogo{
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
   .filterpadding {
     padding: 20px 0 40px 0;
   }
@@ -4145,6 +4161,7 @@ li.page-item.active {
 
   .projectbanner img.full-height {
     object-fit: cover;
+    width: 100%;
   }
 
   .bannerimagecont h2,
@@ -4406,7 +4423,7 @@ figure.snip0016 p, figure.snip00161 p {
   }
 
   .vimision h3.effectheading.aos-init.aos-animate {
-    white-space: inherit;
+    white-space: break-spaces;
     text-align: center;
     line-height: initial;
   }
@@ -4637,16 +4654,18 @@ figure.snip0016 p, figure.snip00161 p {
     float: left;
     text-align: center;
   }
-
-  .filterpadding .col-lg-3.col-12,
-  .galleryfilterstn .col-lg-4.col-12 {
-    margin: 5px 0;
-  }
-
+  .col-lg-1.col-12.d-flex.align-items-center.p-0 span.realstatebtn.mt-2.col-12.m-auto {
+    border-radius: 4px;
+    height: 40px;
+    max-width: 120px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+  
   .projectfilter .MuiSelect-select {
     text-align: left;
-    padding-left: 20px;
-  }
+    padding: 15px;
+}
 
   .sscompleted {
     overflow: hidden;
@@ -4684,7 +4703,11 @@ figure.snip0016 p, figure.snip00161 p {
   .ssgroupformtext .text-transform h2 {
     font-size: 4em;
   }
-
+  .btns.rounded::before {
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+  }
   .vimision .effectheading.newheading {
     font-size: 36px;
   }

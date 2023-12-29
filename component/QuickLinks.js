@@ -24,7 +24,7 @@ const QuickLinks = ({ ebroucher, application, slug, const_status, virtualtour })
               </h3>
             </div>
           </div>
-          <div className='col-lg-10 col-12 m-auto'>
+          <div className='col-lg-10 col-12 m-auto' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-once='true'>
             <div className='row flex-center'>
                 {ebroucher && (
               <div className='col-lg-4 col-12'>
@@ -45,8 +45,7 @@ const QuickLinks = ({ ebroucher, application, slug, const_status, virtualtour })
               </div>
                 )}
               {virtualtour && (
-              <div className='col-lg-4 col-12'>
-              
+              <div className='col-lg-4 col-12'>              
                   <a href={virtualtour} target='_blank'>
                     <button className="realstatebtn text-white">
                       <span className="text-white">360<sup>0</sup> View</span>

@@ -94,12 +94,8 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
           </Select>
         </div>
         <div className='col-lg-1 col-12 d-flex align-items-center p-0'>
-            {/* <div className="col-lg-8">
-              <Button type="submit" variant="contained" color="primary" className='col-12 realstatebtn'>
-                <span className='text-white'> Submit</span>
-              </Button>
-            </div> */}      
-                <span onClick={handleReset}><strong className='text-uppercase cursor-pointer'><Reset /></strong></span>
+            <span onClick={handleReset} className='realstatebtn mt-2 col-12 m-auto cursor-pointer'><strong className='mobile-show fw-normal'>RESET</strong></span>
+            <span onClick={handleReset} ><strong className='text-uppercase cursor-pointer desktop-show'><Reset /></strong></span>
           </div>
         </div>
     </form>

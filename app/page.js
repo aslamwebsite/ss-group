@@ -60,7 +60,7 @@ export default function Home() {
     }
   }, [loading]);
   const numberData = [
-    { startValue: 5, endValue: 29, speed: 400, label: "YEARS", Plus: "+" },
+    { startValue: 5, endValue: 30, speed: 400, label: "YEARS", Plus: "+" },
     {
       startValue: 50,
       endValue: 173,

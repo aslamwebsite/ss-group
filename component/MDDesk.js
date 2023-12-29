@@ -48,7 +48,7 @@ const MDDesk = () => {
                     data-aos-duration="500"
                     data-aos-once="true"
                   >
-                   For 29+ years, SS Group has etched an illustrious track record in
+                   For 30+ years, SS Group has etched an illustrious track record in
 the dynamic landscape of residential and commercial
 developments in Gurugram.
                   </p>

@@ -58,7 +58,7 @@ const page = () => {
   const numberData = [
     {
       startValue: 5,
-      endValue: 29,
+      endValue: 30,
       speed: 400,
       label: "YEARS OF EXPERIENCE",
       Plus: "+",
@@ -78,7 +78,7 @@ const page = () => {
     },
     {
       startValue: 10,
-      endValue: 23,
+      endValue: 20,
       speed: 200,
       label: "PROJECTS DELIVERED",
       Plus: "+",

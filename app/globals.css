@@ -356,7 +356,10 @@ header {
   line-height: 90px;
   font-family: 'Adobe Garamond Pro';
 }
-
+.countercont {
+  position: relative;
+  top: -20px;
+}
 
 .countercont p {
   color: var(--white-color);

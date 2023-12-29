@@ -7,7 +7,7 @@ const QuickLinks = ({ ebroucher, application, slug, const_status, virtualtour })
     return null;
   }
   return (
-    <div className='quicklink col-12 float-start'>
+    <section className='quicklink col-12 float-start'>
       <div className='container'>
         <div className='web-container'>
           <div className='col-12 flaot-start flex-center'>
@@ -67,7 +67,7 @@ const QuickLinks = ({ ebroucher, application, slug, const_status, virtualtour })
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

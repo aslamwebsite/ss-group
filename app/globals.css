@@ -3381,6 +3381,15 @@ li.page-item.active {
 .projectlogo img {
   width: 250px;
 }
+
+.hreranumber p {
+  background: #000;
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  width: 60%;
+  border-radius: 50px;
+}
 @media all and (max-width:1700px) {
   .lefspace {
     width: 90%;
@@ -4361,6 +4370,9 @@ figure.snip0016 p, figure.snip00161 p {
 
 @media all and (max-width:630px) {
   
+.hreranumber p {
+  width: 100%;
+}
 .projectlogo img {
   width: 200px;
 }

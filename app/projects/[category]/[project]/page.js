@@ -116,6 +116,21 @@ const page = () => {
         : null}
         <QuickLinks const_status={project.const_status} ebroucher={project.ebroucher} application={project.application} slug={slug} virtualtour={project.virtualtour}/>
         <Accordian faqData={project.faq} />
+        {project.rera && (
+        <section>
+          <div className='hreranumber'>
+              <div className='container'>
+                  <div className='row'>
+                      <div className='web-container'>
+                          <div className='col-12 float-left text-center flex-center'>
+                              <p className='m-0 pt-4 pb-4'><strong>{project.rera}</strong></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        )}
       </main>
        )}
       <Footer />

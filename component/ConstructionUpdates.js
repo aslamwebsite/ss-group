@@ -10,49 +10,8 @@ import { useParams } from "next/navigation";
 import axios from "axios";
 import FilterConstruction from "./FilterConstruction";
 
-function ConstructionUpdates() {
-  // Const Image Code Start
-  const params = useParams();
-  const slug = params.project;
-
-  const url = window.location.href;
-  const queryString = url.split("?")[1];
-  const queryParams = new URLSearchParams(queryString);
-  const year = queryParams.get("year") || "";
-  const month = queryParams.get("month") || "";
-  console.log(slug);
-  const slug2 = year ? year : "";
-  const slug3 = month ? month : "";
-  const [pagedata, setPagedata] = useState([]);
-
-  useEffect(() => {
-    let mounted = true;
-
-    const loadData = async () => {
-      const response = await axios.get(
-        `https://www.ssgroup-india.com/admin_new/algorithms/modify_construction_json.php?url=${slug}&url2=${slug2}&url3=${slug3}`
-      );
-      if (mounted) {
-        console.log(response);
-        console.log(response.data);
-        setPagedata(response.data);
-        // setData(response.data.products.accordions);
-      }
-    };
-
-    loadData();
-
-    return () => {
-      mounted = false;
-    };
-  }, []);
-
-  console.log(pagedata);
-  if (pagedata.length == 0) {
-    console.log("no data");
-    return null;
-  }
-
+function ConstructionUpdates( {pagedata, year, month} ) {
+  
   const handleFilterSubmit = (formData) => {
     console.log(formData);
   };

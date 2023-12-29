@@ -2,13 +2,54 @@
 import Footer from '@/component/Footer'
 import Header from '@/component/Header'
 import ConstructionUpdates from '@/component/ConstructionUpdates';
-import React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import { useParams } from "next/navigation";
 import { useRouter } from 'next/router';
+import axios from "axios";
 
 const page = () => {
-    const params = useParams();
-    const slug = params.project;
+    // Const Image Code Start
+  const params = useParams();
+  const slug = params.project;
+
+  const url = window.location.href;
+  const queryString = url.split("?")[1];
+  const queryParams = new URLSearchParams(queryString);
+  const yearVal = queryParams.get("year") || "";
+  const monthVal = queryParams.get("month") || "";
+  console.log(slug);
+  const slug2 = yearVal ? yearVal : "";
+  const slug3 = monthVal ? monthVal : "";
+  const [pagedataVal, setPagedata] = useState([]);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const loadData = async () => {
+      const response = await axios.get(
+        `https://www.ssgroup-india.com/admin_new/algorithms/modify_construction_json.php?url=${slug}&url2=${slug2}&url3=${slug3}`
+      );
+      if (mounted) {
+        console.log(response);
+        console.log(response.data);
+        setPagedata(response.data);
+        // setData(response.data.products.accordions);
+      }
+    };
+
+    loadData();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  console.log(pagedataVal);
+  if (pagedataVal.length == 0) {
+    console.log("no data");
+    return null;
+  }
+
   return (
     <>
         <Header className='blackheader' />
@@ -22,7 +63,7 @@ const page = () => {
               <li>
                   <a href="/">Home</a>
                 </li>
-                <li><a href='/'>{slug.replace(/-/g, " ")}</a></li>
+                <li><a href={'/projects/' + pagedataVal.projects[0].construction.cname + '/' + pagedataVal.projects[0].construction.slug}>{pagedataVal.projects[0].construction.proname}</a></li>
                 <li>Construction Updates
                 </li>
                
@@ -38,7 +79,7 @@ const page = () => {
                                <div className='row'>
                                     <div className='col-lg-12 col-12'>
                                         <div className='mediasection m-0'>
-                                              <ConstructionUpdates />                                        
+                                              <ConstructionUpdates pagedata={pagedataVal} year={yearVal} month={monthVal}/>                                        
                                         </div>
                                 </div>
                             </div>

@@ -16,33 +16,13 @@ const Overview = () => {
                 </div>
                 <div className="col-lg-8 col-12" data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true">
                 <p>
-                  Trust is earned. Trust is the outcome of keeping your
-                  word and delivering excellence again and again. SS
-                  Group, Gurugram's leading real estate developer, with
-                  almost 29+ years of unwavering commitment, has
-                  maintained an envious track record of completed
-                  residential and commercial developments in the city,
-                  through a combination of financial, engineering and
-                  design expertise. As a Company we believe in creating
-                  people centric developments while being responsible for
-                  our planet at the same time.
+                Trust is not bestowed easily but is the result of consistent adherence to promises and a dedication to excellence. SS Group, the foremost real estate developer in Gurugram with nearly three decades of steadfast dedication, enjoys an impressive history of successfully executed residential and commercial projects within the city. This accomplishment stems from a blend of financial acumen, engineering proficiency, and innovative design. Our company ethos prioritizes the creation of people-centric developments while also upholding environmental responsibility.
                 </p>
                 <p>
-                  Our dedicated team of architects and engineers focuses
-                  on innovative technology with exceptional quality
-                  control. They create landmarks that are innovative and
-                  inspiring, fairly appreciated both for their design and
-                  quality as well as their future value. Some of our
-                  notable projects delivered in Gurugram include The
-                  Hibiscus, SS The Leaf, SS Plaza, SS Omnia, Southend,
-                  Aaron Ville, and The Lilac, to name a few.
+                Our committed team of architects and engineers is dedicated to leveraging cutting-edge technology while maintaining rigorous quality control standards. They craft iconic landmarks that stand out for their innovation and inspiration, earning well-deserved recognition for both their design excellence and enduring value. Among our noteworthy projects successfully delivered in Gurugram, you'll find The Hibiscus, SS The Leaf, SS Plaza, SS Omnia, Southend, Aaron Ville, and The Lilac, just to name a few.
                 </p>
                 <p>
-                  With one of the largest land banks in Delhi NCR, the
-                  Group is committed to developing state-of-the-art real
-                  estate masterpieces. As a step-up on its ladder of
-                  success, the Group is diversifying into Brewery,
-                  Healthcare, Hospitality and Education.
+                With one of the largest land banks in Delhi NCR, the Group is committed to developing state-of-the-art real estate masterpieces.
                 </p>
                 </div>
                </div>

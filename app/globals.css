@@ -4659,12 +4659,15 @@ figure.snip0016 p, figure.snip00161 p {
   }
   .col-lg-1.col-12.d-flex.align-items-center.p-0 span.realstatebtn.mt-2.col-12.m-auto {
     border-radius: 4px;
-    height: 40px;
+    height: auto;
     max-width: 120px;
     font-size: 13px;
     letter-spacing: 2px;
 }
-  
+.col-lg-1.col-12.d-flex.align-items-center.p-0 span.realstatebtn.mt-2.col-12.m-auto strong.mobile-show.fw-normal {
+  text-align: center;
+  line-height: 40px;
+}
   .projectfilter .MuiSelect-select {
     text-align: left;
     padding: 15px;

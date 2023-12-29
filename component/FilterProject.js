@@ -94,7 +94,7 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
           </Select>
         </div>
         <div className='col-lg-1 col-12 d-flex align-items-center p-0'>
-            <span onClick={handleReset} className='realstatebtn mt-2 col-12 m-auto cursor-pointer'><strong className='mobile-show fw-normal'>RESET</strong></span>
+            <span onClick={handleReset} className='realstatebtn mt-2 col-12 m-auto cursor-pointer mobile-show'><strong className='mobile-show fw-normal'>RESET</strong></span>
             <span onClick={handleReset} ><strong className='text-uppercase cursor-pointer desktop-show'><Reset /></strong></span>
           </div>
         </div>

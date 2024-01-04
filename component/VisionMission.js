@@ -38,7 +38,7 @@ const VisionMission = () => {
       <div className="container">
           <div className="row">
             <div className="col-lg-9 m-auto col-12 float-start sm-padding-0">
-                <div className='col-12 flaot-start flex-center mb-5'>
+                <div className='col-12 flaot-start flex-center mb-5 text-center'>
                 <div className='heading p-0 h-auto border-0 mb-2'>
                 <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>OUR CORPORATE ETHOS UNVEILED</h3>
               </div>
@@ -51,8 +51,7 @@ const VisionMission = () => {
               </div>
                 </div>
                 <div className="col-lg-8 col-12" data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true">
-                <p>Our vision is to become an organization synonymous with quality, innovation and integrity in the field of real estate development and to be number one when it comes to customer preference.
-                </p>
+                <p>Our vision is to become an organization synonymous with quality, innovation, and integrity in the field of real estate development and to be number one when it comes to customer preference. </p>
                 </div>
                </div>
               </div>

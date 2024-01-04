@@ -32,7 +32,8 @@ img {
   max-width: 100%;
   height: auto;
 }
-ul{
+
+ul {
   padding: 0;
 }
 
@@ -356,6 +357,7 @@ header {
   line-height: 90px;
   font-family: 'Adobe Garamond Pro';
 }
+
 .countercont {
   position: relative;
   top: -20px;
@@ -1431,7 +1433,8 @@ figure.snip0016 p {
 }
 
 figure.snip0016 p,
-.mantainde p, figure.snip00161 p {
+.mantainde p,
+figure.snip00161 p {
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 2px;
@@ -1444,7 +1447,8 @@ figure.snip0016 h4 {
   transition-delay: 0.3s;
 }
 
-figure.snip0016 p, figure.snip00161 p {
+figure.snip0016 p,
+figure.snip00161 p {
   font-weight: 300;
   -webkit-transform: translate3d(0%, 30%, 0);
   transform: translate3d(0%, 30%, 0);
@@ -2345,8 +2349,13 @@ header.blackheader .fixed .categories ul li {
 h3.effectheading.aos-init.aos-animate {
   overflow: hidden;
   white-space: nowrap;
-  letter-spacing: 0.15em;
   animation: typing 1s steps(40, end), fade-in 1s 1s ease forwards;
+}
+
+.heading p {
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 10px;
 }
 
 @keyframes typing {
@@ -3232,7 +3241,7 @@ header.blackheader .fixed .hemburgur:hover span {
   width: 80px;
   height: 80px;
   margin: 0 auto;
-  background-color:#ebebeb;
+  background-color: #ebebeb;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -3324,36 +3333,45 @@ li.page-item.active {
 .realstatebtn:before {
   background-color: var(--primary-color) !important;
 }
-.jobheading span, .jobdescription span {
+
+.jobheading span,
+.jobdescription span {
   width: 20px;
   margin-right: 10px;
 }
+
 .jobdescription span {
   width: 25px;
   margin-right: 2px;
   position: relative;
   left: -5px;
 }
+
 .jobdescription {
   margin: 10px 0 15px 0;
 }
+
 .jobheading p {
   width: 90%;
 }
+
 .tbreadcrum {
   top: 12vh;
 }
 
 .home_slidertext span a.fw-500.text-black {
-    background-image: linear-gradient(to right, #000, #000 50%, rgb(89 89 91 / 0%) 100%);
+  background-image: linear-gradient(to right, #000, #000 50%, rgb(89 89 91 / 0%) 100%);
 }
-.z-index-9{
+
+.z-index-9 {
   z-index: 1;
 }
+
 .comingsoon img {
   height: 100vh;
   object-fit: cover;
 }
+
 .snip00161 {
   border: solid 1px #f6f3f3;
   float: left;
@@ -3364,13 +3382,16 @@ li.page-item.active {
   position: relative;
   top: -6px;
 }
+
 .fitleroption figure.snip0016 {
-  min-height: 500px;
+  min-height: 530px;
   display: flex;
 }
+
 .fitleroption figure.snip0016 img {
   object-fit: cover;
 }
+
 .projectlogo {
   text-align: center;
   width: 100%;
@@ -3378,6 +3399,7 @@ li.page-item.active {
   margin-top: 70px;
   float: left;
 }
+
 .projectlogo img {
   width: 250px;
 }
@@ -3390,6 +3412,60 @@ li.page-item.active {
   width: 60%;
   border-radius: 50px;
 }
+
+.prodisclaimer p {
+  margin: 0;
+  line-height: initial;
+  color: #8d8d8d;
+}
+
+.resetbtn button {
+  background: var(--secondary-color);
+}
+
+.approachrow {
+  width: 48%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  margin: 15px 1%;
+  gap: 15px;
+  border: solid 1px #ededed;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .08);
+  align-items: center;
+  border-right: solid 5px var(--primary-color);
+}
+
+.approachimg {
+  width: 40%;
+}
+
+.approachcontent {
+  width: 60%;
+  padding-right: 20px;
+}
+
+.approachcontent h4 {
+  font-size: 28px;
+  line-height: 40px;
+  font-family: var(--headingfont);
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.approachcontent p {
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  margin: 0;
+}
+
+.approachrow:nth-child(even) {
+  margin-top: 5%;
+  border-right: solid 5px var(--secondary-color);
+}
+
 @media all and (max-width:1700px) {
   .lefspace {
     width: 90%;
@@ -3421,9 +3497,11 @@ li.page-item.active {
   .fulltextcolumn {
     width: 83vw;
   }
+
   .tbreadcrum {
     top: 14vh;
-}
+  }
+
   .hiddentextcolumn .scroll-animated-text {
     right: 105%;
   }
@@ -3665,19 +3743,22 @@ li.page-item.active {
     width: 80%;
   }
 
-  figure.snip0016 h4, .snip00161 h4 {
+  figure.snip0016 h4,
+  .snip00161 h4 {
     font-size: 20px;
     line-height: 30px;
   }
 
-  figure.snip0016 p, figure.snip00161 p{
+  figure.snip0016 p,
+  figure.snip00161 p {
     font-size: 12px;
     letter-spacing: 1.5px;
   }
 
-  .home_slidertext a{
+  .home_slidertext a {
     font-size: 12px;
   }
+
   .fulltextcolumn {
     width: 96vw;
   }
@@ -3928,11 +4009,16 @@ li.page-item.active {
 }
 
 @media all and (max-width:990px) {
-  .col-12.float-start.d-flex.align-items-center.p-4.justify-content-between.aos-init.aos-animate {display: grid !important;padding: 15px !important;gap: 15px;}
+  .col-12.float-start.d-flex.align-items-center.p-4.justify-content-between.aos-init.aos-animate {
+    display: grid !important;
+    padding: 15px !important;
+    gap: 15px;
+  }
 
   .category-section .projectslider {
     margin: 2%;
-}
+  }
+
   .filterpadding .col-lg-3.col-12,
   .galleryfilterstn .col-lg-4.col-12 {
     margin: 5px 0;
@@ -3940,7 +4026,8 @@ li.page-item.active {
 
   .tbreadcrum {
     top: 10vh;
-}
+  }
+
   .projectbanner {
     height: 95vh;
   }
@@ -3952,9 +4039,11 @@ li.page-item.active {
   .aboutuspage {
     margin-top: -25px;
   }
+
   .heading h3 {
     line-height: 40px;
-}
+  }
+
   .effectheading.newheading {
     width: 100%;
     float: left;
@@ -3967,10 +4056,12 @@ li.page-item.active {
     width: 100%;
     text-align: center;
   }
-  .projectlogo{
+
+  .projectlogo {
     margin-top: 25px;
     margin-bottom: 10px;
   }
+
   .filterpadding {
     padding: 20px 0 40px 0;
   }
@@ -3986,6 +4077,36 @@ li.page-item.active {
 
   .togmenu {
     width: 90%;
+  }
+
+  .approachrow,
+  .approachrow:nth-child(even) {
+    width: 100%;
+    margin: 0 0 25px 0;
+    flex-wrap: wrap;
+    border-bottom: solid 5px var(--primary-color);
+    border-right: 0;
+    gap: 0;
+  }
+
+  .approachrow:nth-child(even) {
+    border-bottom: solid 5px var(--secondary-color);
+  }
+
+  .approachcontent h4 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .approachimg,
+  .approachcontent,
+  .approachimg img {
+    width: 100%;
+  }
+
+  .approachcontent {
+    padding: 15px;
+    text-align: center;
   }
 
   .css-heg063-MuiTabs-flexContainer {
@@ -4069,7 +4190,7 @@ li.page-item.active {
     padding: 20px 0;
     width: 100%;
     font-size: 13px;
-}
+  }
 
   .menubar ul li a {
     border-right: solid 1px #d7d7d7;
@@ -4217,11 +4338,14 @@ li.page-item.active {
     top: 50%;
     height: 60%;
     transform: translateY(-50%);
-}
-figure.snip0016 p, figure.snip00161 p {
-  font-size: 11px;
-  line-height: 16px;
-}
+  }
+
+  figure.snip0016 p,
+  figure.snip00161 p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
   .banner {
     height: 50vh;
   }
@@ -4361,21 +4485,46 @@ figure.snip0016 p, figure.snip00161 p {
     white-space: inherit;
     font-size: 21px;
     letter-spacing: 1px;
-}
+  }
 
   .heading h1 {
     padding-top: 10px;
   }
+
+  .projectfilter .ssgroupbtn button {
+    border-radius: 0;
+    margin: 5px 0;
+  }
 }
 
-@media all and (max-width:630px) {
-  
-.hreranumber p {
-  width: 100%;
-}
-.projectlogo img {
-  width: 200px;
-}
+@media all and (max-width:767px) {
+
+  .hreranumber p {
+    width: 100%;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .runtext,
+  h3.effectheading.aos-init.aos-animate {
+
+    white-space: break-spaces;
+  }
+
+  .heading h3,
+  .projectcontent h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .fitleroption figure.snip0016 {
+    min-height: 350px;
+  }
+
+  .projectlogo img {
+    width: 200px;
+  }
+
   body {
     line-height: 26px;
     font-size: 16px;
@@ -4626,12 +4775,15 @@ figure.snip0016 p, figure.snip00161 p {
     max-width: 100%;
   }
 
-  .projectwrap .col-12.float-start, .web-container {
+  .projectwrap .col-12.float-start,
+  .web-container {
     padding: 0;
   }
+
   .accordions .MuiButtonBase-root {
     font-size: 15px;
-}
+  }
+
   .bannerwrap {
     gap: 0;
   }
@@ -4669,21 +4821,24 @@ figure.snip0016 p, figure.snip00161 p {
     float: left;
     text-align: center;
   }
+
   .col-lg-1.col-12.d-flex.align-items-center.p-0 span.realstatebtn.mt-2.col-12.m-auto {
     border-radius: 4px;
     height: auto;
     max-width: 120px;
     font-size: 13px;
     letter-spacing: 2px;
-}
-.col-lg-1.col-12.d-flex.align-items-center.p-0 span.realstatebtn.mt-2.col-12.m-auto strong.mobile-show.fw-normal {
-  text-align: center;
-  line-height: 40px;
-}
+  }
+
+  .col-lg-1.col-12.d-flex.align-items-center.p-0 span.realstatebtn.mt-2.col-12.m-auto strong.mobile-show.fw-normal {
+    text-align: center;
+    line-height: 40px;
+  }
+
   .projectfilter .MuiSelect-select {
     text-align: left;
     padding: 15px;
-}
+  }
 
   .sscompleted {
     overflow: hidden;
@@ -4713,6 +4868,10 @@ figure.snip0016 p, figure.snip00161 p {
 }
 
 @media all and (max-width:480px) {
+  .hreranumber p {
+    font-size: 16px;
+    line-height: 20px;
+}
   .effectheading.newheading {
     font-size: 40px;
     line-height: 40px;
@@ -4721,11 +4880,13 @@ figure.snip0016 p, figure.snip00161 p {
   .ssgroupformtext .text-transform h2 {
     font-size: 4em;
   }
+
   .btns.rounded::before {
     border-radius: 40px;
     width: 40px;
     height: 40px;
   }
+
   .vimision .effectheading.newheading {
     font-size: 36px;
   }

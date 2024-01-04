@@ -11,19 +11,18 @@ import { Commitment } from './svg-components/Commitment';
 const circleData = [
   {
     title: 'TRUST',
-    description: 'Trust is the key foundation to build any relation.',
+    description: 'Trust is the key foundation to building any relationship.',
     icon: <Integrity />,
   },
   {
     title: 'RELIABILITY',
-    description: 'Reliability towards our business practices has helped ensure that our investors have faith in us.',
+    description: 'Reliability towards our business practices has helped ensure that faith in us.',
     icon: <Sustainable />,
   },
   {
     title: 'COMMITMENT',
-    description: 'We believe in always delivering upon our promises, irrespective of the circumstances.',
+    description: 'We believe in always delivering upon our promises, irrespective of their circumstances.',
     icon: <Commitment />,
-    // image: 'commitment.png'
   },
   {
     title: 'QUALITY',
@@ -32,7 +31,7 @@ const circleData = [
   },
   {
     title: 'INNOVATIVE',
-    description: 'We are dedicated to bringing innovative technologies to planning, design and construction to improve building reliability, functionality and value.',
+    description: 'We keep evolving our designs and processes, constantly striving for improvement.',
     icon: <Innovative />,
   },
 ];

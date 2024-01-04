@@ -9,59 +9,61 @@ export default class DynamicSliders extends Component {
       nav1: null,
       nav2: null,
       circleContent: [
-        {
-          imageSrc: '/cendana-journey.webp',
-          heading: '2023',
-          title: 'SS CENDANA',
-          text: 'Sector – 83, Gurugram\nThe perfect blend of luxury and comfort',
-        },
+       
         {
           imageSrc: '/strada-journey.webp',
           heading: '2023',
           title: 'SS STRADA',
-          text: 'Sector – 84, Gurugram\nThe next-door go-to-shopping destination',
+          text: 'Sector – 84, NEW Gurugram\nThe next-door go-to-shopping destination',
+        },
+        {
+          imageSrc: '/cendana-journey.webp',
+          heading: '2023',
+          title: 'SS CENDANA',
+          text: 'Sector – 83, NEW Gurugram\nThe perfect blend of luxury and comfort',
         },
         {
           imageSrc: '/linden-floors-journey.webp',
           heading: '2021',
           title: 'SS LINDEN FLOORS',
-          text: 'Sector – 84-85, Gurugram\nIndependent living floors for your exclusive lifestyle',
+          text: 'Sector – 84-85, NEW Gurugram\nIndependent living floors for your exclusive lifestyle',
         },
         {
           imageSrc: '/ss100-journey.webp',
           heading: '2020',
           title: 'SS 100',
-          text: 'Sector – 49, Gurugram\nA premium commercial hub of shop, dine and work',
+          text: 'Sector – 49, Gurugram\nA premium commercial hub of shop, dining and work',
         },
         {
           imageSrc: '/highpoint-journey.webp',
           heading: '2019',
           title: 'SS HIGHPOINT',
-          text: 'Sector – 86, Gurugram\nOne-of-its-kind neighborhood shopping & leisure destination',
+          text: 'Sector – 86, NEW Gurugram\nOne-of-its-kind neighbourhood shopping & leisure destination',
         },
         {
           imageSrc: '/omnia-journey.webp',
           heading: '2014',
           title: 'SS OMNIA',
-          text: 'Sector – 86, Gurugram\nAn open market retail-cum-office destination',
+          text: 'Sector – 86, NEW Gurugram\nAn open market retail-cum-office destination',
         },
         {
           imageSrc: '/leaf-journey.webp',
           heading: '2013',
           title: 'THE LEAF',
-          text: 'Sector – 85, Gurugram\nExquisite homes above all else',
+          text: 'Sector – 85, NEW Gurugram\nExquisite homes above all else',
+        },
+        
+        {
+          imageSrc: '/almeria-journey.webp',
+          heading: '2011',
+          title: 'ALMERIA',
+          text: 'Sector – 84, NEW Gurugram\nAn exclusive low-rise independent residential lifestyle',
         },
         {
           imageSrc: '/coralwood-journey.webp',
           heading: '2011',
           title: 'THE CORALWOOD',
-          text: 'Sector – 84, Gurugram\nAn upscale yet affordable residential township',
-        },
-        {
-          imageSrc: '/almeria-journey.webp',
-          heading: '2011',
-          title: 'ALMERIA',
-          text: 'Sector – 84, Gurugram\nAn exclusive low-rise independent residential lifestyle',
+          text: 'Sector – 84, NEW Gurugram\nAn upscale yet affordable residential township',
         },
         {
           imageSrc: '/plaza-journey.webp',
@@ -73,36 +75,36 @@ export default class DynamicSliders extends Component {
           imageSrc: '/hibiscus-journey.webp',
           heading: '2009',
           title: 'THE HIBISCUS',
-          text: 'Sector – 50, Gurugram\nA luxury township low in density and high on esteem',
+          text: 'Sector – 50, Gurugram\nA luxury township low in density and high in esteem',
         },
         {
           imageSrc: '/aaron-ville-journey.webp',
           heading: '2009',
           title: 'AARON VILLE',
-          text: 'Sector – 48, Gurugram\nPremium villas with unparalleled luxury, grace, and sophistication',
+          text: 'Sector – 48, Gurugram\nPremium villas with unparalleled luxury, grace and sophistication',
         },
         {
           imageSrc: '/lilac-journey.webp',
           heading: '2009',
           title: 'THE LILAC (I & 2)',
-          text: 'Sector – 49, Gurugram\nAn affordable housing and comfortable living',
+          text: 'Sector – 49, Gurugram\nAffordable housing and comfortable living',
         },
         {
           imageSrc: '/delighted-journey.webp',
           heading: '2008',
           title: 'DELIGHT AND SPLENDOURS',
-          text: 'Sector – 57, Gurugram\nThe high rise condominium complex with modern amenities',
+          text: 'Sector – 57, Gurugram\nHigh-rise condominium complex with modern amenities',
         },
         {
           imageSrc: '/paladian-journey.webp',
           heading: '2008',
           title: 'THE PALLADIANS',
-          text: 'Sector – 47-52, Gurugram\nAn independent luxury floors',
+          text: 'Sector – 47-52, Gurugram\nIndependent luxury floors',
         },
         {
           imageSrc: '/georgion-residency-journey.webp',
           heading: '2004',
-          title: 'GEORGIAL RESIDENCY',
+          title: 'GEORGIA RESIDENCY',
           text: 'Sector – 50-51, Gurugram\nA distinctive residential lifestyle',
         },
         {
@@ -121,7 +123,7 @@ export default class DynamicSliders extends Component {
           imageSrc: '/southend-floor-journey.webp',
           heading: '2002',
           title: 'SOUTHEND FLOORS',
-          text: 'Sector – 49, Gurugram\nLimited floors ranging from 180 sq.yds. to 300 sq.yds.',
+          text: 'Sector – 49, Gurugram\nLimited independent floors ranging from 180 sq. yd. to 300 sq. yd.',
         },
         {
           imageSrc: '/southend-journey.webp',
@@ -167,9 +169,14 @@ export default class DynamicSliders extends Component {
     return (
         <div className="col-12 float-start journey">
           <div className="container">
-            <div className="col-12 text-center title">
+            {/* <div className="col-12 text-center title">
               <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>OUR JOURNEY</h3>
-            </div>
+            </div> */}
+            <div className="col-12 flaot-start flex-center mb-5">
+            <div className='heading p-0 h-auto border-0 mb-2'>
+                <h3 className='effectheading text-center' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>A CONTINUOUS JOURNEY <br/>OF SUCCESSFUL DEVELOPMENTS</h3>
+              </div>
+              </div>
             <div className="col-lg-10 m-auto col-12 position-relative image-effect-section" data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="800" data-aos-once='true'>
               <Slider
                 asNavFor={this.state.nav2}

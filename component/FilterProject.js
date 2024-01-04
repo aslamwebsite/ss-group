@@ -24,24 +24,24 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
       [name]: value,
     }));
 
-    if (name === "location") {
-      const typeVal = formData.type;
-      const statusVal = formData.statusval;
-      const url = `${window.location.pathname}?location=${value}&type=${typeVal}&statusval=${statusVal}`;
-      window.location.href = url;
-      }
-    if (name === "type") {
-        const locationVal = formData.location;
-        const statusVal = formData.statusval;
-        const url = `${window.location.pathname}?location=${locationVal}&type=${value}&statusval=${statusVal}`;
-        window.location.href = url;
-        }
-    if (name === "statusval") {
-          const locationVal = formData.location;
-          const typeVal = formData.type;
-          const url = `${window.location.pathname}?location=${locationVal}&type=${typeVal}&statusval=${value}`;
-          window.location.href = url;
-          }
+    // if (name === "location") {
+    //   const typeVal = formData.type;
+    //   const statusVal = formData.statusval;
+    //   const url = `${window.location.pathname}?location=${value}&type=${typeVal}&statusval=${statusVal}`;
+    //   window.location.href = url;
+    //   }
+    // if (name === "type") {
+    //     const locationVal = formData.location;
+    //     const statusVal = formData.statusval;
+    //     const url = `${window.location.pathname}?location=${locationVal}&type=${value}&statusval=${statusVal}`;
+    //     window.location.href = url;
+    //     }
+    // if (name === "statusval") {
+    //       const locationVal = formData.location;
+    //       const typeVal = formData.type;
+    //       const url = `${window.location.pathname}?location=${locationVal}&type=${typeVal}&statusval=${value}`;
+    //       window.location.href = url;
+    //       }
 
   };
 
@@ -93,12 +93,28 @@ const FilterProject = ({ filterData, searchFloc, searchFtype, searchFstatus, ini
             ))}
           </Select>
         </div>
-        {searchFloc ?
-        <div className='col-lg-1 col-12 d-flex align-items-center p-0'>
+        <div className='col-lg-3 col-12 m-auto ssgroupbtn'>
+         <div className="row">
+          <div className="col-lg-6">
+          <Button type="submit" variant="contained" color="primary" className='col-12 realstatebtn'>
+            <span className='text-white'> Submit</span>
+            </Button>
+          </div>
+          {(searchFloc || searchFtype || searchFstatus) ?
+          <div className="col-lg-6 resetbtn">            
+          <Button type="button" variant="contained" color="primary" className='col-12 realstatebtn' onClick={handleReset}>
+            <span className='text-white'>Reset</span>
+          </Button>
+          </div>
+          : null}
+         </div>
+        </div>
+       
+        {/* <div className='col-lg-1 col-12 d-flex align-items-center p-0'>
             <span onClick={handleReset} className='realstatebtn mt-2 col-12 m-auto cursor-pointer mobile-show'><strong className='mobile-show fw-normal'>RESET</strong></span>
             <span onClick={handleReset} ><strong className='text-uppercase cursor-pointer desktop-show'><Reset /></strong></span>
-          </div>
-        : null}
+          </div> */}
+        
         </div>
     </form>
   );

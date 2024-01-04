@@ -10,7 +10,7 @@ const Footer = ({className}) => {
         <footer className={`pb-5 ${className}`} data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>
             <div className="container">
              <div className="row">
-             <div className="d-flex align-items-start justify-content-between flex-wrap">             
+             <div className="d-flex align-items-start justify-content-between flex-wrap p-0">             
                <div className="col-lg-1 col-12 position-relative desktop-show">
                <div className="text-transform">
                <h2 className="d-flex text-center">
@@ -22,8 +22,6 @@ const Footer = ({className}) => {
                   <span>O</span>
                   <span>U</span>
                   <span>P</span>
-               
-                 
                   </h2>
                </div>
                </div>
@@ -62,11 +60,11 @@ Sector- 44, Gurugram,<br />
                   </div>
                </div>
             </div>
-            <div className="col-12 float-left">
+            <div className="col-12 float-start">
                 <div className="col-lg-11 col-12 float-end border-top border-color mt-5 pt-2 copyrights">
                 <div className="row">
                     <div className="col-lg-6 col-12 sm-padding-0">
-                      <p>&copy; {currentYear} | All Rights Reserved. | <Link href='/privacy-policy'>Privacy Policy</Link> | <Link href='/disclaimer'>Disclaimer</Link></p>
+                      <p>&copy; {currentYear} SS Group | All rights reserved. | <Link href='/privacy-policy'>Privacy Policy</Link> | <Link href='/disclaimer'>Disclaimer</Link></p>
                     </div>
                     <div className="col-lg-6 col-12 text-end  sm-padding-0">
                       <p><Link href="https://triverseadvertising.com/" target="_blank">site : triverse</Link></p>

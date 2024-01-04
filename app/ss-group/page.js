@@ -11,6 +11,7 @@ import Overview from "@/component/Overview";
 import React from "react";
 import MDDesk from "@/component/MDDesk";
 import VisionMission from "@/component/VisionMission";
+import Approach from "@/component/Approach"
 
 const page = () => {
   const aboutUsImage = "/about-banner.webp";
@@ -87,7 +88,7 @@ const page = () => {
       startValue: 100,
       endValue: 146,
       speed: 200,
-      label: "LAKH SQ.FT. IN PLANNING",
+      label: "LAKH SQ.FT. UNDER PLANNING",
       Plus: "+",
     },
     {
@@ -144,6 +145,7 @@ const page = () => {
         <section ref={journeyRef}>
           <Journey />
         </section>
+        <Approach />
       </main>
       <Footer />
     </>

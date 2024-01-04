@@ -108,7 +108,6 @@ const page = () => {
             </div>
           </div>
         </section>
-        
         <LocationMap locationData={project.locationData} />
         <GallerySlider galleryData={project.sliderContent} />
         {(project.seotitle && project.seodesc) ? 
@@ -117,7 +116,7 @@ const page = () => {
         <QuickLinks const_status={project.const_status} ebroucher={project.ebroucher} application={project.application} slug={slug} virtualtour={project.virtualtour}/>
         <Accordian faqData={project.faq} />
         {project.rera && (
-        <section>
+        <section data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="800" data-aos-once='true'>
           <div className='hreranumber'>
               <div className='container'>
                   <div className='row'>
@@ -131,6 +130,20 @@ const page = () => {
           </div>
         </section>
         )}
+         {project.disclaimer && (
+           <section data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="800" data-aos-once='true'>
+        
+            <div className='container'>
+                <div className='row'>
+                    <div className='web-container'>
+         <div className="col-12 float-start prodisclaimer">
+         <p> <small>{project.disclaimer}</small></p>
+         </div>
+         </div>
+                  </div>
+              </div>
+        </section>
+         )}
       </main>
        )}
       <Footer />

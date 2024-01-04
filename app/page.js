@@ -76,14 +76,15 @@ export default function Home() {
     },
   ];
   const homeFaqData = [
-    { question: 'What type of properties does SS Group offer?', answer: 'SS Group offers a wide range of residential and commercial properties, including apartments, villas, shops, anchor stores and office spaces. Explore all our properties here at <a href="http://www.ssgroup-india.com" target="_blank">www.ssgroup-india.com</a>' },
-    { question: 'Where are SS Group projects currently located?', answer: 'Our projects are strategically located in prime areas of New Gurugram, offering easy access, excellent connectivity and excellent growth. Find details about our residential or commercial project locations here at <a href="http://www.ssgroup-india.com" target="_blank">www.ssgroup-india.com</a>'},
-    { question: 'What sets SS Group apart from other real estate developers?', answer: 'SS Group is renowned for its dedication to quality construction, innovative designs, and customer-centric approach. Learn more about us at <a href="http://www.ssgroup-india.com/ss-group" target="_blank">ssgroup-india.com about us page</a>.'},
-    { question: 'What is SS Group commitment to sustainability in real estate development?', answer: 'We are dedicated to sustainable development practices, incorporating eco-friendly materials, energy-efficient designs, and green building techniques into our projects.'},
-    { question: 'Does SS Group projects are approved by banks?', answer: 'Yes, we work with reputed financial institutions or banks to provide financial options for qualified homebuyers.'},
-    { question: 'What is the expected completion timeline for your projects?', answer: 'Completion timelines vary by project. Please visit the individual project pages for specific information.'},
-    { question: 'Where can I see a sample flat of SS Group new projects?', answer: 'To know more about SS Group new launches, call <a href="tel:7053109109">7053 109 109</a>'},
-    { question: 'How can I contact SS Group? ', answer: 'For property-related queries, you can fill out the online form on the website or call us at <a href="tel:7053109109">7053 109 109</a>.'},
+    { question: 'What is SS Group?', answer: 'SS Group Group is a leading real estate developer in Gurugram, India, that focuses on creating luxury and community-driven residential and commercial properties.' },
+    { question: 'What are the different type of properties offered by SS Group?', answer: 'SS Group offers a wide range of residential and commercial properties, including apartments, penthouses, villas, shops, anchor stores and office spaces. Explore all our properties here at <a href="http://www.ssgroup-india.com" target="_blank">www.ssgroup-india.com</a>'},
+    { question: 'Where are SS Group projects currently located?', answer: 'Our projects are strategically located in prime areas of Gurugram, offering easy access, excellent connectivity, and excellent growth. Find details about our residential or commercial project locations here at <a href="http://www.ssgroup-india.com/" target="_blank">ssgroup-india.com </a>.'},
+    { question: 'What is the expected completion timeline for your projects?', answer: 'Completion timelines vary by project. Please visit the individual project pages <a href="http://www.ssgroup-india.com/" target="_blank">ssgroup-india.com</a> for specific information.'},
+    { question: 'What sets SS Group apart from other real estate developers?', answer: 'SS Group is renowned for its dedication to quality construction, innovative designs, and customer-centric approach. Learn more about us at the ABOUT US page on <a href="http://www.ssgroup-india.com/ss-group" target="_blank">ssgroup-india.com</a>'},
+    { question: 'Does SS Group have any ongoing or upcoming projects?', answer: 'Yes, SS Group has several ongoing and upcoming residential and commercial projects in New Gurugram. To know more about SS Groups new launches, <a href="tel:7053109109">call 7053 109 109</a>'},
+    { question: 'Are SS Group projects approved by banks?', answer: 'Yes, SS Group has tie-ups with leading banks and financial institutions to offer home loans and other financial assistance to property buyers.'},
+    { question: "What is SS Group's commitment to sustainability in real estate development?", answer: 'We are dedicated to creating sustainable practices, incorporating eco-friendly materials, energy-efficient designs, and green building techniques into our projects.'},
+    { question: "How can I contact SS Group? ", answer: 'For property-related queries, you can fill out the online form on the website or call us at <a href="tel:7053109109.">7053 109 109.</a>'},
 ];
   return (
     <>

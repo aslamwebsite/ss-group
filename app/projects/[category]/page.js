@@ -147,16 +147,20 @@ const page = () => {
     const queryParams = new URLSearchParams(queryString);
     const location = queryParams.get("location") || "";
 
-    if (location) {
-      smoothRef2.current.scrollIntoView({ behavior: "smooth" });
-    }
+    // if (location) {
+    //   smoothRef2.current.scrollIntoView({ behavior: "smooth" });
+    // }
   }, []);
 
   return (
     <>
-      <Header />
+    {(!location && !type && !statusval) ?
+      <Header  />
+      : <Header className='blackheader'/>}
       <main className="d-flex flex-wrap float-start col-12">
         <section className="overflow-hidden ">
+          {/* Condition start*/}
+          {(!location && !type && !statusval) ?
           <div className="bannerimage position-relative full-height">
             <div
               className={`projectbanner ${isZoomed ? "zoom-in" : "zoom-out"}`}
@@ -182,7 +186,11 @@ const page = () => {
               <h2>{text}</h2>
             </div>
           </div>
+          : null}
+          {/* Condition end */}
+          {(!location && !type && !statusval) ?
           <ScrollDown targetRef={smoothRef} />
+          : null}
           <div className="projectfilter float-start col-12" ref={smoothRef}>
             <div className="col-12 float-start">
               <div className="container">

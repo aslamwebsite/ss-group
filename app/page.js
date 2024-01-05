@@ -76,7 +76,7 @@ export default function Home() {
     },
   ];
   const homeFaqData = [
-    { question: 'What is SS Group?', answer: 'SS Group Group is a leading real estate developer in Gurugram, India, that focuses on creating luxury and community-driven residential and commercial properties.' },
+    { question: 'Which is the best real estate company to buy a property in Gurugram?', answer: 'SS Group is a leading real estate developer in Gurugram, India, that focuses on creating luxury and community-driven residential and commercial properties.' },
     { question: 'What are the different type of properties offered by SS Group?', answer: 'SS Group offers a wide range of residential and commercial properties, including apartments, penthouses, villas, shops, anchor stores and office spaces. Explore all our properties here at <a href="http://www.ssgroup-india.com" target="_blank">www.ssgroup-india.com</a>'},
     { question: 'Where are SS Group projects currently located?', answer: 'Our projects are strategically located in prime areas of Gurugram, offering easy access, excellent connectivity, and excellent growth. Find details about our residential or commercial project locations here at <a href="http://www.ssgroup-india.com/" target="_blank">ssgroup-india.com </a>.'},
     { question: 'What is the expected completion timeline for your projects?', answer: 'Completion timelines vary by project. Please visit the individual project pages <a href="http://www.ssgroup-india.com/" target="_blank">ssgroup-india.com</a> for specific information.'},

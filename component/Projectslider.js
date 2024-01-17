@@ -66,10 +66,7 @@ const Projectslider = ({ categoryData }) => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <span className="colorborder position-relative">
-                  <em></em>
-                </span>
-                <h3>Homes BY SS GROUP</h3>
+                <h2>Homes BY SS GROUP</h2>
               </div>
               <div
                 className="col-11 float-end homes"
@@ -108,7 +105,7 @@ const Projectslider = ({ categoryData }) => {
                                     />
                                   ) : null}
                                   <figcaption>
-                                    <h4
+                                    <h3
                                       dangerouslySetInnerHTML={{
                                         __html:
                                           categoryData.homes.LuxuryResidences[
@@ -168,13 +165,13 @@ const Projectslider = ({ categoryData }) => {
                                     />
                                   ) : null}
                                   <figcaption>
-                                    <h4>
+                                    <h3>
                                       {
                                         categoryData.homes.PremiumResidences[
                                           index
                                         ].ProjectName
                                       }
-                                    </h4>
+                                    </h3>
                                     <p>
                                       {
                                         categoryData.homes.PremiumResidences[
@@ -222,7 +219,7 @@ const Projectslider = ({ categoryData }) => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <h3>Retail BY SS GROUP</h3>
+                <h2>Retail BY SS GROUP</h2>
               </div>
               <div
                 className="col-11 float-end homes"
@@ -261,9 +258,9 @@ const Projectslider = ({ categoryData }) => {
                                     />
                                   ) : null}
                                   <figcaption>
-                                    {/* <h4>{categoryData.retail.LuxuryResidences[index].ProjectName}</h4>
+                                    {/* <h3>{categoryData.retail.LuxuryResidences[index].ProjectName}</h3>
                                                 <p>{categoryData.retail.LuxuryResidences[index].location}</p> */}
-                                    <h4
+                                    <h3
                                       dangerouslySetInnerHTML={{
                                         __html:
                                           categoryData.retail.LuxuryResidences[
@@ -322,13 +319,13 @@ const Projectslider = ({ categoryData }) => {
                                     />
                                   ) : null}
                                   <figcaption>
-                                    <h4>
+                                    <h3>
                                       {
                                         categoryData.retail.PremiumResidences[
                                           index
                                         ].ProjectName
                                       }
-                                    </h4>
+                                    </h3>
                                     <p>
                                       {
                                         categoryData.retail.PremiumResidences[
@@ -379,13 +376,13 @@ const Projectslider = ({ categoryData }) => {
                                     />
                                   ) : null}
                                   <figcaption>
-                                    <h4>
+                                    <h3>
                                       {
                                         categoryData.retail.OngoingProjects[
                                           index
                                         ].ProjectName
                                       }
-                                    </h4>
+                                    </h3>
                                     <p>
                                       {
                                         categoryData.retail.OngoingProjects[

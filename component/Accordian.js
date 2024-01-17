@@ -39,7 +39,7 @@ const Accordian = ({ faqData }) => {
                       onChange={() => handleAccordionChange(index)}
                     >
                       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                        {faqItem.question}
+                        <h3>{faqItem.question}</h3>
                       </AccordionSummary>
                       <AccordionDetails>
                         <p dangerouslySetInnerHTML={{ __html: faqItem.answer }} />

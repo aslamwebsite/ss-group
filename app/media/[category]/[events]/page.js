@@ -47,13 +47,13 @@ return (
     <>
         <Header className='blackheader' />
         <main className="d-flex flex-wrap float-start col-12 mt-5">
-        <section>
+        <section>   
                 <div className='media'>
                     <div className='container'>
                         <div className='row'>
                             <div className=' flex-center'>
                                 <div className='col-12 float-start heading text-center'>
-                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>{slug}</h3>
+                                    <h1 className='headingh2 effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>{slug}</h1>
                                 </div>
                                 </div>  
                         </div>

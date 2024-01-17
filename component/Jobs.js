@@ -42,7 +42,7 @@ const Jobs = ({ jobsdata }) => {
                       onChange={() => handleAccordionChange(index)}
                     >
                       <AccordionSummary expandIcon={<ExpandMoreIcon />} className='text-uppercase'>
-                        {jobItem.title}
+                       <h3> {jobItem.title}</h3>
                       </AccordionSummary>
                       <AccordionDetails>
                        <div className='jobheading d-flex flex-wrap'>
@@ -51,7 +51,7 @@ const Jobs = ({ jobsdata }) => {
                        <div className='jobdescription d-flex flex-wrap'>
                        <span><Location /></span> <p className='m-0'>{jobItem.location}</p>
                        </div>
-                        <h6 className='m-0'>Please send your updated resume, mentioning your current CTC, expected salary and notice period to <a href="mailto:hr@ssgroup-india.com">hr@ssgroup-india.com</a></h6>
+                        <p className='m-0'>Please send your updated resume, mentioning your current CTC, expected salary and notice period to <a href="mailto:hr@ssgroup-india.com">hr@ssgroup-india.com</a></p>
                       </AccordionDetails>
                     </Accordion>
                   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '/public/ss-kiavasa.webp'
-import Mbanner from '/public/mkiavasa.jpg'  
+import Mbanner from '/public/mkiavasa.webp'  
 import Image from "next/image";
 // import Enquiry from './Enquiry'
 

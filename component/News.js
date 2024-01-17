@@ -44,7 +44,7 @@ const News = () => {
             <div className='row'>
                 <div className='col-lg-8 col-12 m-auto py-5 text-center' data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>
                     <div className='newstitle'>
-                        <h3 className='col-lg-10 col-12 m-auto'>LATEST UPDATES</h3>
+                        <span className='col-lg-10 col-12 m-auto'>LATEST UPDATES</span>
                     </div>
                 <Slider {...settings}>
       {newsItems.map((newsItem, index) => (

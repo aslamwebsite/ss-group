@@ -15,7 +15,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
               <div className="container">
                 <div className="web-container">
                   <div className="title col-12 float-start text-center">
-                    <h3
+                    <h2
                       data-aos="zoom-in"
                       data-aos-easing="ease-in"
                       data-aos-offset="50"
@@ -23,7 +23,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                       data-aos-once="true"
                     >
                       NEW LAUNCH
-                    </h3>
+                    </h2>
                   </div>
                   <div className="row">
                     {Object.keys(categoryToShow.NewLaunch).map(
@@ -71,12 +71,12 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                 ) : null}
                                 <div className='col-12 float-start d-flex align-items-center p-4 justify-content-between' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'>
                                 <figcaption>
-                                  <h4 className='m-0'>
+                                  <h3 className='m-0'>
                                     {
                                       categoryToShow.NewLaunch[index]
                                         .ProjectName
                                     }
-                                  </h4>
+                                  </h3>
                                   <p>
                                     {
                                       categoryToShow.NewLaunch[index]
@@ -103,7 +103,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
               <div className="container">
                 <div className="web-container">
                   <div className="title col-12 float-start text-center">
-                    <h3
+                    <h2
                       data-aos="zoom-in"
                       data-aos-easing="ease-in"
                       data-aos-offset="50"
@@ -111,7 +111,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                       data-aos-once="true"
                     >
                       Ongoing
-                    </h3>
+                    </h2>
                   </div>
                   <div className="row">
                     {Object.keys(categoryToShow.LuxuryResidences).map(
@@ -158,12 +158,12 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                   />
                                 ) : null}
                                 <figcaption>
-                                  <h4>
+                                  <h3>
                                     {
                                       categoryToShow.LuxuryResidences[index]
                                         .ProjectName
                                     }
-                                  </h4>
+                                  </h3>
                                   <p>
                                     {
                                       categoryToShow.LuxuryResidences[index]
@@ -188,7 +188,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
               <div className="container">
                 <div className="web-container">
                   <div className="title col-12 float-start text-center">
-                    <h3
+                    <h2
                       data-aos="zoom-in"
                       data-aos-easing="ease-in"
                       data-aos-offset="50"
@@ -196,7 +196,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                       data-aos-once="true"
                     >
                       Ready To Move
-                    </h3>
+                    </h2>
                   </div>
                   <div className="row">
                     {Object.keys(categoryToShow.PremiumResidences).map(
@@ -242,12 +242,12 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                   />
                                 ) : null}
                                 <figcaption>
-                                  <h4>
+                                  <h3>
                                     {
                                       categoryToShow.PremiumResidences[index]
                                         .ProjectName
                                     }
-                                  </h4>
+                                  </h3>
                                   <p>
                                     {
                                       categoryToShow.PremiumResidences[index]
@@ -272,7 +272,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
               <div className="container">
                 <div className="web-container">
                   <div className="title col-12 float-start text-center">
-                    <h3
+                    <h2
                       data-aos="zoom-in"
                       data-aos-easing="ease-in"
                       data-aos-offset="50"
@@ -280,7 +280,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                       data-aos-once="true"
                     >
                       Completed
-                    </h3>
+                    </h2>
                   </div>
                   <div className="row">
                     {Object.keys(categoryToShow.Completed).map(
@@ -326,12 +326,12 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                   />
                                 ) : null}
                                 <figcaption>
-                                  <h4>
+                                  <h3>
                                     {
                                       categoryToShow.Completed[index]
                                         .ProjectName
                                     }
-                                  </h4>
+                                  </h3>
                                   <p>
                                     {
                                       categoryToShow.Completed[index]
@@ -361,13 +361,13 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
             <div className="web-container">
               <div className="row">
                 <div className="title col-12 float-start text-center">
-                  <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500"
+                  <h2 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500"
                     data-aos-once="true"
                   >
                     {filtersearchResult.length > 0
                       ? "Search Result"
                       : "No Data Found"}
-                  </h3>
+                  </h2>
                 </div>
                 {filtersearchResult.map((searchResult, index) => (
                   <div
@@ -403,7 +403,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                           />
                         ) : null}
                         <figcaption>
-                          <h4>{searchResult.ProjectName}</h4>
+                          <h3>{searchResult.ProjectName}</h3>
                           <p>{searchResult.location}</p>
                           <p>Know More</p>
                         </figcaption>

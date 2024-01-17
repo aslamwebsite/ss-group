@@ -24,10 +24,13 @@ function Gallerybox({ gallery_data }) {
             </div>
             <div className="lightcont">
               <h4>{galData.titleData}</h4>
-              <h5>
-                {galData.news_paperName}
-                <span className="pull-right">{galData.datemonth}</span>
-              </h5>
+              {galData && galData.news_paperName && galData.datemonth ? (
+  <h5>
+    {galData.news_paperName}
+    <span className="pull-right">{galData.datemonth}</span>
+  </h5>
+) : null}
+
             </div>
           </a>
         ))}

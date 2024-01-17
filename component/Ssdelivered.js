@@ -36,9 +36,6 @@ const Ssdelivered = ({ deliveredData, slugValue }) => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <span className="colorborder position-relative">
-                  <em></em>
-                </span>
                 <h3> Delivered</h3>
               </div>
               <div className="col-lg-11 m-auto col-12 image-effect-section">

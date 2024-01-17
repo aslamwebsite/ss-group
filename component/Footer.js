@@ -13,7 +13,7 @@ const Footer = ({className}) => {
              <div className="d-flex align-items-start justify-content-between flex-wrap p-0">             
                <div className="col-lg-1 col-12 position-relative desktop-show">
                <div className="text-transform">
-               <h2 className="d-flex text-center">
+               <p className="d-flex text-center">
                <span>S</span>
                   <span>S</span>                  
                   <span className="px-2"></span>
@@ -22,14 +22,14 @@ const Footer = ({className}) => {
                   <span>O</span>
                   <span>U</span>
                   <span>P</span>
-                  </h2>
+                  </p>
                </div>
                </div>
                <div className="ssgroupfooter col-lg-11 col-12 border border-color">
                   <div className="col-lg-8 col-12 m-auto">
                   <div className="col-12 float-start border-bottom border-color pb-5 mb-5">
                   <div className="col-12 float-start text-center title mb-3">
-                                <h3 className="border-0 text-white" data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>REQUEST A CALL BACK</h3>
+                                <span className="border-0 text-white" data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>REQUEST A CALL BACK</span>
                             </div>
                   <Form/>  
                   </div>

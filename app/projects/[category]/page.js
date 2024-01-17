@@ -182,8 +182,8 @@ const page = () => {
                 priority
               />
             </div>
-            <div className="bannerimagecont position-absolute top-50 text-center col-12 float-start">
-              <h2>{text}</h2>
+            <div className="bannerimagecont position-absolute top-50 text-center col-12 float-start ">
+              <h1>{text}</h1>
             </div>
           </div>
           : null}

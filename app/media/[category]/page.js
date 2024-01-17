@@ -22,7 +22,7 @@ return (
                         <div className='row'>
                             <div className=' flex-center'>
                                 <div className='col-12 float-start heading text-center'>
-                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>{stringWithoutHyphen}</h3>
+                                    <h1 className='headingh2 effectheading text-uppercase' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>{stringWithoutHyphen}</h1>
                                 </div>
                                 </div>  
                         </div>

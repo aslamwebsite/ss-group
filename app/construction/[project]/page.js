@@ -71,7 +71,7 @@ const page = () => {
             </div>
                                <div className="col-12 flaot-start flex-center mt-5">
                                <div className='heading text-center border-0 mb-2'>
-                                    <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'> {slug.replace(/-/g, " ")} <br/>Construction Updates</h3>
+                                    <h1 className='headingh2 effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'> {slug.replace(/-/g, " ")} <br/>Construction Updates</h1>
                                 </div>
                                </div>
                         </div>

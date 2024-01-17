@@ -47,11 +47,11 @@ return (
     <Image src={galData.image} width='230' height='280' alt={galData.titleData + ' ' + galData.news_paperName}/> 
   </div>
   <div className="lightcont">
-    <h4>{galData.titleData}</h4>
-    <h5>
+    <h2>{galData.titleData}</h2>
+    <h3>
       {(typeVal !== 'notice-ads') ? galData.news_paperName : ''}
       <span className="pull-right">{galData.datemonth}</span>
-    </h5>
+    </h3>
   </div>
 </a>
       </>

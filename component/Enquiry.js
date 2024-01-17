@@ -29,14 +29,14 @@ export default function Enquiry({ enquireText, requestCallbackText }) {
               <div className='col-lg-3'></div>
               <div className='col-lg-6'>
                 <div className='col-12 float-start text-center title'>
-                  <h3 className='border-0 text-white'>{requestCallbackText}</h3>
+                  <span className='border-0 text-white'>{requestCallbackText}</span>
                 </div>
                <Form />
               </div>
               <div className='col-lg-3'>
                 <div className='ssgroupformtext position-relative col-12 float-start'>
                   <div className='text-transform'>
-                    <h2 className='d-flex text-center'>
+                    <p className='d-flex text-center'>
                       <span>S</span>
                       <span>S</span>
                       <span className='px-2'></span>
@@ -45,7 +45,7 @@ export default function Enquiry({ enquireText, requestCallbackText }) {
                       <span>O</span>
                       <span>U</span>
                       <span>P</span>
-                    </h2>
+                    </p>
                   </div>
                 </div>
               </div>

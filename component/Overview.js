@@ -11,7 +11,7 @@ const Overview = () => {
                <div className="row align-items-center">
                 <div className="col-lg-4 col-12">
                 <div className='heading p-0 h-auto border-0 mb-2'>
-                <h3 className='effectheading newheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>Overview</h3>
+                <h1 className='effectheading newheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>Overview</h1>
               </div>
                 </div>
                 <div className="col-lg-8 col-12" data-aos="fade-left" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once="true">

@@ -44,7 +44,7 @@ const About = () => {
             <div className='col-lg-4 col-12'>
              <div className='lefspace aboutus'>
              <div className='heading p-0 h-auto border-0 mb-2'>
-                <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>BUILT ON VALUES</h3>
+                <h1 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="100" data-aos-duration="500" data-aos-once='true'>BUILT ON VALUES</h1>
               </div>
               <div className='col-12 float-start'>
                 <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-once='true'>Trust is not bestowed easily but is the result of consistent adherence to promises and a dedication to excellence. SS Group, the foremost real estate developer in Gurugram with nearly three decades of steadfast dedication, enjoys an impressive history of successfully executed residential and commercial projects within the city. This accomplishment stems from a blend of financial acumen, engineering proficiency, and innovative design.</p>

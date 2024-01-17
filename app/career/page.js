@@ -44,14 +44,14 @@ if (pagedata.length===0) {
                 <div className='web-container'>
                     <div className='col-lg-12 text-center'>
                         <div className='heading border-0 text-uppercase p-0'>
-                            <h3 className='effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>Career</h3>
+                            <h1 className='headingh2 effectheading' data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="500" data-aos-once='true'>Career</h1>
                             </div>
                     </div>
                     {/* Loop Start */}
                     {pagedata.career.map((careerdesc, index) => (
   <div className={`col-lg-11 m-auto col-12 text-center ${index === pagedata.career.length - 1 ? '' : 'mb-5'}`} key={index}>
     <div className='title mb-4'>
-      <h3 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>{careerdesc.heading}</h3>
+      <h2 data-aos="zoom-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="800" data-aos-once='true'>{careerdesc.heading}</h2>
     </div>
     <div dangerouslySetInnerHTML={{ __html: careerdesc.description }} data-aos="fade-up" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="900" data-aos-once='true'/>
   </div>

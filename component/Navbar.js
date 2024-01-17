@@ -52,7 +52,7 @@ const Navbar = () => {
                                     <div className='rightbox d-flex align-items-center'>
                                         <div className='address'>
                                             <div className='title'>
-                                                <h3 className='text-white'>Get In Touch</h3>
+                                                <span className='text-white'>Get In Touch</span>
                                             </div>
                                             <div className='addressbox'>
                                                 <span>T</span>
@@ -75,7 +75,7 @@ const Navbar = () => {
                                         </div>
                                         <div className='followus'>
                                             <div className='title mb-2'>
-                                                <h3 className='text-white border-0 p-0'>Follow Us</h3>
+                                                <span className='text-white border-0 p-0'>Follow Us</span>
                                             </div>
                                             <ul className='d-flex p-0 gap-3'>
                                                 <li className='p-0'><a className='lh-1 fs-1' href="https://www.facebook.com/ssgrpindia" target="_blank"><Facebook /></a></li>

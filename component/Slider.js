@@ -123,7 +123,7 @@ const Slick = () => {
               />
             </div>
             <div className="home_slidertext position-absolute top-55 text-center text-white col-12 flex-center d-grid">
-            {slide.heading && ( <h4>{slide.heading}</h4> )}
+            {slide.heading && ( <span>{slide.heading}</span> )}
               {slide.subHeading && <p>{slide.subHeading}</p>}
               {slide.link && (
                 <span>

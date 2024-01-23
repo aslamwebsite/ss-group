@@ -2553,7 +2553,6 @@ h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
 
 .locationimage img {
   max-width: 100%;
-  object-fit: cover;
 }
 
 .locationmapcta {
@@ -2869,7 +2868,7 @@ h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
 }
 
 .projectfilter .ssgroupbtn button {
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .projectfilter .MuiSelect-select {
@@ -3570,6 +3569,7 @@ h1.headingh2{
 }
 
 @media all and (max-width:1450px) {
+
   .projectfilter .MuiSelect-select {
     padding: 10px 0;
     letter-spacing: 2px;
@@ -3595,7 +3595,7 @@ h1.headingh2{
 
   figure.snip0016 figcaption {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .effectheading.newheading {
@@ -3715,7 +3715,7 @@ h1.headingh2{
   }
 
   .circlecont h4,
-  .abstractshape h4 {
+  .abstractshape h4,  .snip00161 figcaption h3 {
     font-size: 24px;
   }
 
@@ -3745,15 +3745,24 @@ h1.headingh2{
     font-size: 14px;
   }
 
-  .loadingtext span:first-child {
+  .loadingtext span:first-child, .home_slidertext h4, .home_slidertext span {
     font-size: 32px;
     line-height: 50px;
   }
-
+  figure.snip0016 h4, figure.snip0016 h3 {
+    font-size: 1.2rem;
+}
   .loadingtext {
     font-size: 18px;
     line-height: 26px;
   }
+  .bannerimagecont h2, .bannerimagecont h1, .heading h1{
+    font-size: 46px;
+    line-height: 50px;
+  }
+  .projectfilter .ssgroupbtn button {
+    height: 42px;
+}
 }
 
 @media all and (max-width:1380px) {

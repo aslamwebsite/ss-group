@@ -31,7 +31,7 @@ const ProjectOverview = ({ project }) => {
         <div className='container'>
           <div className="col-lg-8 col-12 m-auto text-center">
             <div className="heading">
-              {showH1 && <h1 className="runtext lh-1 text-uppercase">{project.ProjectName}</h1>}
+              {showH1 && <h1 className="runtext text-uppercase">{project.ProjectName}</h1>}
               {showH2 && <h2>{project.Location}</h2>}
             </div>
             <div className="col-12 float-start">

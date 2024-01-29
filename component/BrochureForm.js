@@ -21,7 +21,7 @@ const BrochureForm = ({
       <div className="flex-center">
         <div className={`popup flex-center ${isPopupOpen ? "active" : ""}`}>
           <div className="popupContent col-12 pull-start">
-            <a className="position-absolute col-12 start-1/2 top-0 py-5 cursor-pointer">
+            <a className="position-absolute col-12 start-0 top-0 py-5 cursor-pointer text-center text-white">
               <span onClick={togglePopup} className="p-2 text-center">
                 Close -
               </span>

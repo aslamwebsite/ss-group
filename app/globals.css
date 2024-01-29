@@ -3483,15 +3483,8 @@ h1.headingh2{
     color: var(--black-color);
     text-transform: uppercase;
 }
-
-@media screen and (min-width: 1920px) {
- img{
-  object-fit: cover;
+.banner img {
   width: 100%;
-  height: auto;
-
-
- }
 }
 @media all and (max-width:1700px) {
   .lefspace {

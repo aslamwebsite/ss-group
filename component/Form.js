@@ -97,9 +97,9 @@ const Form = (brochure) => {
           setIsSubmitting(false);
           console.error("Error:", error);
         });
-      if (brochure) {
-        window.open(brochure.brochure, "_blank");
-      }
+        if (brochure.brochure) {
+          window.open(brochure.brochure, "_blank");
+        }
     }
   };
 

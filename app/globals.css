@@ -3452,19 +3452,22 @@ li.page-item.active {
 }
 
 .approachcontent h4 {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 30px;
   font-family: var(--headingfont);
   color: var(--secondary-color);
   text-transform: uppercase;
   margin: 0;
+  letter-spacing: 0;
 }
 
 .approachcontent p {
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: 0.5px;
-  font-size: 15px;
+  font-size: 14px;
   margin: 0;
+  max-height: 120px;
+  overflow: auto;
 }
 
 .approachrow:nth-child(even) {
@@ -3568,6 +3571,15 @@ h1.headingh2{
   .menus .togmenu ul li {
     padding: 15px 0;
   }
+  .approachcontent h4 {
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.approachcontent p {
+    font-size: 13px;
+    line-height: 19px;
+}
 }
 
 @media all and (max-width:1450px) {
@@ -3792,6 +3804,10 @@ h1.headingh2{
 }
 
 @media all and (max-width:1380px) {
+  .approachcontent h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
   .mantainde h4 {
     font-size: 13px;
     line-height: 16px;
@@ -3986,9 +4002,13 @@ h1.headingh2{
     font-size: 12px;
     line-height: 16px;
   }
-}
+} 
 
 @media all and (max-width:1280px) {
+  .approachcontent h4 {
+    font-size: 14px;
+    line-height: 20px;
+}
   .fulltextcolumn {
     width: 107vw;
   }
@@ -3996,6 +4016,9 @@ h1.headingh2{
   .hiddentextcolumn .scroll-animated-text {
     right: 133%;
   }
+  .approachcontent p {
+    max-height: 100px;
+}
 }
 
 @media all and (max-width:1180px) {
@@ -4005,6 +4028,11 @@ h1.headingh2{
     margin: 25px 0;
   }
 
+  .approachcontent p {
+    font-size: 12px;
+    line-height: 16px;
+    max-height: 80px;
+  }
   .vimision .abstractshape:last-child {
     margin: 0;
   }
@@ -4092,6 +4120,11 @@ h1.headingh2{
 }
   .btns.rounded .text-green {
     top: 0;
+}
+.approachcontent p{
+  max-height: inherit;
+    font-size: 13px;
+    line-height: 19px;
 }
   .category-section .projectslider {
     margin: 2%;

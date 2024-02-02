@@ -27,7 +27,7 @@ const Approach = () => {
   ];
 
   return (
-    <section className='d-none'>
+    <section>
       <div className="container">
         <div className="row">
           <div className="web-container">

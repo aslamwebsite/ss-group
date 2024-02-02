@@ -1669,7 +1669,7 @@ figure.snip0016 a {
 .quotes p:before {
   content: '\201E';
   position: absolute;
-  top: -150%;
+  top: -150px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 500px;
@@ -2476,9 +2476,6 @@ h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
   font-weight: bold;
   color: var(--black-color);
   letter-spacing: 1.5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .locationinfo {
@@ -3299,7 +3296,6 @@ figure.snip0016 a[href='#'] {
 }
 
 .quicklink a {
-  margin-bottom: 15px;
   display: inline-block;
   width: 100%;
 }
@@ -3486,6 +3482,9 @@ h1.headingh2{
 .banner img {
   width: 100%;
 }
+.quicklink .col-lg-4.col-12:last-child {
+  margin-top: 15px;
+}
 @media all and (max-width:1700px) {
   .lefspace {
     width: 90%;
@@ -3572,12 +3571,24 @@ h1.headingh2{
 }
 
 @media all and (max-width:1450px) {
-
+  .insidenavbarbutton .slick-arrow.slick-prev, .insidenavbarbutton .slick-arrow.slick-next {
+    width: 50px;
+    height: 50px;
+}
+  .hreranumber p {
+    font-size: 21px;
+    line-height: 26px;
+}
+  .web-container {
+    width: 75%;
+}
   .projectfilter .MuiSelect-select {
     padding: 10px 0;
     letter-spacing: 2px;
   }
-
+  .projectlogo{
+    margin-top: 50px;
+  }
   .mantainde h4 {
     font-size: 14px;
     line-height: 20px;
@@ -3639,6 +3650,9 @@ h1.headingh2{
     font-size: 30px;
   }
 
+  .heading h3{
+    line-height: 40px;
+  }
   header.blackheader {
     min-height: 100px;
   }
@@ -3648,9 +3662,12 @@ h1.headingh2{
   }
 
   .locationheading h4 {
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 20px;
   }
-
+  .locationcont{
+    padding:15px
+  }
   /* header.blackheader .header {
       padding: 15px 0;
   } */
@@ -3698,10 +3715,13 @@ h1.headingh2{
   }
 
   body {
-    line-height: 22px;
-    font-size: 14px;
+    line-height: 24px;
+    font-size: 15px;
     letter-spacing: 0.5px;
-  }
+}
+.image-effect-section .slick-prev:before, .image-effect-section .slick-next:before{
+  bottom: -5px;
+}
 
   .effectlayer::after {
     width: 388px;
@@ -3759,20 +3779,33 @@ h1.headingh2{
     font-size: 18px;
     line-height: 26px;
   }
-  .bannerimagecont h2, .bannerimagecont h1, .heading h1{
+  .bannerimagecont h2, .bannerimagecont h1{
     font-size: 46px;
     line-height: 50px;
   }
   .projectfilter .ssgroupbtn button {
     height: 42px;
 }
+.btns.rounded .text-green {
+  top: 4px;
+}
 }
 
 @media all and (max-width:1380px) {
+  .mantainde h4 {
+    font-size: 13px;
+    line-height: 16px;
+}
+.completedetails{
+  padding:5px
+}
   .web-container {
     width: 80%;
   }
-
+  .slick-dots li, .slick-dots li button {
+    width: 15px;
+    height: 15px;
+}
   figure.snip0016 h4, figure.snip0016 h3
   .snip00161 h4 {
     font-size: 20px;
@@ -3801,12 +3834,14 @@ h1.headingh2{
     width: 90%;
   }
 
-  .bannerimagecont h2, .bannerimagecont h1,
-  .heading h1 {
-    font-size: 40px;
-    line-height: 60px;
-  }
-
+  .bannerimagecont h2, .bannerimagecont h1, .heading h1 {
+    font-size: 36px;
+    line-height: 46px;
+}
+.lightcont h2, .lightcont h4 {
+  font-size: 14px;
+  line-height: 20px;
+}
   .address,
   .contact {
     padding-bottom: 15px;
@@ -3843,7 +3878,7 @@ h1.headingh2{
   }
 
   .realstatebtn span {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 2px;
   }
 
@@ -3868,7 +3903,7 @@ h1.headingh2{
 
   .runtext,
   h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
-    letter-spacing: 0.10em;
+    letter-spacing: 0.09em;
   }
 
   .header {
@@ -3926,10 +3961,9 @@ h1.headingh2{
     font-size: 10px;
   }
 
-  .heading h3, .lefspace.aboutus .heading h1, .headingh2 {
+  .lefspace.aboutus .heading h1, .headingh2 {
     line-height: 30px;
   }
-
   .projectcontent h3 {
     font-size: 26px;
     line-height: 32px;
@@ -3974,7 +4008,9 @@ h1.headingh2{
   .vimision .abstractshape:last-child {
     margin: 0;
   }
-
+  ul.d-flex.gap-5.m-0 {
+    gap: 1rem !important;
+}
   .abstractshape::before {
     height: 335px;
     background-repeat: no-repeat;
@@ -4036,6 +4072,13 @@ h1.headingh2{
   .text-transform h2, .text-transform p {
     font-size: 90px;
   }
+  .navbar {
+    margin-left: 25px;
+}
+.realstatebtn span {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
 }
 
 @media all and (max-width:990px) {
@@ -4044,7 +4087,12 @@ h1.headingh2{
     padding: 15px !important;
     gap: 15px;
   }
-
+  footer .ssgroupbtn button span {
+    font-size: 12px;
+}
+  .btns.rounded .text-green {
+    top: 0;
+}
   .category-section .projectslider {
     margin: 2%;
   }
@@ -4053,7 +4101,9 @@ h1.headingh2{
   .galleryfilterstn .col-lg-4.col-12 {
     margin: 5px 0;
   }
-
+  .countercont {
+    top: -10px;
+}
   .tbreadcrum {
     top: 10vh;
   }
@@ -4167,7 +4217,7 @@ h1.headingh2{
     object-position: top;
   }
 
-  .numbercolumn:last-child {
+  .numbercolumn:last-child, .quicklink .col-lg-4.col-12:last-child {
     margin: 0;
   }
 
@@ -4513,7 +4563,7 @@ h1.headingh2{
 
   .media h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
     white-space: inherit;
-    font-size: 21px;
+    font-size: 24px;
     letter-spacing: 1px;
   }
 
@@ -4536,17 +4586,18 @@ h1.headingh2{
   }
 
   .runtext,
-  h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
+  h3.effectheading.aos-init.aos-animate{
 
     white-space: break-spaces;
   }
 
-  .heading h3, .lefspace.aboutus .heading h1,
-  .projectcontent h3, .headingh2 {
-    font-size: 24px;
+  .heading h3, .lefspace.aboutus .heading h1, .headingh2 {
+    font-size: 26px;
     line-height: 30px;
   }
-
+  .ssgroupfooter form .row {
+    gap: 15px;
+}
   .fitleroption figure.snip0016 {
     min-height: 350px;
   }
@@ -4810,10 +4861,12 @@ h1.headingh2{
     padding: 0;
   }
 
-  .accordions .MuiButtonBase-root {
+  .accordions .MuiButtonBase-root, .locationinfo ul li {
     font-size: 15px;
   }
-
+  .locationinfo ul li{
+    line-height: 20px;
+  }
   .bannerwrap {
     gap: 0;
   }
@@ -4895,18 +4948,27 @@ h1.headingh2{
   .col-12.flaot-start.flex-center.mb-5 {
     margin-bottom: 25px !important;
   }
+  .lefspace.aboutus h1.effectheading.aos-init.aos-animate{
+    text-align: left;
+  }
+  .breadcumtab ul {
+    flex-wrap: wrap;
+}
+.runtext, h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
+  letter-spacing: 0.05em;
+}
 }
 
 @media all and (max-width:480px) {
+  .journey h3.effectheading {
+    font-size: 19px;
+    line-height: 28px;
+}
   .hreranumber p {
     font-size: 16px;
     line-height: 20px;
 }
-  .effectheading.newheading {
-    font-size: 40px;
-    line-height: 40px;
-  }
-
+  
   .ssgroupformtext .text-transform h2, .ssgroupformtext .text-transform p {
     font-size: 4em;
   }
@@ -5024,7 +5086,6 @@ h1.headingh2{
 
   .realstatebtn span {
     font-size: 9px;
-    letter-spacing: 1px;
   }
 
   .logo {
@@ -5055,11 +5116,6 @@ h1.headingh2{
   .countercount {
     font-size: 40px;
     line-height: 40px;
-  }
-
-  .heading h3, .lefspace.aboutus .heading h1, .headingh2 {
-    font-size: 26px;
-    line-height: 30px;
   }
 
   .togmenu ul li a,

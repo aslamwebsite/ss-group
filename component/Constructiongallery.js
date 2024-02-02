@@ -22,8 +22,14 @@ function Gallerybox({ gallery_data }) {
     (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
   ).slice(indexOfFirstItem, indexOfLastItem);
 
-  // Update current page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  
+    // Scroll to top
+    if (window.scrollY !== 0) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="Gallerybox mt-5 float-start col-12">
@@ -51,45 +57,43 @@ function Gallerybox({ gallery_data }) {
           ))}
         </>
       </LightGallery>
-{gallery_data.projects.flatMap(
-  (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
-).length > itemsPerPage && (
-  <ul className="pagination col-12 float-start flex-center mt-5">
-    {/* "Start" button */}
-    <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
-      <a onClick={() => paginate(1)} className="page-link">
-      «
-      </a>
-    </li>
+      {gallery_data.projects.flatMap(
+        (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
+      ).length > itemsPerPage && (
+        <ul className="pagination col-12 float-start flex-center mt-5">
+          {/* "Start" button */}
+          <li className={`page-item ${currentPage === 1 ? "disabled" : ""}`}>
+            <a onClick={() => paginate(1)} className="page-link">
+              «
+            </a>
+          </li>
 
-    {/* Numbered pages */}
-    {Array.from({ length: Math.ceil(gallery_data.projects.flatMap(
-      (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
-    ).length / itemsPerPage) }, (_, i) => (
-      <li key={i + 1} className={`page-item ${currentPage === i + 1 ? "active" : ""}`}>
-        <a onClick={() => paginate(i + 1)} className="page-link">
-          {i + 1}
-        </a>
-      </li>
-    ))}
+          {/* Numbered pages */}
+          {Array.from({ length: Math.ceil(gallery_data.projects.flatMap(
+            (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
+          ).length / itemsPerPage) }, (_, i) => (
+            <li key={i + 1} className={`page-item ${currentPage === i + 1 ? "active" : ""}`}>
+              <a onClick={() => paginate(i + 1)} className="page-link">
+                {i + 1}
+              </a>
+            </li>
+          ))}
 
-    {/* "End" button */}
-    <li className={`page-item ${currentPage === Math.ceil(gallery_data.projects.flatMap(
-      (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
-    ).length / itemsPerPage) ? "disabled" : ""}`}>
-      <a
-        onClick={() => paginate(Math.ceil(gallery_data.projects.flatMap(
-          (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
-        ).length / itemsPerPage))}
-        className="page-link"
-      >
-          »
-      </a>
-    </li>
-  </ul>
-)}
-
-
+          {/* "End" button */}
+          <li className={`page-item ${currentPage === Math.ceil(gallery_data.projects.flatMap(
+            (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
+          ).length / itemsPerPage) ? "disabled" : ""}`}>
+            <a
+              onClick={() => paginate(Math.ceil(gallery_data.projects.flatMap(
+                (project) => project.construction.gallery.flatMap((gallery) => gallery.galData)
+              ).length / itemsPerPage))}
+              className="page-link"
+            >
+              »
+            </a>
+          </li>
+        </ul>
+      )}
     </div>
   );
 }

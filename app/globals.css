@@ -3507,7 +3507,7 @@ h1.headingh2{
     width: 100%;
   }
 }
-@media all and (max-width:1920){
+@media all and (max-width:1920px){
   .react-parallax img.react-parallax-bgimage {
     height: auto !important;
   }

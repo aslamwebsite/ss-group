@@ -2539,9 +2539,6 @@ h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
   bottom: 5%;
 }
 
-.react-parallax img.react-parallax-bgimage {
-  height: auto !important;
-}
 
 .locationimage {
   transition: transform .5s;
@@ -3489,6 +3486,31 @@ h1.headingh2{
 }
 .quicklink .col-lg-4.col-12:nth-child(4) {
   margin-top: 15px;
+}
+@media all and (min-width:1940px) {
+  body{
+    font-size: 19px;
+    line-height: 30px;
+  }
+  .categories ul li{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .aboutimg {
+    width: 82%;
+    height: auto;
+  }
+  .imagemanager img, .projectbanner img{
+    width: 100%;
+  }
+  .slick-slide img{
+    width: 100%;
+  }
+}
+@media all and (max-width:1920){
+  .react-parallax img.react-parallax-bgimage {
+    height: auto !important;
+  }
 }
 @media all and (max-width:1700px) {
   .lefspace {

@@ -17,9 +17,8 @@ import ChatboxWidget from "@/component/ChatboxWidget"
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [categoryData, setCategoryData] = useState([]);
-  const smoothRef = useRef(null);
-  const botId = 'bf3bc593-8a20-460f-8f79-7e1b5a5fb9d7';
-
+  // const categoryData = projectData.categories;
+  // console.log(categoryData);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,12 +27,23 @@ export default function Home() {
           "https://www.ssgroup-india.com/admin_new/api/fetch_cat.php"
         );
         setCategoryData(response.data.categories);
+        // console.log(response.data.categories);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
 
     fetchData();
+  }, []);
+
+  if (!categoryData) {
+    return <p>Error</p>;
+  }
+  const smoothRef = useRef(null);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
   }, []);
 
   useEffect(() => {
@@ -60,7 +70,7 @@ export default function Home() {
     }
   }, [loading]);
   const numberData = [
-    { startValue: 5, endValue: 30, speed: 400, label: "YEARS", Plus: "+" },
+    { startValue: 5, endValue: 29, speed: 400, label: "YEARS", Plus: "+" },
     {
       startValue: 50,
       endValue: 173,
@@ -75,17 +85,26 @@ export default function Home() {
       Plus: "+",
     },
   ];
-  const homeFaqData = [
-    { question: 'Which is the best real estate company to buy a property in Gurugram?', answer: 'SS Group is a leading real estate developer in Gurugram, India, that focuses on creating luxury and community-driven residential and commercial properties.' },
-    { question: 'What are the different type of properties offered by SS Group?', answer: 'SS Group offers a wide range of residential and commercial properties, including apartments, penthouses, villas, shops, anchor stores and office spaces. Explore all our properties here at <a href="http://www.ssgroup-india.com" target="_blank">www.ssgroup-india.com</a>'},
-    { question: 'Where are SS Group projects currently located?', answer: 'Our projects are strategically located in prime areas of Gurugram, offering easy access, excellent connectivity, and excellent growth. Find details about our residential or commercial project locations here at <a href="http://www.ssgroup-india.com/" target="_blank">ssgroup-india.com </a>.'},
-    { question: 'What is the expected completion timeline for your projects?', answer: 'Completion timelines vary by project. Please visit the individual project pages <a href="http://www.ssgroup-india.com/" target="_blank">ssgroup-india.com</a> for specific information.'},
-    { question: 'What sets SS Group apart from other real estate developers?', answer: 'SS Group is renowned for its dedication to quality construction, innovative designs, and customer-centric approach. Learn more about us at the ABOUT US page on <a href="http://www.ssgroup-india.com/ss-group" target="_blank">ssgroup-india.com</a>'},
-    { question: 'Does SS Group have any ongoing or upcoming projects?', answer: 'Yes, SS Group has several ongoing and upcoming residential and commercial projects in New Gurugram. To know more about SS Groups new launches, <a href="tel:7053109109">call 7053 109 109</a>'},
-    { question: 'Are SS Group projects approved by banks?', answer: 'Yes, SS Group has tie-ups with leading banks and financial institutions to offer home loans and other financial assistance to property buyers.'},
-    { question: "What is SS Group's commitment to sustainability in real estate development?", answer: 'We are dedicated to creating sustainable practices, incorporating eco-friendly materials, energy-efficient designs, and green building techniques into our projects.'},
-    { question: "How can I contact SS Group? ", answer: 'For property-related queries, you can fill out the online form on the website or call us at <a href="tel:7053109109.">7053 109 109.</a>'},
-];
+  const [homeFaqData, sethomeFaqData] = useState([]);
+  useEffect(() => {
+    let mounted = true;
+
+    const loadData = async () => {
+      const response2 = await axios.get(
+        `https://www.ssgroup-india.com/admin_new/algorithms/fetch_faqs.php`
+      );
+      if (mounted) {
+        console.log(response2.data);
+        sethomeFaqData(response2.data);
+      }
+    };
+
+    loadData();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
   return (
     <>
       <Loader />

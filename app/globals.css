@@ -3517,6 +3517,10 @@ h1.headingh2{
     width: 90%;
   }
 
+  .togmenu ul li a, .pseudo-text-effect{
+    font-size: 56px;
+    line-height: 60px;
+  }
   .hiddentextcolumn .scroll-animated-text {
     right: 98%;
   }

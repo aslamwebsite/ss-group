@@ -3487,6 +3487,10 @@ h1.headingh2{
 .quicklink .col-lg-4.col-12:nth-child(4) {
   margin-top: 15px;
 }
+.accordions ul {
+  list-style: disc;
+  padding-left: 30px;
+}
 @media all and (min-width:1940px) {
   body{
     font-size: 19px;

@@ -6,8 +6,8 @@ const nextConfig = {
     buildActivity: false,
   },
   images: {
-    domains: ['www.ssgroup-india.com'],
-  },
+    domains: ['ssgroup.triverseadvertising.com'],
+  }
   eslint: {
     ignoreDuringBuilds: true,
   },

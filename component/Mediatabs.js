@@ -48,7 +48,7 @@ function Mediatabs() {
         const apiEndpoint = slug === "press-coverage" ? "press.php" : "media.php";
 
         try {
-          const response = await axios.get(`https://www.ssgroup-india.com/admin_new/api/${apiEndpoint}?type=${slug}&y=${year}`);
+          const response = await axios.get(`http://ssgroup.triverseadvertising.com/admin_new/api/${apiEndpoint}?type=${slug}&y=${year}`);
           console.log(response.data);
           setPagedata(response.data);
         } catch (error) {

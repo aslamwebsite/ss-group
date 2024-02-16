@@ -26,7 +26,7 @@ const page = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://www.ssgroup-india.com/admin_new/api/fetch_product.php"
+          "http://ssgroup.triverseadvertising.com/admin_new/api/fetch_product.php"
         );
         console.log(response);
         const project = response.data.projects.find((p) => p.slug === slug);

@@ -12,7 +12,7 @@ const page = () => {
   useEffect(() => {
     let mounted = true;
     const loadData = async () => {
-       const response = await axios.get('https://www.ssgroup-india.com/admin_new/api/career.php');
+       const response = await axios.get('http://ssgroup.triverseadvertising.com/admin_new/api/career.php');
        if(mounted){
         console.log(response.data);
            setPagedata(response.data);

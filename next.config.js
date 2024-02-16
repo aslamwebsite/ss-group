@@ -7,7 +7,7 @@ const nextConfig = {
   },
   images: {
     domains: ['ssgroup.triverseadvertising.com'],
-  }
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },

@@ -25,7 +25,7 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://ssgroup.triverseadvertising.com/admin_new/api/fetch_cat.php"
+          "https://triverseadvertising.com/ss-group/admin_new/api/fetch_cat.php"
         );
         setCategoryData(response.data.categories);
       } catch (error) {

@@ -27,7 +27,7 @@ const page = () => {
 
     const loadData = async () => {
       const response = await axios.get(
-        `http://ssgroup.triverseadvertising.com/admin_new/algorithms/modify_construction_json.php?url=${slug}&url2=${slug2}&url3=${slug3}`
+        `https://triverseadvertising.com/ss-group/admin_new/algorithms/modify_construction_json.php?url=${slug}&url2=${slug2}&url3=${slug3}`
       );
       if (mounted) {
         console.log(response);

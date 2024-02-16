@@ -21,7 +21,7 @@ const [pagedata, setPagedata] = useState([]);
   useEffect(() => {
   let mounted = true;
   const loadData = async () => {
-     const response = await axios.get(`http://ssgroup.triverseadvertising.com/admin_new/api/events_data.php?y=${yearVal}&m=${monthVal}&cat=${eventVal}`);
+     const response = await axios.get(`https://triverseadvertising.com/ss-group/admin_new/api/events_data.php?y=${yearVal}&m=${monthVal}&cat=${eventVal}`);
      if(mounted) {
         console.log(response.data);
          setPagedata(response.data);

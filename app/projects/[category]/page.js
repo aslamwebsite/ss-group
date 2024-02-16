@@ -25,7 +25,7 @@ const page = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://ssgroup.triverseadvertising.com/admin_new/api/fetch_cat.php"
+          "https://triverseadvertising.com/ss-group/admin_new/api/fetch_cat.php"
         );
         setCategoryData(response.data.categories[slug]);
         console.log(response.data.categories[slug]);

@@ -6,7 +6,12 @@ const nextConfig = {
     buildActivity: false,
   },
   images: {
-    domains: ['ssgroup.triverseadvertising.com'],
+   remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'triverseadvertising.com',
+      }
+    ]
   },
   eslint: {
     ignoreDuringBuilds: true,

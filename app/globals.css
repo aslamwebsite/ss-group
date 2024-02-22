@@ -71,7 +71,7 @@ footer,
 .lg-react-element,
 .completeimg,
 .completedetails,
-.locationinfo ul {
+.locationinfo ul, .Gallerybox {
   width: 100%;
   float: left;
 }
@@ -111,9 +111,9 @@ ul {
   justify-content: center;
 }
 
-.Gallerybox .lg-react-element {
+/* .Gallerybox .lg-react-element {
   justify-content: center;
-}
+} */
 
 .navbar {
   width: 50px;
@@ -2605,7 +2605,7 @@ h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
 }
 
 .galleryimage {
-  height: 30vh;
+  height: 24vh;
   overflow: hidden;
 }
 
@@ -2962,10 +2962,10 @@ h3.effectheading.aos-init.aos-animate, h1.effectheading.aos-init.aos-animate {
   height: 680px;
 }
 
-.galleryimage img {
+/* .galleryimage img {
   object-fit: cover;
   object-position: top;
-}
+} */
 
 .css-17o5nyn.Mui-expanded {
   color: var(--primary-color);

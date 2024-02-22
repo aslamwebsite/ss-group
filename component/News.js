@@ -15,6 +15,21 @@ const News = () => {
   };
   const newsItems = [
     {
+      content: "SS Group signs agreement for 5-screen multiplex at SS Highpoint, Sector 86, New Gurugram with Roongta Cinemas",
+    },
+    {
+      content: "SS WhiteWater commercial project successfully launched at Sector 90, New Gurugram",
+    },
+    {
+      content: "Group Housing Coming Soon at New Gurugram",
+    },
+    {
+      content: "SS Cendana, Sector 83, New Gurugram, Nearing Full Occupancy as Demand Surges",
+    },
+    {
+      content: "The Leaf, Sector 85, New Gurugram, Project successfully delivered",
+    },
+    {
       content: "Roongta Cinemas coming soon at SS Highpoint Sector – 86, New Gurugram.",
     },
     {

@@ -69,7 +69,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                     }
                                   />
                                 ) : null}
-                                <div className='col-12 float-start d-flex align-items-center p-4 justify-content-between' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'>
+                                <div className='col-12 float-start d-flex align-items-center p-4 justify-content-between d-none' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'>
                                 <figcaption>
                                   <h3 className='m-0'>
                                     {

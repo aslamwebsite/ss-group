@@ -69,7 +69,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                     }
                                   />
                                 ) : null}
-                                <div className='col-12 float-start d-flex align-items-center p-4 justify-content-between d-none' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'>
+                                <div className='col-12 float-start d-flex align-items-center p-4 justify-content-between' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'>
                                 <figcaption>
                                   <h3 className='m-0'>
                                     {
@@ -77,7 +77,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                         .ProjectName
                                     }
                                   </h3>
-                                  <p>
+                                  <p className='fw-normal'>
                                     {
                                       categoryToShow.NewLaunch[index]
                                         .location
@@ -85,7 +85,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                   </p>
                                   
                                 </figcaption>
-                                <span className="btns rounded m-0"><span className="text-green">Know More</span></span>
+                                <span className="btns rounded m-0"><span className="text-green">Coming Soon</span></span>
                                 </div>
                               </figure>
                             </div>

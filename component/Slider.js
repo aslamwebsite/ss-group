@@ -40,7 +40,7 @@ const Slick = () => {
     {
       imageSrc: "/ss-kiavasa.webp",
       altText: "SS kiavasa",
-      link: "/projects/homes/ss-kiavasa",
+      // link: "/projects/homes/ss-kiavasa",
       mimageSrc: "/mkiavasa.webp"
     },
     {

@@ -38,7 +38,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                           data-aos-once="true"
                         >
                           {/* <Link href={"/projects/" + slugValue + "/" + categoryToShow.NewLaunch[index].slug}> */}
-                          <Link
+                          {/* <Link
                             href={
                               categoryToShow.NewLaunch[index]
                                 .linkActive != 0
@@ -48,7 +48,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                   categoryToShow.NewLaunch[index].slug
                                 : ""
                             }
-                          >
+                          > */}
                             <div
                               className={`projectslider m-0`}
                               ref={(el) => projectSliders.current.push(el)}
@@ -69,7 +69,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                     }
                                   />
                                 ) : null}
-                                <div className='col-12 float-start d-flex align-items-center p-4 justify-content-between' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'>
+                                <div className='col-12 float-start d-flex align-items-center p-4 justify-content-between d-none' data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in" data-aos-once='true'>
                                 <figcaption>
                                   <h3 className='m-0'>
                                     {
@@ -89,7 +89,7 @@ const Category = ({ categoryToShow, filtersearchResult, slugValue }) => {
                                 </div>
                               </figure>
                             </div>
-                          </Link>
+                          {/* </Link> */}
                         </div>
                       )
                     )}

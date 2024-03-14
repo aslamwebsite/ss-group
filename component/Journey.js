@@ -9,7 +9,12 @@ export default class DynamicSliders extends Component {
       nav1: null,
       nav2: null,
       circleContent: [
-       
+        {
+          imageSrc: '/whitewater.webp',
+          heading: '2024',
+          title: 'SS WHITEWATER',
+          text: 'Sector – 90,\nFirst Mall in NEW Gurugram',
+        },
         {
           imageSrc: '/strada-journey.webp',
           heading: '2023',

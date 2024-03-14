@@ -50,8 +50,8 @@ const Footer = ({className}) => {
                         <div className="col-lg-4 col-12 flex-center align-items-start" data-aos="fade-in" data-aos-easing="ease-in" data-aos-offset="50" data-aos-duration="900" data-aos-once='true'>
                           <div className="addressbox">
                               <span>A</span>
-                              <p>77, SS House, <br />
-Sector- 44, Gurugram,<br />
+                              <p>77, SS House <br />
+Sector- 44, Gurugram<br />
 (Haryana)- 122003</p>
                           </div>
                         </div>

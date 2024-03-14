@@ -15,6 +15,9 @@ const News = () => {
   };
   const newsItems = [
     {
+      content: "Prime Minister Narendra Modi Unveils 19km Gurgaon Section of Dwarka Expressway.",
+    },
+    {
       content: "SS Group signs agreement for 5-screen multiplex at SS Highpoint, Sector 86, New Gurugram with Roongta Cinemas",
     },
     {
